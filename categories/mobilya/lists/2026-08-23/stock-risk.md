@@ -1,0 +1,7 @@
+# Stok Riski — 2026-08-23
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 66 | -13 |  | - | [KOKİ DESİGN LİDA 2 Kişilik Uzun Koltuk Berjer Wellsoft Gülkurusu (Salon , Balkon ,Ofis)](https://www.trendyol.com/koki-design/lida-2-kisilik-uzun-koltuk-berjer-wellsoft-gulkurusu-salon-balkon-ofis-p-1139651302?boutiqueId=61&merchantId=1065542) | KOKİ DESİGN | - | 7999 | InStock | - | - | - | refreshed |  | Kargo Bedava; Peşin Fiyatına 6 Taksit; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 81 | -1 | 15.8 | 14.2 | [Apple Yenilenmiş IPHONE 16 PRO MAX 256GB -B Kalite- Siyah Titanyum](https://www.trendyol.com/apple/iphone-16-pro-max-256gb-siyah-titanyum-p-857296077) | Apple | Getmobil | 92999 | InStock | 4.6 | 94 | 99 | refreshed |  | 750 TL Kupon; Kargo Bedava; Peşin Fiyatına 9 Taksit |
+| 110 | - |  | - | [joyfoam modular foam sofas TERRA LÜKS KÖŞE BERJER YATAKLI YIKANABİLİR ORTA SERT SUNGER GENÇ DİNAMİK TARZ](https://www.trendyol.com/joyfoam-modular-foam-sofas/terra-luks-kose-berjer-yatakli-yikanabilir-orta-sert-sunger-genc-dinamik-tarz-p-1104194795?boutiqueId=61&merchantId=1219953) | joyfoam modular foam sofas | Joyfoam modular foam sofas | 7419 | InStock | - | - | - | refreshed |  | Kargo Bedava; Peşin Fiyatına 6 Taksit |
