@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-08-22
+📊 Trendyol Süpermarket Günlük Raporu — 2026-08-23
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) MissClean ( 3 Adet ) Mikrofiber Mutfak Temizlik Bezi 40*40 Cm Leke Tutmaz Koku Yapmaz (162.12 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 3) MOMORDİCA Coconut Mix - 250 ml (212.55 TL)
-🎯 Niche: 1) HARMANA Karnıyarık Otu Tozu 150 Gr | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) Sibelon Professionel Kağıt Tırnak Törpü 100/180 1 Adet
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-22.md
+🔥 Trend: 1) MOMORDİCA Karnıyarık Otu Mix - 250ml (279 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 3) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (370 TL)
+🎯 Niche: 1) HARMANA Karnıyarık Otu Tozu 150 Gr | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) green card 81 İlden Bodrum Mandalina Macunu
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-23.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
