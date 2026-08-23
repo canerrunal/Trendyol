@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-08-22
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-08-23
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) New Well Lıft me up Volume Mascara 8 ml (190.71 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1498 TL) | 3) Magly Magnetic Cars Manyetik Araç Oyun Seti - Manyetik Yapı Blokları Araba Eklentisi (354.25 TL)
-🎯 Niche: 1) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 2) Embeauty Cherki Glow Argan Yağı İçerikli Besleyici Saç Parfümü 100 ml | 3) Genel Markalar BÜYÜK BOY 25 CM Katlanır Kore yelpaze Serinlik
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-08-22.md
+🔥 Trend: 1) MOMORDİCA Karnıyarık Otu Mix - 250ml (279 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1498 TL) | 3) MİSTİRİK Porfy Model Inceltici Etkili Lazer Kesim Paçalı Iz Yapmaz Şort Korse Ten Renk (389.99 TL)
+🎯 Niche: 1) cabuk baskı Kız Çocuklara Özel 120 Adet İsime Özel Okul Etiketi Seti 5 Sevimli Temalı Defter Kitap ve Kalem Etiketi | 2) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 3) HARMANA Karnıyarık Otu Tozu 150 Gr
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-08-23.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
