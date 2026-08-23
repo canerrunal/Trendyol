@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-22
+📊 Trendyol Kozmetik Günlük Raporu — 2026-08-23
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) ILLUSIONE FRAGRANCE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk (479 TL) | 2) Frederic Patric C'OR Premium Parfüm (1698 TL) | 3) EzNevita Katı Hindistan Cevizi Yağı 170 ml - Soğuk Sıkım %100 Saf Sızma (180 TL)
-🎯 Niche: 1) PİRAYE AKSESUAR DIY Kirpik - Takma Kirpik 600 Adet Kirpik Seti Kitap Model 30-40-50-60-80-100 D Farklı Boylar | 2) Embeauty Cherki Glow Argan Yağı İçerikli Besleyici Saç Parfümü 100 ml | 3) Xoom Liberty Body Mist 30 ML - Gün Boyu Tazelik
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-22.md
+🔥 Trend: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi (199.9 TL) | 2) CALLİEL Ton Eşitleyici Aydınlık Verici Yoğun Nemlendirici +50 SPF Güneş Kremi 80 ML (296.9 TL) | 3) Yves Rocher Monoi Parfümlü Vücut Spreyi-Egzotik, Sıcak ve Çekici-Monoi de Tahiti-Vegan-125ml (374.95 TL)
+🎯 Niche: 1) Cream Co. Nemlendirici Aydınlatıcı Yüz Spreyi | Peptit Face Mist | Ektoin Hyaluronik Asit | Tüm Cilt Tipleri | 2) CALLİEL Aydınlatıcı ve Canlandırıcı Leke Karşıtı Bakım Seti | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-23.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
