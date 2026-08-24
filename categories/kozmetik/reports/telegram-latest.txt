@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-23
+📊 Trendyol Kozmetik Günlük Raporu — 2026-08-24
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi (199.9 TL) | 2) CALLİEL Ton Eşitleyici Aydınlık Verici Yoğun Nemlendirici +50 SPF Güneş Kremi 80 ML (296.9 TL) | 3) Yves Rocher Monoi Parfümlü Vücut Spreyi-Egzotik, Sıcak ve Çekici-Monoi de Tahiti-Vegan-125ml (374.95 TL)
-🎯 Niche: 1) Cream Co. Nemlendirici Aydınlatıcı Yüz Spreyi | Peptit Face Mist | Ektoin Hyaluronik Asit | Tüm Cilt Tipleri | 2) CALLİEL Aydınlatıcı ve Canlandırıcı Leke Karşıtı Bakım Seti | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-23.md
+🔥 Trend: 1) Frederic Patric C'OR Premium Parfüm (1698 TL) | 2) Embeauty Ultra Siyah Dolgunlaştırıcı Maskara – Hacim ve Uzunluk Etkili (455 TL) | 3) FRANKLY Pirinç Özü, 9 Çeşit peptit ve Kolajen İçeren Gözenek Sıkılaştırıcı Closer Toner Pad 70 Adet 105ml (899.25 TL)
+🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) FRANKLY Pirinç Özü, 9 Çeşit peptit ve Kolajen İçeren Gözenek Sıkılaştırıcı Closer Toner Pad 70 Adet 105ml | 3) CALLİEL Aydınlatıcı ve Canlandırıcı Leke Karşıtı Bakım Seti
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-24.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
