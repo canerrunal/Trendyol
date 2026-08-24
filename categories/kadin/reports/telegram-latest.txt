@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-08-23
+📊 Trendyol Kadın Günlük Raporu — 2026-08-24
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Mad Parfüm Mad H105 Selective 50 ml Kadın Parfüm (379.99 TL) | 2) ILLUSIONE FRAGRANCE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk (479 TL) | 3) New Well Ter Önleyici Beyazlatıcı Roll-on 50 ml (218 TL)
+🔥 Trend: 1) New Well Ter Önleyici Beyazlatıcı Roll-on 50 ml (191.31 TL) | 2) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (398.05 TL)
 🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ISANA DEODORANT KREM 50ML SODYUM KARBONATLI
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kadin/reports/2026-08-23.md
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kadin/reports/2026-08-24.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
