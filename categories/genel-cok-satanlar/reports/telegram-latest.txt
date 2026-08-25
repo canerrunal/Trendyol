@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-08-24
-✅ 200 ürünlük havuz | 198/200 detay yenilendi | kalite PASS
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-08-25
+✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Siyah İnci Kadın Siyah-beyaz Kısa Kollu Pamuklu Düğmeli Biyeli Pijama Takım (362.57 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1498 TL) | 3) MİSTİRİK Porfy Model Inceltici Etkili Lazer Kesim Paçalı Iz Yapmaz Şort Korse Ten Renk (389.99 TL)
-🎯 Niche: 1) cabuk baskı Kız Çocuklara Özel 120 Adet İsime Özel Okul Etiketi Seti 5 Sevimli Temalı Defter Kitap ve Kalem Etiketi | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Genel Markalar BÜYÜK BOY 25 CM Katlanır Kore yelpaze Serinlik
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-08-24.md
+🔥 Trend: 1) Siyah İnci Kadın Siyah-beyaz Kısa Kollu Pamuklu Düğmeli Biyeli Pijama Takım (362.57 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1498 TL) | 3) Siyah İnci sarı ekose kareli Nakışlı Düğmeli Biyeli İnce Soft Örme Pijama Takımı 8001 (439.99 TL)
+🎯 Niche: 1) cabuk baskı Kız Çocuklara Özel 120 Adet İsime Özel Okul Etiketi Seti 5 Sevimli Temalı Defter Kitap ve Kalem Etiketi | 2) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-08-25.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
