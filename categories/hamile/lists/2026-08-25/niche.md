@@ -1,0 +1,11 @@
+# Niche Fırsatlar — 2026-08-25
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4 | 8 | 100.5 | 35.3 | [Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez](https://www.trendyol.com/arma-yildiz/cikarilabilir-pedli-emzirme-sutyeni-3-lu-beyaz-siyah-ten-pamuklu-gogus-ucu-belli-etmez-p-996643753) | Arma Yıldız | ARMA YILDIZ | 531.9 | InStock | 4.4 | - | 96 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 12 | 18 | 76.3 | 34.6 | [Catherines Yumuşak dokulu hamile sabahlık-2349](https://www.trendyol.com/catherines/yumusak-dokulu-hamile-sabahlik-2349-p-744326438) | Catherines | - | 1098.27 | InStock | 4.7 | 210 | - | refreshed |  | Kargo Bedava |
+| 5 | 8 | 96.3 | 32 | [Miss Dünya Lissa 3'lü Paket Kadın Çok Renkli Pamuklu Likralı Süprem Hamile ve Lohusa Yüksek Bel Külot](https://www.trendyol.com/miss-dunya-lissa/3-lu-paket-kadin-cok-renkli-pamuklu-likrali-suprem-hamile-ve-lohusa-yuksek-bel-kulot-p-790050699) | Miss Dünya Lissa | Miss Dünya Lissa | 299.99 | InStock | 4.5 | 1196 | 238 | refreshed |  | Kargo Bedava |
+| 6 | 9 | 96.3 | 29.6 | [Dagi Siyah Emzirme Sütyeni](https://www.trendyol.com/dagi/siyah-emzirme-sutyeni-p-1838360) | Dagi | LORİSA | 498.95 | InStock | 4.6 | - | 343 | refreshed |  | Kargo Bedava; Sepette %5 İndirim; Trendyol Plus'a Özel |
+| 8 | 10 | 106.2 | 29.6 | [Pierre Cardin Kadın Ten 6116 Pamuklu Kaplı Emzirme Sütyeni](https://www.trendyol.com/pierre-cardin/kadin-ten-6116-pamuklu-kapli-emzirme-sutyeni-p-32211168) | Pierre Cardin | Pierre Cardin Kadın İç Giyim | 467.41 | InStock | 4.4 | - | 41 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 13 | 8 | 78.8 | 29.6 | [MODALADY 3 ADET %100 PAMUKLU HAMİLE KÜLODU](https://www.trendyol.com/modalady/3-adet-100-pamuklu-hamile-kulodu-p-902666880) | MODALADY | UCUZAGETİR | 298.9 | InStock | 4.5 | - | 120 | refreshed |  | Kargo Bedava |
+| 9 | 8 | 90.8 | 27.5 | [Dagi Beyaz Emzirme Sütyeni](https://www.trendyol.com/dagi/beyaz-emzirme-sutyeni-p-1838359) | Dagi | LORİSA | 449.45 | InStock | 4.6 | - | 534 | refreshed |  | Kargo Bedava; Sepette %5 İndirim; Trendyol Plus'a Özel |
