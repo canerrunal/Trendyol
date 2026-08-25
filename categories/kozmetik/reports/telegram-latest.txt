@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-24
+📊 Trendyol Kozmetik Günlük Raporu — 2026-08-25
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Frederic Patric C'OR Premium Parfüm (1698 TL) | 2) Embeauty Ultra Siyah Dolgunlaştırıcı Maskara – Hacim ve Uzunluk Etkili (455 TL) | 3) FRANKLY Pirinç Özü, 9 Çeşit peptit ve Kolajen İçeren Gözenek Sıkılaştırıcı Closer Toner Pad 70 Adet 105ml (899.25 TL)
-🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) FRANKLY Pirinç Özü, 9 Çeşit peptit ve Kolajen İçeren Gözenek Sıkılaştırıcı Closer Toner Pad 70 Adet 105ml | 3) CALLİEL Aydınlatıcı ve Canlandırıcı Leke Karşıtı Bakım Seti
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-24.md
+🔥 Trend: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi (199.9 TL) | 2) Maybelline New York Lash Sensational Sky High Maskara - Kirpiklerde Limitsiz Uzunluk ve Hacim Etkisi (559 TL) | 3) La Roche Posay Cicaplast Balm B5+ Tahriş Olmuş Ciltlere Yatıştırıcı ve Bariyer Onarıcı Yüz& Vücut Bakım Kremi 40 ml (599.9 TL)
+🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) TTO Clinic Kore Serisi Yüz Kremi - Pirinç Mayası ve Niacinamide Aydınlatıcı 50 ml | 3) VULLY Glow Chanera Argan yağlı besleyici ve Panthenol içerikli ışıltı veren Saç Parfümü 100 Ml
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-25.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
