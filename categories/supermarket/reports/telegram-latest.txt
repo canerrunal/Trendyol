@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-08-24
-✅ 200 ürünlük havuz | 199/200 detay yenilendi | kalite PASS
+📊 Trendyol Süpermarket Günlük Raporu — 2026-08-25
+✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bilge İlaç Matcha Premium Japanese Premium Japanese Çilek Aromalı Detox Burner Form Maça Çayı 1 Kutu (1 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 3) MOMORDİCA Coconut Mix - 250 ml (212.55 TL)
+🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 2) MOMORDİCA Coconut Mix - 250 ml (279 TL) | 3) icollagen İyi Uykular Kolajen Jelibonu - Kedi Otu & 5 Tip Kolajen (350 TL)
 🎯 Niche: 1) Zühre Ana Doğal Karnıyarık Otu (Psyllium) Tozu 30 saşe x 5gr | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) icollagen Gummies Jelibon Hidrolizat Kolajen & Prebiyotik
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-24.md
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-25.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
