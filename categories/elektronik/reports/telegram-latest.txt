@@ -1,7 +1,7 @@
-📊 Trendyol Elektronik Günlük Raporu — 2026-08-24
+📊 Trendyol Elektronik Günlük Raporu — 2026-08-25
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) comedones Dijital Baskül Yağ Su Kas Vücut Kitle Endeksi Kilo Ölçer Tartı (438.8 TL) | 2) KUMTEL KTF-258W Kule Tipi Beyaz Vantilatör – 50W, Zaman Ayarlı, 3 Hız Kademeli, Sessiz Çalışma (1419 TL) | 3) Braun FS1000 Mini Yüz Tüy Alma Makinesi Pil Ve Temizleme Fırçası, Seyahat Boy, Kablosuz Kullanım (1299 TL)
-🎯 Niche: 1) Philips 3000 Serisi 7in1, Erkek Bakım Seti, Yüz/Saç/Vücut Tıraş Makinesi, Islak /Kuru Kullanım, MG3930/15 | 2) Popidima Yüksek Kalite Tüm Telefonlara Uyumlu Yağmur Su Geçirmez Waterproof Deniz Havuz Altı Geçirmez Kılıf | 3) ACSTECH 4K Dijital Fotoğraf Makinesi 48MP Flip Ekran 18X Zoom Flaşlı 64GB Hediyeli Türkçe Menü
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/elektronik/reports/2026-08-24.md
+🔥 Trend: 1) KUMTEL KTF-258W Kule Tipi Beyaz Vantilatör – 50W, Zaman Ayarlı, 3 Hız Kademeli, Sessiz Çalışma (1419 TL) | 2) Braun FS1000 Mini Yüz Tüy Alma Makinesi Pil Ve Temizleme Fırçası, Seyahat Boy, Kablosuz Kullanım (1299 TL) | 3) Xiaomi Redmi Buds 6 Play Siyah Kulakiçi Kulaklık-Gürültü Önleme BT5.4 IOS&Android (Xiaomi TR Garantili) (789 TL)
+🎯 Niche: 1) Popidima Yüksek Kalite Tüm Telefonlara Uyumlu Yağmur Su Geçirmez Waterproof Deniz Havuz Altı Geçirmez Kılıf | 2) ACSTECH 4K Dijital Fotoğraf Makinesi 48MP Flip Ekran 18X Zoom Flaşlı 64GB Hediyeli Türkçe Menü | 3) Arfseb Yüz Kaş Bıyık Tüy Alıcı Epilasyon Aleti
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/elektronik/reports/2026-08-25.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
