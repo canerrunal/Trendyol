@@ -1,0 +1,8 @@
+# Stok Riski — 2026-08-26
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 19 | -7 | 52.4 | 49.7 | [Defacto %100 Pamuk Baskılı Kapüşonlu Fermuarlı Sweatshirt Erkek Çocuk D8536A825SP](https://www.trendyol.com/defacto/100-pamuk-baskili-kapusonlu-fermuarli-sweatshirt-erkek-cocuk-d8536a825sp-p-888262701?boutiqueId=61&merchantId=904253) | Defacto | - | 779.99 | InStock | 4.7 | 5 | - | refreshed |  | Kargo Bedava |
+| 40 | 24 | 10.4 | 24.6 | [Defacto %100 Pamuk Bisiklet Yaka Gökkuşağı Baskılı Waffle Uzun Kollu Çıtçıtlı Body Kız Bebek Yenidoğan E2381](https://www.trendyol.com/defacto/100-pamuk-bisiklet-yaka-gokkusagi-baskili-waffle-uzun-kollu-citcitli-body-kiz-bebek-yenidogan-e2381-p-899074928?boutiqueId=61&merchantId=1188) | Defacto | - | 108 | InStock | 4.6 | 19 | - | refreshed |  | Sepette %70 İndirim; Kargo Bedava; Trendyol Plus'a Özel |
+| 58 | 10 | 39.9 | 4.9 | [Rose Kız çocuk ayakkabı abiye şeffaf ökçe çiçek taşlı detaylı](https://www.trendyol.com/rose/kiz-cocuk-ayakkabi-abiye-seffaf-okce-cicek-tasli-detayli-p-815469320?boutiqueId=61&merchantId=112931) | Rose | Ayakkabı City | 577 | InStock | 4 | - | 299 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 32 | -26 | 41.6 | 13.4 | [Genel Markalar Ahşap Kızma Birader Kutu Oyunu](https://www.trendyol.com/genel-markalar/ahsap-kizma-birader-kutu-oyunu-p-72392826?boutiqueId=61&merchantId=1312738) | Genel Markalar | JOY SMART | 114 | InStock | 4.4 | 1578 | 250 | refreshed |  | Sepette %2 İndirim; Kargo Bedava |
