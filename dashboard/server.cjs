@@ -153,7 +153,7 @@ function buildSocialStatus({ bypassCache = false } = {}) {
     recentRuns: runs.slice(0, 8),
     error: available ? null : 'GitHub sosyal yayın verilerine ulaşılamadı. gh oturumunu ve ağ bağlantısını kontrol edin.'
   };
-  socialCache = { expiresAt: Date.now() + 300000, value };
+  socialCache = { expiresAt: Date.now() + 60000, value };
   return value;
 }
 
