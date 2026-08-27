@@ -16,8 +16,19 @@ const HOST = process.env.DASHBOARD_HOST || '127.0.0.1';
 const PORT = Number(process.env.DASHBOARD_PORT || 4317);
 const TIMEZONE = 'Europe/Istanbul';
 const GITHUB_BASE = 'https://github.com/caner8047-coder/Trendyol/blob/main';
+const SOCIAL_REPOSITORY = process.env.SOCIAL_REPOSITORY || 'caner8047-coder/verimimaricom';
+const SOCIAL_WORKFLOW = process.env.SOCIAL_WORKFLOW || 'publish-announcements.yml';
+const SOCIAL_SITE = process.env.SOCIAL_SITE || 'https://verimimari.com';
+const GH_BIN = process.env.GH_BIN || [path.join(os.homedir(), '.local', 'bin', 'gh'), '/opt/homebrew/bin/gh', '/usr/local/bin/gh'].find(file => fs.existsSync(file)) || 'gh';
+const SOCIAL_PLATFORMS = [
+  { key: 'instagram', label: 'Instagram', handle: '@veri.mimari', profileUrl: 'https://www.instagram.com/veri.mimari/' },
+  { key: 'facebook', label: 'Facebook', handle: 'Veri Mimarı', profileUrl: 'https://www.facebook.com/verimimaricom' },
+  { key: 'linkedin', label: 'LinkedIn', handle: 'Veri Mimarı', profileUrl: 'https://www.linkedin.com/in/veri-mimari/' },
+  { key: 'x', label: 'X', handle: '@verimimari', profileUrl: 'https://x.com/verimimari' }
+];
 
 let statusCache = { expiresAt: 0, value: null };
+let socialCache = { expiresAt: 0, value: null };
 
 function readJson(file, fallback = null) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); }
@@ -31,6 +42,120 @@ function run(command, args, fallback = '') {
 }
 
 function git(args, fallback = '') { return run('/usr/bin/git', args, fallback); }
+
+function publicGithubJson(pathname, fallback = '{}') {
+  return run('/usr/bin/curl', [
+    '-fsSL', '--max-time', '4',
+    '-H', 'Accept: application/vnd.github+json',
+    '-H', 'X-GitHub-Api-Version: 2022-11-28',
+    `https://api.github.com/repos/${SOCIAL_REPOSITORY}${pathname}`
+  ], fallback);
+}
+
+function parseSocialRefs(payload) {
+  const nodes = payload?.data?.repository?.refs?.nodes || [];
+  return nodes.map(node => {
+    const name = String(node.name || '').replace(/^refs\/tags\/social\//, '');
+    const separator = name.indexOf('/');
+    if (separator < 1) return null;
+    const platform = name.slice(0, separator);
+    const slug = name.slice(separator + 1);
+    if (!SOCIAL_PLATFORMS.some(item => item.key === platform) || !slug) return null;
+    return {
+      platform,
+      slug,
+      commit: node.target?.oid || null,
+      sourceCommitAt: isoOrNull(node.target?.committedDate),
+      announcementUrl: `${SOCIAL_SITE}/duyurular/${encodeURIComponent(slug)}`,
+      tagUrl: `https://github.com/${SOCIAL_REPOSITORY}/tree/social/${platform}/${encodeURIComponent(slug)}`
+    };
+  }).filter(Boolean).sort((a, b) => String(b.sourceCommitAt || '').localeCompare(String(a.sourceCommitAt || '')));
+}
+
+function normalizeSocialRun(run) {
+  const running = ['queued', 'in_progress', 'requested', 'waiting'].includes(run.status);
+  const outcome = running ? 'running' : run.conclusion === 'success' ? 'success' : run.conclusion === 'cancelled' ? 'cancelled' : 'failed';
+  return {
+    id: run.databaseId,
+    status: run.status,
+    conclusion: run.conclusion || null,
+    outcome,
+    event: run.event,
+    title: run.displayTitle || 'Sosyal yayın görevi',
+    createdAt: isoOrNull(run.createdAt),
+    updatedAt: isoOrNull(run.updatedAt),
+    commit: run.headSha || null,
+    url: run.url
+  };
+}
+
+function buildSocialStatus({ bypassCache = false } = {}) {
+  if (!bypassCache && socialCache.value && socialCache.expiresAt > Date.now()) return socialCache.value;
+  const [owner, repository] = SOCIAL_REPOSITORY.split('/');
+  const variableOutput = run(GH_BIN, ['variable', 'list', '--repo', SOCIAL_REPOSITORY, '--json', 'name,value'], '[]');
+  const runOutput = run(GH_BIN, ['run', 'list', '--repo', SOCIAL_REPOSITORY, '--workflow', SOCIAL_WORKFLOW, '--limit', '12', '--json', 'databaseId,status,conclusion,event,displayTitle,createdAt,updatedAt,headSha,url'], '[]');
+  const refsQuery = `query { repository(owner: \"${owner}\", name: \"${repository}\") { refs(refPrefix: \"refs/tags/social/\", first: 100) { nodes { name target { ... on Commit { oid committedDate } } } } } }`;
+  const refsOutput = run(GH_BIN, ['api', 'graphql', '-f', `query=${refsQuery}`], '{}');
+  let variables = []; let runs = []; let refsPayload = {};
+  try { variables = JSON.parse(variableOutput || '[]'); } catch {}
+  try { runs = JSON.parse(runOutput || '[]').map(normalizeSocialRun); } catch {}
+  try { refsPayload = JSON.parse(refsOutput || '{}'); } catch {}
+  if (!runs.length) {
+    try {
+      const publicRuns = JSON.parse(publicGithubJson(`/actions/workflows/${SOCIAL_WORKFLOW}/runs?per_page=12`, '{}'));
+      runs = (publicRuns.workflow_runs || []).map(run => normalizeSocialRun({
+        databaseId: run.id, status: run.status, conclusion: run.conclusion, event: run.event,
+        displayTitle: run.display_title, createdAt: run.created_at, updatedAt: run.updated_at,
+        headSha: run.head_sha, url: run.html_url
+      }));
+    } catch {}
+  }
+  if (!(refsPayload?.data?.repository?.refs?.nodes || []).length) {
+    try {
+      const publicTags = JSON.parse(publicGithubJson('/tags?per_page=100', '[]'));
+      refsPayload = { data:{ repository:{ refs:{ nodes:(publicTags || []).filter(tag => String(tag.name).startsWith('social/')).map(tag => ({
+        name: String(tag.name).replace(/^social\//, ''), target:{ oid:tag.commit?.sha || null, committedDate:null }
+      })) } } } };
+    } catch {}
+  }
+  const variableMap = new Map(variables.map(item => [item.name, item.value]));
+  const configured = String(variableMap.get('SOCIAL_AUTO_PLATFORMS') || process.env.SOCIAL_AUTO_PLATFORMS || 'linkedin,x,instagram,facebook').split(',').map(item => item.trim()).filter(Boolean);
+  const refs = parseSocialRefs(refsPayload);
+  const platforms = SOCIAL_PLATFORMS.map(item => {
+    const publications = refs.filter(ref => ref.platform === item.key);
+    return {
+      ...item,
+      enabled: configured.includes(item.key),
+      publicationCount: publications.length,
+      latest: publications[0] || null
+    };
+  });
+  const latestRun = runs[0] || null;
+  const available = variables.length > 0 || runs.length > 0 || refs.length > 0;
+  const value = {
+    available,
+    repository: SOCIAL_REPOSITORY,
+    repositoryUrl: `https://github.com/${SOCIAL_REPOSITORY}`,
+    workflowUrl: `https://github.com/${SOCIAL_REPOSITORY}/actions/workflows/${SOCIAL_WORKFLOW}`,
+    enabled: variableMap.has('SOCIAL_PUBLISH_ENABLED') ? variableMap.get('SOCIAL_PUBLISH_ENABLED') === 'true' : process.env.SOCIAL_PUBLISH_ENABLED !== 'false',
+    source: variables.length ? 'github-cli' : 'public-api',
+    configuredPlatforms: configured,
+    summary: {
+      activePlatforms: platforms.filter(item => item.enabled).length,
+      publicationCount: refs.length,
+      successfulRuns: runs.filter(item => item.outcome === 'success').length,
+      failedRuns: runs.filter(item => item.outcome === 'failed').length,
+      lastRunAt: latestRun?.createdAt || null,
+      lastOutcome: latestRun?.outcome || 'unknown'
+    },
+    platforms,
+    recentPublications: refs.slice(0, 12),
+    recentRuns: runs.slice(0, 8),
+    error: available ? null : 'GitHub sosyal yayın verilerine ulaşılamadı. gh oturumunu ve ağ bağlantısını kontrol edin.'
+  };
+  socialCache = { expiresAt: Date.now() + 300000, value };
+  return value;
+}
 
 function istanbulDate(value = new Date()) {
   const date = value instanceof Date ? value : new Date(value);
@@ -309,6 +434,7 @@ function buildStatus({ bypassCache = false } = {}) {
       heartbeat: fs.existsSync(path.join(HERMES_CRON_DIR, 'ticker_heartbeat')) ? fs.readFileSync(path.join(HERMES_CRON_DIR, 'ticker_heartbeat'), 'utf8').trim() : null,
       lastSuccess: fs.existsSync(path.join(HERMES_CRON_DIR, 'ticker_last_success')) ? fs.readFileSync(path.join(HERMES_CRON_DIR, 'ticker_last_success'), 'utf8').trim() : null
     },
+    social: buildSocialStatus({ bypassCache }),
     taxonomy: buildTaxonomyStatus(jobByName, executions, today),
     profiles,
     recentEvents
@@ -377,5 +503,5 @@ function startServer() {
   return server;
 }
 
-module.exports = { ROOT, buildStatus, cronTime, errorSummary, progressFromLog, discoverProfiles, startServer };
+module.exports = { ROOT, buildStatus, buildSocialStatus, parseSocialRefs, normalizeSocialRun, cronTime, errorSummary, progressFromLog, discoverProfiles, startServer };
 if (require.main === module) startServer();

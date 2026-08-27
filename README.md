@@ -88,6 +88,8 @@ Günlük profil çalışmaları tek bir global kilitle sıralanır; aynı anda i
 - Ürün sayısı, detay başarısı, stok/satıcı/puan/yorum/soru/teslimat kapsamı
 - Telegram teslim durumu, GitHub commit'i, yerel rapor ve teknik log bağlantıları
 - Devam eden işlerde listeleme/detay ilerlemesi
+- Veri Mimarı'nın Instagram, Facebook, LinkedIn ve X otomasyon durumu
+- Sosyal yayın etiketleri, son GitHub Actions çalışmaları ve hata kayıtları
 
 Kurulum ve kullanım:
 
@@ -98,6 +100,8 @@ npm run dashboard:test      # API/veri modeli kontrollerini çalıştırır
 ```
 
 Servis yönetimi için LaunchAgent etiketi `com.caner.trendyol-dashboard`'dur. Dashboard salt okunurdur; görev çalıştırmaz, durdurmaz veya veri dosyalarını değiştirmez.
+
+Sosyal Yayın Merkezi, `caner8047-coder/verimimaricom` deposunu yerel `gh` oturumu üzerinden salt okunur izler. GitHub Actions değişkenlerini, `social/<platform>/<duyuru>` yayın etiketlerini ve son workflow sonuçlarını gösterir; sosyal ağ erişim jetonlarını okumaz veya tarayıcıya göndermez. Farklı bir depo ya da workflow izlemek için `SOCIAL_REPOSITORY` ve `SOCIAL_WORKFLOW` ortam değişkenleri kullanılabilir.
 
 ## Otomatik Çok Satanlar kategori evreni
 

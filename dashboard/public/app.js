@@ -7,6 +7,9 @@ const fmtDateTime = value => value ? new Intl.DateTimeFormat('tr-TR',{timeZone:'
 const fmtDay = value => new Intl.DateTimeFormat('tr-TR',{timeZone:'Europe/Istanbul',weekday:'short',day:'2-digit'}).format(new Date(`${value}T12:00:00+03:00`));
 const fmtDuration = seconds => seconds == null ? '—' : seconds >= 60 ? `${Math.floor(seconds/60)} dk ${seconds%60} sn` : `${seconds} sn`;
 const healthText = health => ({healthy:'Başarılı',failed:'Hata',warning:'Uyarı',running:'Çalışıyor',paused:'Duraklatıldı'}[health] || health);
+const platformMark = platform => ({instagram:'IG',facebook:'FB',linkedin:'IN',x:'X'}[platform] || platform.slice(0,2).toUpperCase());
+const socialOutcome = outcome => ({success:'Başarılı',failed:'Hata',running:'Çalışıyor',cancelled:'İptal',unknown:'Veri yok'}[outcome] || outcome);
+const prettySlug = slug => String(slug || '').replace(/-20\d{2}$/,'').split('-').filter(Boolean).map((word,index)=>index ? word : word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
 
 function relative(value) {
   if (!value) return '—';
@@ -39,6 +42,37 @@ function renderSummary() {
     ['GitHub',state.data.repository.shortHead,'main güncel commit','good']
   ];
   $('#summaryCards').innerHTML = cards.map(([label,value,detail,cls]) => `<article class="stat ${cls}"><span class="stat-label">${label}</span><strong class="stat-value">${value}</strong><span class="stat-detail">${detail}</span></article>`).join('');
+}
+
+function renderSocial() {
+  const social = state.data.social;
+  if (!social) return;
+  const summary = social.summary || {};
+  const lastOutcome = socialOutcome(summary.lastOutcome);
+  const statusClass = !social.available ? 'unavailable' : social.enabled ? 'active' : 'paused';
+  $('#socialAutomation').className = `social-automation ${statusClass}`;
+  $('#socialAutomation').textContent = !social.available ? 'Bağlantı yok' : social.enabled ? 'Otomatik yayın açık' : 'Otomatik yayın kapalı';
+  $('#socialWorkflow').href = social.workflowUrl;
+  $('#socialRepository').href = social.repositoryUrl;
+  $('#socialSummary').innerHTML = [
+    ['Aktif platform',`${summary.activePlatforms || 0}/4`,social.enabled ? 'push sonrası otomatik' : 'yayın hattı kapalı'],
+    ['Yayın kaydı',fmtNumber(summary.publicationCount),'platform etiketleri'],
+    ['Son çalışma',lastOutcome,fmtDateTime(summary.lastRunAt),summary.lastOutcome === 'failed' ? 'bad' : summary.lastOutcome === 'running' ? 'running' : 'good'],
+    ['Başarılı iş',summary.successfulRuns || 0,`${summary.failedRuns || 0} hata kaydı`,summary.failedRuns ? 'warn' : 'good']
+  ].map(([label,value,detail,cls='']) => `<div class="social-stat ${cls}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong><small>${escapeHtml(detail)}</small></div>`).join('');
+  $('#socialPlatforms').innerHTML = (social.platforms || []).map(platform => {
+    const latest = platform.latest;
+    return `<article class="social-platform ${platform.enabled ? 'enabled' : 'disabled'}">
+      <div class="platform-top"><span class="platform-mark ${platform.key}">${platformMark(platform.key)}</span><div><strong>${escapeHtml(platform.label)}</strong><small>${escapeHtml(platform.handle)}</small></div><b>${platform.enabled ? 'Açık' : 'Kapalı'}</b></div>
+      <div class="platform-count"><strong>${fmtNumber(platform.publicationCount)}</strong><span>yayın kaydı</span></div>
+      <p>${latest ? escapeHtml(prettySlug(latest.slug)) : 'Henüz yayın etiketi yok'}</p>
+      <div class="platform-links"><a href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noreferrer">Profil ↗</a>${latest ? `<a href="${escapeHtml(latest.announcementUrl)}" target="_blank" rel="noreferrer">Duyuru ↗</a>` : ''}</div>
+    </article>`;
+  }).join('');
+  const publications = social.recentPublications || [];
+  $('#socialPublications').innerHTML = publications.length ? publications.map(item => `<a class="social-row" href="${escapeHtml(item.announcementUrl)}" target="_blank" rel="noreferrer"><span class="mini-mark">${platformMark(item.platform)}</span><div><strong>${escapeHtml(prettySlug(item.slug))}</strong><small>${escapeHtml(item.platform)} · ${fmtDateTime(item.sourceCommitAt)}</small></div><i>↗</i></a>`).join('') : '<p class="social-empty">Henüz sosyal yayın kaydı yok.</p>';
+  const runs = social.recentRuns || [];
+  $('#socialRuns').innerHTML = runs.length ? runs.map(run => `<a class="social-row run-${run.outcome}" href="${escapeHtml(run.url)}" target="_blank" rel="noreferrer"><span class="run-dot"></span><div><strong>${socialOutcome(run.outcome)}</strong><small>${escapeHtml(run.event === 'workflow_dispatch' ? 'Manuel test' : 'Duyuru değişikliği')} · ${fmtDateTime(run.createdAt)}</small></div><i>#${run.id}</i></a>`).join('') : `<p class="social-empty">${escapeHtml(social.error || 'Henüz otomasyon çalışması yok.')}</p>`;
 }
 
 function taxonomyStageState(stage) {
@@ -124,7 +158,7 @@ function openDrawer(slug) {
 function closeDrawer() { $('#detailDrawer').classList.remove('open'); $('#detailDrawer').setAttribute('aria-hidden','true'); setTimeout(() => $('#drawerBackdrop').hidden = true, 220); state.selected = null; }
 
 function renderAll() {
-  renderNext(); renderAlerts(); renderSummary(); renderTaxonomy(); renderTimeline(); renderJobs(); renderHistory(); renderEvents();
+  renderNext(); renderAlerts(); renderSummary(); renderSocial(); renderTaxonomy(); renderTimeline(); renderJobs(); renderHistory(); renderEvents();
   $('#githubLink').href = state.data.repository.github;
   $('#lastUpdated').textContent = `Son kontrol ${fmtDateTime(state.data.generatedAt)} · 15 sn otomatik yenileme`;
   if (state.selected) openDrawer(state.selected);
