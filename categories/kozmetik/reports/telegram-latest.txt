@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-27
+📊 Trendyol Kozmetik Günlük Raporu — 2026-08-28
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Cream Co. Allık Ruj Göz Farı Glow Tint Soft Mocha | Nemlendirici Makyaj | Nude | Hyaluronik Asit Peptit (199.9 TL) | 2) Bargello 171 KADIN PARFÜM EDP FLORAL 50 ml (370 TL) | 3) İnowia YUZA-Eyeliner Stamp-Çift Taraflı Suya dayanıklı (540.38 TL)
-🎯 Niche: 1) PİRAYE AKSESUAR DIY Kirpik - Takma Kirpik 600 Adet Kirpik Seti Kitap Model 30-40-50-60-80-100 D Farklı Boylar | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) MOZIUR Tırnak Bakım Törpüsü 100-180 Kalıcı Oje Protez Tırnak
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-27.md
+🔥 Trend: 1) Bargello 171 KADIN PARFÜM EDP FLORAL 50 ml (370 TL) | 2) Cream Co. Allık Ruj Göz Farı Glow Tint Soft Mocha | Nemlendirici Makyaj | Nude | Hyaluronik Asit Peptit (199.9 TL) | 3) La Roche Posay Effaclar Supramolecular Karma ve Yağlı Ciltler İçin Yağ İçermeyen Gözenek Karşıtı Nemlendirici 40 ml (999 TL)
+🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) MOZIUR Tırnak Bakım Törpüsü 100-180 Kalıcı Oje Protez Tırnak | 3) Akat Gardi Saç Köpüğü Hacimli Bukleler Leydi 200ml.Isı Koruma Gün Boyu Dolgunluk Saç Parfümü Etkili Koku
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-28.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
