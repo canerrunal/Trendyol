@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-08-27
+📊 Trendyol Süpermarket Günlük Raporu — 2026-08-29
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Ravla Mor Meyveli Karışım - 330g (530 TL) | 2) HARMANA Hindiba Kahvesi 1 Aylık - (60 Kullanım) Net 150gr (367.63 TL) | 3) icollagen Kolajen Ve Prebiyotik Tablet (350 TL)
-🎯 Niche: 1) BioBellinda Mikrofiber Cam Bezi (40X40 CM) | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-27.md
+🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 2) MOMORDİCA Coconut Mix - 250 ml (279 TL) | 3) Swedent Gurme Serisi Sütlü Çikolata Sos Kremsi Dokusu ile Zengin ve Akışkan Kıvam (269 TL)
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) Swedent Gurme Serisi Ruby Çilek Aromalı Sos Gerçek Meyve Lezzetiyle Canlı ve Akışkan Kıvam
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-29.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
