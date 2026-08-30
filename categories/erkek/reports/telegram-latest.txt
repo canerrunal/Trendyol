@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-08-29
+📊 Trendyol Erkek Günlük Raporu — 2026-08-30
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (398.05 TL) | 3) EPİFY Epify Tüy Dökücü Krem (549 TL)
-🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) GIGI MILANO Erkek Parfüm - Las Vegas Night Pour Homme Erkek Parfüm 50 Ml Afrodizyak erkek parfüm
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/erkek/reports/2026-08-29.md
+🔥 Trend: 1) ORNATE Karınca Yumurtası Yağlı Tüy Azaltıcı Ve Tüy Serum 30ml %0.5 Formic Acid %10 Aloe Vera (283.03 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (331.41 TL) | 3) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL)
+🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) LumenaScent S401 Erkek Parfüm Woody Edp 50 ml
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/erkek/reports/2026-08-30.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
