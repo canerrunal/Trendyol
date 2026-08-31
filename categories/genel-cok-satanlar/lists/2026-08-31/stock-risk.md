@@ -1,0 +1,9 @@
+# Stok Riski — 2026-08-31
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 6 | 2 | 68 | - | [HUALONG akupunktur iğnesi 0,25x25mm 200lük paket 2 kutu 400 adet](https://www.trendyol.com/hualong/akupunktur-ignesi-0-25x25mm-200luk-paket-2-kutu-400-adet-p-1162736984) | HUALONG | - | 900 | InStock | - | - | - | refreshed |  | Sepette %5 İndirim; Son 10 Günün En Düşük Fiyatı |
+| 10 |  | 65.6 | 44.4 | [Herbalife Collagen Drink Powder / Çilek & Limon Aromalı Kolajen Takviyesi /](https://www.trendyol.com/herbalife/collagen-drink-powder-cilek-limon-aromali-kolajen-takviyesi-p-1063046307) | Herbalife | STAR LIFE | 1655 | InStock | 4.1 | 4 | 7 | refreshed |  | Trendyol Plus'a Özel |
+| 8 | -3 | 92.8 | 47.2 | [dorre Yüz Taşı Seti Kendinden Yapışkanlı İnci & Mor Taş – Ay, Kalp, Yıldız Figürlü Uzun Süre Kalıcı](https://www.trendyol.com/dorre/yuz-tasi-seti-kendinden-yapiskanli-inci-mor-tas-ay-kalp-yildiz-figurlu-uzun-sure-kalici-p-1142065730) | dorre | Pureeve | 149.99 | InStock | 4.8 | 2 | 2 | refreshed |  | Kargo Bedava |
+| 1 | 1 | 83.6 | 50.7 | [İMEXTECH 4K Çantalı Dijital Retro Video Kamera 48MP 16X Zoom Işıklı (+32GB Kart Hediye) Fotoğraf Makinesi](https://www.trendyol.com/imextech/4k-cantali-dijital-retro-video-kamera-48mp-16x-zoom-isikli-32gb-kart-hediye-fotograf-makinesi-p-1162337246) | İMEXTECH | Serreha | 2770 | InStock | 3 | - | 18 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 2 | - | 79.4 | 51.6 | [Instax Mini Liplay Plus Hybrid Fotoğraf Makinesi +10'lu film](https://www.trendyol.com/instax/mini-liplay-plus-hybrid-fotograf-makinesi-10-lu-film-p-1057965343) | Instax | HOBİ FOTO | 15148 | InStock | 4 | - | 2 | refreshed |  | Kargo Bedava; Peşin Fiyatına 9 Taksit |
