@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-30
+📊 Trendyol Kozmetik Günlük Raporu — 2026-08-31
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bath & Body Works Into the Night Seyahat Boy Vücut Spreyi 75 mL (379 TL) | 2) NYX Professional Makeup Bare With Me Kapatıcı Serum 03 Vanilla Concealer (1049.99 TL) | 3) Cream Co. Allık Ruj Göz Farı Glow Tint Soft Mocha | Nemlendirici Makyaj | Nude | Hyaluronik Asit Peptit (199.9 TL)
-🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Yoğun Nemlendirici Vücut Sütü Losyonu Tüy Azaltıcı, Onarıcı 4d Hyaluronik Asit 250 ml Vegan | 3) Embeauty Keratin Boost Onarıcı Dolgunlaştırıcı Saç Bakım Kremi 200 ml
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-30.md
+🔥 Trend: 1) Bath & Body Works Into the Night Seyahat Boy Vücut Spreyi 75 mL (379 TL) | 2) Cream Co. Allık Ruj Göz Farı Glow Tint Soft Mocha | Nemlendirici Makyaj | Nude | Hyaluronik Asit Peptit (199.9 TL) | 3) Qremfi Sıfır Gözenek Siyah Nokta Mavi Kil Maskesi | AHA + BHA+PHA 100 ml (261.91 TL)
+🎯 Niche: 1) Master Lashes 100/180 Çift Taraflı Kağıt Törpü Profesyonel Törpü Kalıcı Oje Protez Tırnak (1 Adet) | 2) Ceelini El ve Ayak Tırnak Bakım Serumu Çay Ağacı , Salisik Asit Özlü Serum 30 ml | 3) CALLİEL Ton Eşitleyici Gözenek Sıkılaştırıcı Mandelik Asit Tonik 200 Ml
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-31.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
