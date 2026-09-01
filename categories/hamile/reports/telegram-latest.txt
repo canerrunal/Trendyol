@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-08-31
+📊 Trendyol Hamile Günlük Raporu — 2026-09-01
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Catherines Yumuşak Dokulu Hamile Pijama Takımı-893 (1144 TL) | 2) Catherines Yumuşak dokulu hamile pijama takımı (1079.2 TL) | 3) Catherines Lux Mood Hamile Elbisesi (796 TL)
+🔥 Trend: 1) Catherines Yumuşak Dokulu Hamile Pijama Takımı (1079.2 TL) | 2) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL) | 3) Catherines Comfort Mood Hamile Pijama Takımı (1248 TL)
 🎯 Niche: 1) Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez | 2) Miss Dünya Lissa 3'lü Paket Kadın Çok Renkli Pamuklu Likralı Süprem Hamile ve Lohusa Yüksek Bel Külot | 3) Dagi Ten Emzirme Sütyeni
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/hamile/reports/2026-08-31.md
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/hamile/reports/2026-09-01.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
