@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-31
+📊 Trendyol Kozmetik Günlük Raporu — 2026-09-01
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bath & Body Works Into the Night Seyahat Boy Vücut Spreyi 75 mL (379 TL) | 2) Cream Co. Allık Ruj Göz Farı Glow Tint Soft Mocha | Nemlendirici Makyaj | Nude | Hyaluronik Asit Peptit (199.9 TL) | 3) Qremfi Sıfır Gözenek Siyah Nokta Mavi Kil Maskesi | AHA + BHA+PHA 100 ml (261.91 TL)
-🎯 Niche: 1) Master Lashes 100/180 Çift Taraflı Kağıt Törpü Profesyonel Törpü Kalıcı Oje Protez Tırnak (1 Adet) | 2) Ceelini El ve Ayak Tırnak Bakım Serumu Çay Ağacı , Salisik Asit Özlü Serum 30 ml | 3) CALLİEL Ton Eşitleyici Gözenek Sıkılaştırıcı Mandelik Asit Tonik 200 Ml
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-31.md
+🔥 Trend: 1) Bath & Body Works Into the Night Seyahat Boy Vücut Spreyi 75 mL (379 TL) | 2) NYX Professional Makeup Buttermelt Highlighter Kremsi Pudra Aydınlatıcı - 05 Bright & Butta (574.99 TL) | 3) NYX Professional Makeup Bare With Me Kapatıcı Serum 01 Fair Concealer (824.99 TL)
+🎯 Niche: 1) MOZIUR Tırnak Bakım Törpüsü 100-180 Kalıcı Oje Protez Tırnak | 2) PİRAYE AKSESUAR DIY Kirpik - Takma Kirpik 600 Adet Kirpik Seti Kitap Model 30-40-50-60-80-100 D Farklı Boylar | 3) Master Lashes 100/180 Çift Taraflı Kağıt Törpü Profesyonel Törpü Kalıcı Oje Protez Tırnak (1 Adet)
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-09-01.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
