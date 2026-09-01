@@ -1,6 +1,6 @@
 # Trendyol Çok Satanlar Kategori Kataloğu
 
-Son keşif: **2026-08-31T15:00:41+03:00**
+Son keşif: **2026-09-01T15:00:26+03:00**
 
 - Menüdeki kategori yolu: **4.003**
 - Benzersiz kategori kimliği: **3.952**
