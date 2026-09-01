@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-08-30
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-01
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) BEYZANA 3'lü Bambu Çok Amaçlı Sepet Dikdörtgen (271.54 TL) | 2) Serstil 8 Adet - Antrasit Çizgili Büyük Boy Baza Altı Ve Çekyat Tipi Hurç 65 x 45 x 22 cm (479 TL) | 3) eco concept Mitos Serisi Dijital Baskı Halı Etnik Retro Desen Mutfak Halı Yıkanabilir Kaymaz Taban Salon Halısı (2.38 TL)
-🎯 Niche: 1) Hibana Kendinden Yapışkanlı Şeffaf Askı Metal Kanca Askılık 1 Adet | 2) KHAKMA 3’lü Cam Reçellik & Sosluk Seti 100 ml | Kapaklı Mini Kavanoz, Kahvaltılık & Saklama Kabı Seti | 3) Ezupack 25 Adet Sızdırmaz 120 ml Mini Saklama Kabı Sosluk Buzluk Kabı, Et Suyu, Kemik Suyu, Sos Kabı Mutfak
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-08-30.md
+🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (199.9 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (49.9 TL) | 3) Orvila 5 Bölmeli Metal Elbise Askısı - Giysi Pantalon Eşarp Fular Kıyafet Gardrop Düzenleyici Organizer (98.9 TL)
+🎯 Niche: 1) Orvila Döner Başlıklı Elbise Askısı 9 Gözlü Sihirli Askılık Dolap İçi Düzenleyici Askılık | 2) Amentes Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik | 3) thebestnzm ÇT Çeçem Ticaret Duvara Monte Mop Ve Paspas Tutucu Gold
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-01.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
