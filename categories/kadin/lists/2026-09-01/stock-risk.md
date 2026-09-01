@@ -1,0 +1,8 @@
+# Stok Riski — 2026-09-01
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 130 | -43 | 27.3 | 2.7 | [Igora Royal Özel Seriler 0-22 Turuncu Azaltıcı Saç Boyası 60ml](https://www.trendyol.com/igora/royal-ozel-seriler-0-22-turuncu-azaltici-sac-boyasi-60ml-p-6062531?boutiqueId=61&merchantId=488161) | Igora | MAS BEAUTY | 500 | InStock | 4.3 | 2568 | 2082 | refreshed |  | Kargo Bedava; 580 TL Kupon; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 151 | - | 27.7 | 2.3 | [Elidor Şampuan ve Saç Bakım Kremi Güçlü ve Parlak 400 ml x3](https://www.trendyol.com/elidor/sampuan-ve-sac-bakim-kremi-guclu-ve-parlak-400-ml-x3-p-238938266?boutiqueId=61&merchantId=378048) | Elidor | Unilever | 362.14 | InStock | 4.7 | 2919 | 310 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı |
+| 153 | - | 19.6 | 10.4 | [MUJGAN Kendinden Yapışkanlı Yüz Taşı Büyük Elmas Model](https://www.trendyol.com/mujgan/kendinden-yapiskanli-yuz-tasi-buyuk-elmas-model-p-691095416?boutiqueId=61&merchantId=357668) | MUJGAN | Ucuz Al | 74.99 | InStock | 4.5 | 277 | 43 | refreshed |  | 74,95 TL Kupon; Kargo Bedava |
+| 160 | -84 | 29.5 | 0.5 | [Yves Rocher Güçlendirici Prebiyotik Şampuan-Saç Dökülmesine Karşı/Anti-Chute-SLS,SLES içermez,Vegan-300ml](https://www.trendyol.com/yves-rocher/guclendirici-prebiyotik-sampuan-sac-dokulmesine-karsi-anti-chute-sls-sles-icermez-vegan-300ml-p-691063557?boutiqueId=61&merchantId=691473) | Yves Rocher | ZENIQ LİVİNG | 515.24 | InStock | 4.3 | 4845 | 562 | refreshed |  | Kargo Bedava; Sepette %20 İndirim |
