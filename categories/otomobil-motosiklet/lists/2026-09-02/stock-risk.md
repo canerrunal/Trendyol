@@ -1,0 +1,7 @@
+# Stok Riski — 2026-09-02
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 53 | 11 | 40.9 | 11.7 | [Syrox Type C - Usb 3.0 Otg Usb Flash Dönüştürücü Dt13](https://www.trendyol.com/syrox/type-c-usb-3-0-otg-usb-flash-donusturucu-dt13-p-58664421) | Syrox | GülşenGSM | 49.9 | InStock | 4.4 | 647 | 1240 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 73 | 9 | 18.5 | 18.3 | [SRKOC Standart Beden Dokunmatik Motor Eldiveni](https://www.trendyol.com/srkoc/standart-beden-dokunmatik-motor-eldiveni-p-1134431293) | SRKOC | SOSYETEZGAHI | 385 | InStock | 4 | 94 | 108 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; 25 TL Kupon; Son 10 günün en düşük fiyatı |
+| 69 | -43 | 10 | 20 | [Emsal Grup 2'li Set Plastik - Araç İçi Koltuk Arkası Çanta, Tablet, Telefon ve Eşya Askısı, Araç Düzenleyici](https://www.trendyol.com/emsal-grup/2-li-set-plastik-arac-ici-koltuk-arkasi-canta-tablet-telefon-ve-esya-askisi-arac-duzenleyici-p-1154790642?boutiqueId=61&merchantId=320329) | Emsal Grup | EMSAL GRUP | 43.61 | InStock | 4.4 | 17 | 6 | refreshed |  | Sepette %1 İndirim; Sepette %5 İndirim; 49,90 TL Kupon; 74,90 TL Kupon; 129,90 TL Kupon; 115,85 TL Kupon; 114,99 TL Kupon; Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
