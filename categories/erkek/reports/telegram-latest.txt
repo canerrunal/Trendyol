@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-09-01
+📊 Trendyol Erkek Günlük Raporu — 2026-09-02
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (300.19 TL) | 2) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL) | 3) EPİFY Epify Tüy Dökücü Krem (549 TL)
-🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) C&E Design 10 Adet Siyah Lastik Toka Seti
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/erkek/reports/2026-09-01.md
+🔥 Trend: 1) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL) | 2) Mad Parfüm Mad J102 Selective 50 ml Erkek Parfüm (299.99 TL) | 3) EPİFY Epify Tüy Dökücü Krem (549 TL)
+🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) Restorex Keratin & Argan Onarıcı Saç Bakım Şampuanı 500ml
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/erkek/reports/2026-09-02.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
