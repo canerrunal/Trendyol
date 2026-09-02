@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-01
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-02
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (199.9 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (49.9 TL) | 3) Orvila 5 Bölmeli Metal Elbise Askısı - Giysi Pantalon Eşarp Fular Kıyafet Gardrop Düzenleyici Organizer (98.9 TL)
-🎯 Niche: 1) Orvila Döner Başlıklı Elbise Askısı 9 Gözlü Sihirli Askılık Dolap İçi Düzenleyici Askılık | 2) Amentes Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik | 3) thebestnzm ÇT Çeçem Ticaret Duvara Monte Mop Ve Paspas Tutucu Gold
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-01.md
+🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (199.9 TL) | 2) Storlant Mat Bambu Orta Gramajlı 1/3 Sık Pileli Ütü Gerektirmez Tül Perde | Sade ve Kaliteli Dokuma (0.01 TL) | 3) Çiçek 1 adet beyaz renkli Çınar Islak Lale – Yapay Dekor, Masa Süsü (24.9 TL)
+🎯 Niche: 1) Orvila Döner Başlıklı Elbise Askısı 9 Gözlü Sihirli Askılık Dolap İçi Düzenleyici Askılık | 2) Dream Time Bambu Premium Sıvı Geçirmez Fitted Alez | Bambu Ultra Sessiz Yatak Koruyucu | 3) Amentes Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-02.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
