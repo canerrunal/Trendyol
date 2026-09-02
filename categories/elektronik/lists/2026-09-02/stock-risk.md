@@ -1,0 +1,8 @@
+# Stok Riski — 2026-09-02
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 57 | -4 | 28.5 | 17.6 | [Philips 2000 Serisi BRE228/05 Bacak Epilasyon Aleti, Kablolu, Yıkanabilir, Mavi](https://www.trendyol.com/philips/2000-serisi-bre228-05-bacak-epilasyon-aleti-kablolu-yikanabilir-mavi-p-938058358?boutiqueId=61&merchantId=921838) | Philips | BKM TECHNOLOGY | 1275 | InStock | 4.3 | 718 | 644 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Peşin Fiyatına 3 Taksit; Son 10 günün en düşük fiyatı |
+| 95 | 1 | 19.7 | 26.4 | [Apple AirTag Tekli Paket 2. Nesil](https://www.trendyol.com/apple/airtag-tekli-paket-2-nesil-p-825979722?boutiqueId=689770&merchantId=968) | Apple | Trendyol | 1329 | InStock | 4.6 | 55 | 149 | refreshed |  | Son 10 Günün En Düşük Fiyatı; Kargo Bedava; Peşin Fiyatına 3 Taksit; Son 10 günün en düşük fiyatı |
+| 135 | -23 | 28.5 | 10.7 | [Seram Collection Dijital Hassas Mutfak Tartısı - Mutfak Terazisi-hassas Ölçüm](https://www.trendyol.com/seram-collection/dijital-hassas-mutfak-tartisi-mutfak-terazisi-hassas-olcum-p-1053904153?boutiqueId=61&merchantId=510669) | Seram Collection | Seram Collection | 144.44 | InStock | 4.2 | 259 | 54 | refreshed |  | Son 10 Günün En Düşük Fiyatı; 20 TL Kupon; Kargo Bedava; Son 10 günün en düşük fiyatı |
+| 168 | 23 | 26.6 | 3.4 | [Roborock Vacuum Q8 Max Pro Robot Süpürge Beyaz](https://www.trendyol.com/roborock/vacuum-q8-max-pro-robot-supurge-beyaz-p-929960380?boutiqueId=61&merchantId=1296910) | Roborock | EMAR TEKNOJİ | 13785 | InStock | 4.3 | 2120 | 2306 | refreshed |  | Kargo Bedava; Peşin Fiyatına 9 Taksit |
