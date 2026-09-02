@@ -1,7 +1,7 @@
-📊 Trendyol Çocuk Günlük Raporu — 2026-09-01
+📊 Trendyol Çocuk Günlük Raporu — 2026-09-02
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1695.75 TL) | 2) Mino Makers 78 Parça Manyetik Yapı Blokları - Çocuklar İçin 3 Boyutlu Renkli Mıknatıslı 78 Parça Manyetik Blok Oyun Seti (1699.91 TL) | 3) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (2196 TL)
-🎯 Niche: 1) Defacto 5'li Pamuklu Patik Karma Çorap Erkek Çocuk I3261A8NS | 2) Defacto Basic Dikişsiz 5'li Pamuklu Patik Çorap Kız Çocuk H8926A8NS | 3) Happy Toys MyClean DİNAZOR SUDA BÜYÜYEN 8 ADET DİNAZOR YUMURTASI
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/reports/2026-09-01.md
+🔥 Trend: 1) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1695.75 TL) | 2) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (2196 TL) | 3) Mino Makers 78 Parça Manyetik Yapı Blokları - Çocuklar İçin 3 Boyutlu Renkli Mıknatıslı 78 Parça Manyetik Blok Oyun Seti (1699.91 TL)
+🎯 Niche: 1) None Sihirli Büyüyen Dinazor Yumurtası 1 Adet | 2) FBZhome 72 Parça Manyetik Yapı Blokları - Çocuklar için Renkli 3 Boyutlu Karo Oyun Seti Oyuncak Yap-Boz | 3) Happy Toys MyClean DİNAZOR SUDA BÜYÜYEN 8 ADET DİNAZOR YUMURTASI
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/reports/2026-09-02.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
