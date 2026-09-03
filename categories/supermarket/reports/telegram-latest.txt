@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-09-02
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-03
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Erbatab Magnezyum 3 Lü Form (BİSGLİSİNAT, SİTRAT, MALAT) & Vitamin B2 , B3 , B6 - 60 Kapsül (347.4 TL) | 2) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül (399 TL) | 3) MOMORDİCA Coconut Mix - 250 ml (210.87 TL)
+🔥 Trend: 1) Erbatab Magnezyum 3 Lü Form (BİSGLİSİNAT, SİTRAT, MALAT) & Vitamin B2 , B3 , B6 - 60 Kapsül (347.4 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 3) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül (399 TL)
 🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-09-02.md
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-09-03.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
