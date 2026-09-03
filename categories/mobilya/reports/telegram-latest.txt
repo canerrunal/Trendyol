@@ -1,7 +1,7 @@
-📊 Trendyol Mobilya Günlük Raporu — 2026-09-02
+📊 Trendyol Mobilya Günlük Raporu — 2026-09-03
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) GOOD NİGHT Partner Sofa & Yatak & Berjer (10779.23 TL) | 2) GOOD NİGHT Legom Aktivite Koltuğu & Yatak & Çok amaçlı (14439.24 TL) | 3) GOOD NİGHT Legom Aktivite Koltuğu & Yatak & Çok amaçlı (14439.24 TL)
-🎯 Niche: 1) Puklife Ahşap Yan Sehpa – Katlanabilir Koltuk Sehpası 40x20 cm Ceviz Renk | 2) Tükendi | 3) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/mobilya/reports/2026-09-02.md
+🔥 Trend: 1) GOOD NİGHT Legom Aktivite Koltuğu & Yatak & Çok amaçlı (14439.24 TL) | 2) GOOD NİGHT Legom Aktivite Koltuğu & Yatak & Çok amaçlı (14439.24 TL) | 3) GOOD NİGHT Eco Legom Tamamen Sünger Yıkanabilir Kılıflı (10779.23 TL)
+🎯 Niche: 1) Puklife Ahşap Yan Sehpa – Katlanabilir Koltuk Sehpası 40x20 cm Ceviz Renk | 2) Puklife Koltuk Tepsisi Yan Sehpa | 3) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/mobilya/reports/2026-09-03.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
