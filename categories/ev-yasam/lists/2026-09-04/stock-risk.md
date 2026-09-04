@@ -1,0 +1,6 @@
+# Stok Riski — 2026-09-04
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 21 | - | 71.2 | 25.9 | [Genel Markalar 2'li Modern Dekorasyon İçin Şık Beyaz Çizgili Seramik Çiçek Vazo 19cm - Minimal ve Zarif Vazo Modeli](https://www.trendyol.com/genel-markalar/2-li-modern-dekorasyon-icin-sik-beyaz-cizgili-seramik-cicek-vazo-19cm-minimal-ve-zarif-vazo-modeli-p-982523847?boutiqueId=61&merchantId=840546) | Genel Markalar | AyaTicaret | 98.47 | InStock | 3.8 | - | 608 | refreshed |  | Sepette %15 İndirim; Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 20 | - | 60.3 | 39.3 | [Home Çok Fonksiyonlu 360 Derece Döner Metal Askı – Dolap, Gardırop, Çanta, Kemer ve Kravat Düzenleyici](https://www.trendyol.com/home/cok-fonksiyonlu-360-derece-doner-metal-aski-dolap-gardirop-canta-kemer-ve-kravat-duzenleyici-p-925015477?boutiqueId=61&merchantId=1029242) | Home | Demirbas E-Ticaret | 67.99 | InStock | 4.7 | 102 | 8 | refreshed |  | Sepette %30 İndirim; Sepette %15 İndirim; Sepette %1 İndirim; Kargo Bedava; Trendyol Plus'a Özel |

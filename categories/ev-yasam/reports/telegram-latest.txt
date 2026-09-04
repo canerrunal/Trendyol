@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-03
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-04
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (199.9 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (49.9 TL) | 3) Orvila 5 Bölmeli Metal Elbise Askısı - Giysi Pantalon Eşarp Fular Kıyafet Gardrop Düzenleyici Organizer (98.9 TL)
-🎯 Niche: 1) Orvila Döner Başlıklı Elbise Askısı 9 Gözlü Sihirli Askılık Dolap İçi Düzenleyici Askılık | 2) Dream Time Bambu Premium Sıvı Geçirmez Fitted Alez | Bambu Ultra Sessiz Yatak Koruyucu | 3) Orvila Sihirli Elbise Askısı 9 Gözlü Akıllı Askı Sihirli Askılık
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-03.md
+🔥 Trend: 1) Dorcia Home 12 Adet Ahşap Görünümlü Plastik A Kalite Askı (199.9 TL) | 2) Nandy Home 6 Adet 2400Ml. Freshbox Saklama Kabı Seti - Mikrodalga ve Difrize Uyumlu (308.58 TL) | 3) Meleni Home 4'lü Buzdolabı Organizer Mikrodalga ve Difrize Uygun Düzenleyici Buzluk Saklama Kabı Antrasit 3100ml (199.9 TL)
+🎯 Niche: 1) YEGGE 30x10cm Çekmece ve Dolap içi Düzenleyici, Eşarp Düzenleyici, Katlanabilir Çorap ve Çamaşır Organizer Raf Düzenleyici | 2) Dorcia Home 12 Adet Ahşap Görünümlü Plastik A Kalite Askı | 3) Dream Time 2 Adet Bambu Lüks Sıvı Geçirmez Yastık Alezi | 50x70cm Su Geçirmez Jakarlı Yastık Alezi 2'li Set
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-04.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
