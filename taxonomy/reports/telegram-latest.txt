@@ -1,7 +1,7 @@
-🌳 Trendyol Çok Satanlar Kategori Evreni — 2026-09-03
-✅ 3.952/3.952 benzersiz kategori (%100)
-🗂️ 4.003 menü yolu · 51 tekrar yol
-📦 68.925 benzersiz ürün · 86.125 sıralama kaydı
-📭 279 başarılı fakat boş kategori
+🌳 Trendyol Çok Satanlar Kategori Evreni — 2026-09-04
+✅ 3.955/3.955 benzersiz kategori (%100)
+🗂️ 4.006 menü yolu · 51 tekrar yol
+📦 67.677 benzersiz ürün · 84.520 sıralama kaydı
+📭 281 başarılı fakat boş kategori
 🧭 6 seviye · 19 ana kategori
-🔗 https://github.com/caner8047-coder/Trendyol/blob/main/taxonomy/reports/2026-09-03.md
+🔗 https://github.com/caner8047-coder/Trendyol/blob/main/taxonomy/reports/2026-09-04.md
