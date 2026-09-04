@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-09-03
+📊 Trendyol Hamile Günlük Raporu — 2026-09-04
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Pierre Cardin Kadın Ten 6116 Pamuklu Kaplı Emzirme Sütyeni (408.13 TL) | 2) Catherines Lux Mood Hamile Elbisesi (796 TL) | 3) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL)
-🎯 Niche: 1) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı | 2) Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez | 3) Dagi Ten Emzirme Sütyeni
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/hamile/reports/2026-09-03.md
+🔥 Trend: 1) Pierre Cardin Kadın Ten 6116 Pamuklu Kaplı Emzirme Sütyeni (399.9 TL) | 2) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı (649.9 TL) | 3) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL)
+🎯 Niche: 1) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı | 2) Maison La Femme Kadın Siyah Yüksek Bel Bol Paça Hamile Pantolonu | 3) Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/hamile/reports/2026-09-04.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
