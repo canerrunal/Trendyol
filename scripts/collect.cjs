@@ -241,7 +241,7 @@ async function collectListing(page) {
   const maxConsecutiveZeroPages = Number(config.maxConsecutiveZeroPages || 3);
   const isBestSellerHub = config.listingMode === 'bestSellerHub';
   const requireAddToCart = config.requireAddToCart !== false;
-  for (const segment of segments) {
+  segmentLoop: for (const segment of segments) {
     let zeroStreak = 0; let segmentPosition = 0;
     const segmentMaxPages = Number(segment.maxPages || maxPages);
     for (let pageNo = 1; pageNo <= segmentMaxPages && unique.length < config.maxProducts; pageNo++) {
@@ -265,7 +265,13 @@ async function collectListing(page) {
         await gotoWithRetry(page, pageUrl.toString());
         if (isBestSellerHub && segment.tab) {
           const tab = page.getByRole('button', { name: segment.tab, exact: true });
-          if (await tab.count() === 0) throw new Error(`Çok Satanlar kategori sekmesi bulunamadı: ${segment.tab}`);
+          await tab.first().waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+          if (await tab.count() === 0) {
+            const error = `Çok Satanlar kategori sekmesi bulunamadı: ${segment.tab}`;
+            console.warn(error);
+            pageStats.push({ segment: segment.name, page: pageNo, added: 0, error });
+            continue segmentLoop;
+          }
           const beforeId = await page.locator('a[href*="-p-"]').first().getAttribute('href').catch(() => null);
           await tab.first().click({ force: true });
           await page.waitForFunction(previous => {

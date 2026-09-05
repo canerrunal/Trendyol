@@ -15,7 +15,7 @@ fi
 if [[ "${TRENDYOL_GLOBAL_LOCK_HELD:-0}" != "1" ]]; then
   export TRENDYOL_GLOBAL_LOCK_HELD=1
   echo "GLOBAL_LOCK_WAIT profile=$PROFILE"
-  exec /usr/bin/lockf -t 1 /tmp/trendyol-daily-global.lock "$0" "$PROFILE"
+  exec /usr/bin/lockf -t 900 /tmp/trendyol-daily-global.lock "$0" "$PROFILE"
 fi
 
 cd "$PROJECT_DIR"
