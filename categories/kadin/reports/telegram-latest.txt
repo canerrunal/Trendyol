@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-09-04
+📊 Trendyol Kadın Günlük Raporu — 2026-09-05
 ✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
 ♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (300.19 TL) | 3) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL)
-🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) C&E Design Ultra Esnek Kopmaz Siyah + Şeffaf Saç Örgü Lastiği 100 Adet
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kadin/reports/2026-09-04.md
+🔥 Trend: 1) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (398.05 TL) | 3) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL)
+🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) Bargello 384 Kadın Parfüm 50 ml Edp Floral - Rsaf384
+📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kadin/reports/2026-09-05.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
