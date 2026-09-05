@@ -18,7 +18,7 @@
   "sort": "BEST_SELLER",
   "requireAddToCart": false,
   "listingScrollCount": 5,
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "minimumRatingCountCoverage": 50,
   "maxPagesPerSegment": 20,
@@ -34,7 +34,7 @@
     { "name": "tv-unitesi-sehpa", "url": "https://www.trendyol.com/sr?wc=104489&sst=BEST_SELLER", "query": "tv ünitesi sehpa" },
     { "name": "bahce-mobilyasi", "url": "https://www.trendyol.com/sr?wc=104489&sst=BEST_SELLER", "query": "bahçe mobilyası" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

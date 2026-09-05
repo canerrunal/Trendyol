@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { extractProductMetrics, METRIC_FIELDS, estimateInventory, periodEstimate, count } = require('./product_metrics.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 function cliArg(name, fallback = null) {
@@ -144,7 +145,7 @@ function latestHistoryByProduct(history) {
 }
 function chooseDetailItems(listed, history, date) {
   const topN = Number(config.dailyFullDetailTopN || 200);
-  const rotateN = Number(config.dailyRotatingDetailN || 200);
+  const rotateN = Number(config.dailyRotatingDetailN ?? 200);
   const hotLimit = Number(config.hotDetailLimit || 50);
   const reasons = new Map();
   const add = (item, reason) => {
@@ -154,7 +155,7 @@ function chooseDetailItems(listed, history, date) {
   };
   listed.slice(0, topN).forEach(item => add(item, 'daily_top'));
   const rotationPool = listed.slice(topN);
-  const blockCount = Math.max(1, Math.ceil(rotationPool.length / rotateN));
+  const blockCount = Math.max(1, Math.ceil(rotationPool.length / Math.max(1, rotateN)));
   const dayNumber = Math.floor(Date.parse(`${date}T00:00:00Z`) / 86400000);
   const rotationIndex = ((dayNumber % blockCount) + blockCount) % blockCount;
   rotationPool.slice(rotationIndex * rotateN, rotationIndex * rotateN + rotateN).forEach(item => add(item, `rotation_${rotationIndex + 1}_of_${blockCount}`));
@@ -333,6 +334,18 @@ function jsonLdProduct(items) {
 }
 async function collectDetail(context, item, index) {
   const page = await context.newPage();
+  // Question totals arrive after the initial HTML. Retain only the aggregate,
+  // never question text or customer details, and match this exact product.
+  let resolveQuestions;
+  const questionsReady = new Promise(resolve => { resolveQuestions = resolve; });
+  page.on('response', async response => {
+    try {
+      const url = new URL(response.url());
+      if (url.hostname !== 'apigw.trendyol.com' || !url.pathname.endsWith(`/merchant-questions/content/${item.product_id}/answered`) || !response.ok()) return;
+      const total = count((await response.json())?.questions?.totalElements);
+      if (total !== null) resolveQuestions(total);
+    } catch { /* Missing dynamic data remains unknown. */ }
+  });
   try {
     await gotoWithRetry(
       page,
@@ -340,12 +353,16 @@ async function collectDetail(context, item, index) {
       Number(config.detailNavigationAttempts || 1),
       Number(config.detailNavigationTimeoutMs || 30000)
     );
+    const questionTotal = await Promise.race([questionsReady, sleep(4000).then(() => null)]);
     const payload = await page.evaluate(() => ({
       body: document.body.innerText,
+      html: document.documentElement.outerHTML,
       jsonld: [...document.querySelectorAll('script[type="application/ld+json"]')].map(x => x.textContent),
       canonical: document.querySelector('link[rel="canonical"]')?.href || location.href
     }));
     const p = jsonLdProduct(payload.jsonld);
+    const metrics = extractProductMetrics(payload.html, item.product_id);
+    if (!p.name && !metrics) throw new Error('Product payload missing; refusing successful detail status');
     const body = payload.body;
     const offer = Array.isArray(p.offers) ? (p.offers[0] || {}) : (p.offers || {});
     const rating = p.aggregateRating || {};
@@ -362,11 +379,11 @@ async function collectDetail(context, item, index) {
     const original = item.listing_original_price && item.listing_original_price > price ? item.listing_original_price : null;
     const stockText = firstMatch(body, /(\d+\s+adetten fazla stok sunulmuştur|son \d+ ürün|tükenmek üzere|stokta yok)/i);
     const deliveryText = firstMatch(body, /([^\n]{0,80}(?:yarın kargoda|Tahmini Teslim|en geç)[^\n]{0,100})/i);
-    const question = firstMatch(body, /([\d.,]+)\s+Soru-Cevap/i);
+    const question = firstMatch(body, /([\d.,]+)\s+Soru\s*[-–]\s*Cevap/i) || firstMatch(body, /Satıcı Soruları\s*\(([\d.,]+)\)/i);
     const reviews = Array.isArray(p.review) ? p.review : [];
     const properties = Object.fromEntries((p.additionalProperty || []).map(x => [normalize(x.name), normalize(x.unitText || x.value)]));
     const salesSignal = item.sales_signal || firstMatch(body, /(\d+\s+günde\s+[\d.,]+[BMK]?\+?\s+ürün satıldı!?)/i);
-    return {
+    const result = {
       ...item, detail_status: 'refreshed', detail_attempted: true, detail_ok: true, detail_error: null, canonical_url: payload.canonical,
       title, brand: normalize(p.brand?.name || p.manufacturer || item.listing_brand || brandFromUrl(item.url, title)), category: normalize(p.pattern),
       seller_name: seller, seller_score: trNumber(firstMatch(sellerBlock, new RegExp(`${String(seller || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s+([0-9]+(?:[.,][0-9]+)?)`))),
@@ -374,9 +391,9 @@ async function collectDetail(context, item, index) {
       discount_percent: original && price ? Math.round((1 - price / original) * 1000) / 10 : null,
       currency: offer.priceCurrency || 'TRY', campaigns: [...new Set([...(item.campaigns || []), ...pickCampaigns(body)])],
       stock_status: String(offer.availability || '').split('/').pop() || (/stokta yok/i.test(body) ? 'OutOfStock' : (/Sepete Ekle|Şimdi Al/i.test(body) ? 'InStock' : null)), stock_signal: stockText,
-      rating: Number(rating.ratingValue) || schemaNumber(firstMatch(body, /\n(\d[.,]\d)\n[\d.]+\s+Değerlendirme/i)) || null,
-      rating_count: Number(rating.ratingCount) || trNumber(firstMatch(body, /\n([\d.]+)\s+Değerlendirme/i)) || null,
-      review_count: Number(rating.reviewCount) || null, question_count: trNumber(question),
+      rating: schemaNumber(rating.ratingValue) ?? schemaNumber(firstMatch(body, /\n(\d[.,]\d)\n[\d.]+\s+Değerlendirme/i)),
+      rating_count: schemaNumber(rating.ratingCount) ?? trNumber(firstMatch(body, /\n([\d.]+)\s+Değerlendirme/i)),
+      review_count: schemaNumber(rating.reviewCount), question_count: questionTotal ?? trNumber(question),
       sales_signal: salesSignal,
       ...parseSalesSignal(salesSignal),
       basket_signal: firstMatch(body, /([\d.,]+[BMK]?\s+kişinin sepetinde)/i),
@@ -389,6 +406,17 @@ async function collectDetail(context, item, index) {
       properties, sample_review_count: reviews.length,
       sample_review_avg: reviews.length ? Math.round(reviews.reduce((a, r) => a + Number(r.reviewRating?.ratingValue || 0), 0) / reviews.length * 100) / 100 : null
     };
+    if (metrics) {
+      // Clear missing metrics explicitly so yesterday's quantity cannot masquerade as fresh.
+      for (const field of METRIC_FIELDS) result[field] = metrics[field] ?? null;
+      for (const field of ['merchant_id','offer_key','seller_name','seller_score','stock_status','stock_signal','price','original_price','rating','rating_count','review_count','question_count']) {
+        if (metrics[field] !== null && metrics[field] !== undefined) result[field] = metrics[field];
+      }
+    } else for (const field of METRIC_FIELDS) result[field] = null;
+    result.original_price = result.original_price > result.price ? result.original_price : null;
+    result.discount_percent = result.original_price && result.price ? Math.round((1-result.price/result.original_price)*1000)/10 : null;
+    result.detail_refreshed_at = new Date().toISOString();
+    return result;
   } catch (e) {
     return { ...item, detail_status: 'failed', detail_attempted: true, detail_ok: false, detail_error: normalize(e.message).slice(0, 300) };
   } finally {
@@ -410,7 +438,7 @@ function mergePoolProducts(listed, detailResults, history, timestamp, date, sele
     const fresh = resultMap.get(item.product_id);
     let base;
     if (fresh?.detail_ok) {
-      base = { ...old, ...fresh, detail_status: 'refreshed', detail_attempted: true, detail_ok: true, detail_refreshed_at: timestamp, detail_age_days: 0 };
+      base = { ...old, ...fresh, detail_status: 'refreshed', detail_attempted: true, detail_ok: true, detail_refreshed_at: fresh.detail_refreshed_at || timestamp, detail_age_days: 0 };
     } else if (fresh) {
       const oldRefreshedAt = old?.detail_refreshed_at || old?.captured_at || null;
       base = { ...old, ...item, ...fresh, detail_status: old ? 'failed_carried_forward' : 'failed', detail_attempted: true, detail_ok: false, detail_refreshed_at: oldRefreshedAt, detail_age_days: ageInDays(date, oldRefreshedAt) };
@@ -418,6 +446,7 @@ function mergePoolProducts(listed, detailResults, history, timestamp, date, sele
       const oldRefreshedAt = old?.detail_refreshed_at || (old?.detail_ok ? old.captured_at : null);
       base = { ...old, ...item, detail_status: oldRefreshedAt ? 'carried_forward' : 'listing_only', detail_attempted: false, detail_ok: null, detail_refreshed_at: oldRefreshedAt, detail_age_days: ageInDays(date, oldRefreshedAt), detail_selection: [] };
     }
+    if (base.detail_status !== 'refreshed') for (const field of METRIC_FIELDS) base[field] = null;
     base.date = date; base.captured_at = timestamp; base.query = config.query; base.sort = config.sort;
     base.data_sources = base.detail_status === 'refreshed' ? ['search_result_dom','product_detail_jsonld','product_detail_dom'] : old ? ['search_result_dom','historical_product_detail'] : ['search_result_dom'];
     return base;
@@ -450,14 +479,19 @@ function scoreProducts(products, history, today) {
     const oldScopePosition = Number(oldRank?.rank_scope_position || oldRank?.segment_position || oldRank?.bestseller_rank || 0);
     const rankDelta = oldRank && oldScopePosition > 0 && scopePosition > 0 ? oldScopePosition - scopePosition : null;
     const priceDeltaPct = oldOffer && Number(oldOffer.price) ? Math.round((Number(p.price) / Number(oldOffer.price) - 1) * 1000) / 10 : null;
-    const reviewDelta = oldProduct ? Number(p.review_count || 0) - Number(oldProduct.review_count || 0) : null;
+    const reviewDelta = oldProduct && p.review_count != null && oldProduct.review_count !== '' && oldProduct.review_count != null ? Number(p.review_count) - Number(oldProduct.review_count) : null;
+    const estimate = estimateInventory(p, oldProduct);
+    const measured = { ...p, ...estimate };
+    estimate.sales_estimate_weekly = periodEstimate(history, measured, 7);
+    estimate.sales_estimate_monthly = periodEstimate(history, measured, 30);
     const competitionCount = p.review_count ?? p.rating_count;
     const trendScore = Math.round((Math.max(0, 40 - scopePosition) * 2 + Math.log10((competitionCount || 0) + 1) * 8 + Math.min(30, (p.sales_signal_daily_min || 0) / 20) + Math.max(0, p.discount_percent || 0)) * 10) / 10;
     const nicheScore = competitionCount === null || competitionCount === undefined ? null : Math.round((Math.min(50, (p.sales_signal_daily_min || 0) / 8) + Math.max(0, 30 - Math.log10(competitionCount + 1) * 8) + Math.max(0, 25 - scopePosition / 2)) * 10) / 10;
-    return { ...p, rank_scope: scope, rank_scope_position: scopePosition, offer_key: currentOfferKey, rank_delta: rankDelta, price_delta_percent: priceDeltaPct, review_delta: reviewDelta, trend_score: trendScore, niche_score: nicheScore };
+    return { ...p, ...estimate, rank_scope: scope, rank_scope_position: scopePosition, offer_key: currentOfferKey, rank_delta: rankDelta, price_delta_percent: priceDeltaPct, review_delta: reviewDelta, trend_score: trendScore, niche_score: nicheScore };
   });
 }
 const columns = [
+  ...METRIC_FIELDS,
   'date','captured_at','query','sort','source_segment','source_query','segment_position','source_page','search_position','bestseller_rank','category_rank','rank_scope','rank_scope_position','rank_delta','trend_score','niche_score',
   'product_id','merchant_id','offer_key','title','brand','category','url','seller_name','seller_score','price','original_price','discount_percent','price_delta_percent','currency',
   'campaigns','stock_status','stock_signal','sales_signal','sales_signal_days','sales_signal_min','sales_signal_daily_min','rating','rating_count','review_count','review_delta','question_count',
@@ -544,7 +578,7 @@ function generateReport(products, date, quality) {
     `\n_Not: Sıralama ve görünür sinyaller Trendyol sayfasının toplama anındaki durumudur; gerçek satış adedi veya stok miktarı olarak yorumlanmamalıdır._\n`;
 }
 function qualityFor(products) {
-  const fields = ['product_id','title','url','price','seller_name','stock_status','rating','rating_count','review_count','question_count','delivery_summary'];
+  const fields = ['stock_quantity','seller_count_observed','variant_id','inventory_key','product_id','title','url','price','seller_name','stock_status','rating','rating_count','review_count','question_count','delivery_summary'];
   const coverageFor = rows => Object.fromEntries(fields.map(f => [f, rows.length ? Math.round(rows.filter(p => p[f] !== null && p[f] !== undefined && p[f] !== '').length / rows.length * 1000) / 10 : 0]));
   const coverage = coverageFor(products);
   const attempted = products.filter(p => p.detail_attempted === true);
@@ -620,7 +654,7 @@ async function main() {
     }
     await Promise.all(Array.from({ length: Math.max(1, config.detailConcurrency) }, worker));
     const pooled = mergePoolProducts(listed, detailed, history, timestamp, date, selection);
-    const availabilityFields = ['title','brand','seller_name','seller_score','price','original_price','campaigns','stock_status','stock_signal','rating','rating_count','review_count','question_count','delivery_summary','shipping_cost','properties'];
+    const availabilityFields = [...METRIC_FIELDS,'title','brand','seller_name','seller_score','price','original_price','campaigns','stock_status','stock_signal','rating','rating_count','review_count','question_count','delivery_summary','shipping_cost','properties'];
     const enriched = pooled.map(p => {
       const base = { ...p };
       base.field_availability = Object.fromEntries(availabilityFields.map(f => [f, base[f] === null || base[f] === undefined || base[f] === '' || (Array.isArray(base[f]) && !base[f].length) ? 'unavailable' : 'observed']));
@@ -661,7 +695,7 @@ async function main() {
       telegramStrategy,
       `🔥 Trend: ${topTrend.map((p,i)=>`${i+1}) ${p.title} (${p.price} TL)`).join(' | ')}`,
       `🎯 Niche: ${topNiche.map((p,i)=>`${i+1}) ${p.title}`).join(' | ') || 'Baz çizgisi oluşuyor'}`,
-      `📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/${OUTPUT_PREFIX ? `${OUTPUT_PREFIX}/` : ''}reports/${date}.md`,
+      `📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/${OUTPUT_PREFIX ? `${OUTPUT_PREFIX}/` : ''}reports/${date}.md`,
       `Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.`
     ].join('\n');
     fs.writeFileSync(path.join(OUTPUT_ROOT, 'reports', 'telegram-latest.txt'), telegram + '\n');
@@ -671,5 +705,5 @@ async function main() {
     console.log(JSON.stringify({ ok: quality.status === 'PASS', profile: PROFILE, date, quality, files: { report: `${prefix}reports/${date}.md`, snapshot: `${prefix}snapshots/${date}/products.csv`, lists: `${prefix}lists/${date}` } }, null, 2));
   } finally { await context.close(); await browser.close(); }
 }
-module.exports = { ROOT, OUTPUT_ROOT, PROFILE, config, columns, listCols, listMdFields, listTitles, buildLists, generateReport, mdTable, qualityFor, writeCsv, parseSalesSignal, rankScope, offerKey, scoreProducts };
+module.exports = { ROOT, OUTPUT_ROOT, PROFILE, config, columns, listCols, listMdFields, listTitles, buildLists, generateReport, mdTable, qualityFor, writeCsv, parseSalesSignal, rankScope, offerKey, scoreProducts, collectDetail, mergePoolProducts };
 if (require.main === module) main().catch(err => { console.error(err.stack || err.message); process.exit(1); });

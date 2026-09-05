@@ -17,7 +17,7 @@
   "listingMode": "bestSellerHub",
   "requireAddToCart": false,
   "listingScrollCount": 2,
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 1,
   "searchSegments": [
@@ -43,7 +43,7 @@
     { "name": "kompakt-fotograf-makinesi", "tab": "Kompakt Fotoğraf Makinesi", "limit": 10 },
     { "name": "populer-tamamlama", "limit": 100 }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

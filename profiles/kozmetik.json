@@ -16,7 +16,7 @@
   "searchUrl": "https://www.trendyol.com/kozmetik-x-c89?fl=encoksatanurunler",
   "query": "kozmetik",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 20,
   "maxConsecutiveZeroPages": 6,
@@ -31,7 +31,7 @@
     { "name": "kisisel-bakim", "url": "https://www.trendyol.com/sr?wc=89&sst=BEST_SELLER", "query": "kişisel bakım" },
     { "name": "gunes-bakimi", "url": "https://www.trendyol.com/sr?wc=89&sst=BEST_SELLER", "query": "güneş bakımı" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

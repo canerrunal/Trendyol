@@ -1,0 +1,354 @@
+{
+  "product": {
+    "id": 35509789,
+    "ratingScore": {
+      "averageRating": 4.593546779618788,
+      "commentCount": 20955,
+      "totalCount": 40135
+    },
+    "merchantListing": {
+      "merchant": {
+        "id": 110463,
+        "name": "BULUTTABUL",
+        "sellerScore": {
+          "value": 9.2,
+          "color": "#049B24"
+        }
+      },
+      "winnerVariant": {
+        "itemNumber": 63355555,
+        "listingId": "844f898ce09c76a838c658affac8c36d",
+        "price": {
+          "sellingPrice": {
+            "value": 2403,
+            "text": "2.403 TL"
+          }
+        },
+        "quantity": 2709
+      },
+      "variants": [
+        {
+          "itemNumber": 63355555,
+          "price": {}
+        }
+      ],
+      "otherMerchants": [
+        {
+          "id": 113529,
+          "name": "ON8",
+          "sellerScore": {
+            "value": 9.3,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "8684e82e4e251a151ed0924cb7af05c6",
+              "price": {
+                "sellingPrice": {
+                  "value": 2282,
+                  "text": "2.282 TL"
+                }
+              },
+              "quantity": 6369
+            }
+          ]
+        },
+        {
+          "id": 4591,
+          "name": "Turuncu Elma",
+          "sellerScore": {
+            "value": 8.9,
+            "color": "#08B449"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "9f839ce16ba93315cc00a8746b5737ce",
+              "price": {
+                "sellingPrice": {
+                  "value": 2300,
+                  "text": "2.300 TL"
+                }
+              },
+              "quantity": 1524
+            }
+          ]
+        },
+        {
+          "id": 195926,
+          "name": "Darkese",
+          "sellerScore": {
+            "value": 9.1,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "f9ab3c5d7637d956d31ec07ee40577ce",
+              "price": {
+                "sellingPrice": {
+                  "value": 2409,
+                  "text": "2.409 TL"
+                }
+              },
+              "quantity": 19
+            }
+          ]
+        },
+        {
+          "id": 106392,
+          "name": "İstereyon",
+          "sellerScore": {
+            "value": 9.3,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "02dc2f3178d76b603c6d870abf22c4ae",
+              "price": {
+                "sellingPrice": {
+                  "value": 2449,
+                  "text": "2.449 TL"
+                }
+              },
+              "quantity": 8
+            }
+          ]
+        },
+        {
+          "id": 527974,
+          "name": "BulutCo",
+          "sellerScore": {
+            "value": 9.2,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "02f26c0940c49d1c313074da36db9a89",
+              "price": {
+                "sellingPrice": {
+                  "value": 2449,
+                  "text": "2.449 TL"
+                }
+              },
+              "quantity": 191
+            }
+          ]
+        },
+        {
+          "id": 512091,
+          "name": "labooryonline",
+          "sellerScore": {
+            "value": 9.4,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "e9a4f09e72c3fd5b58c5562673301c7b",
+              "price": {
+                "sellingPrice": {
+                  "value": 2490,
+                  "text": "2.490 TL"
+                }
+              },
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "id": 258683,
+          "name": "Sedir Alışveriş Mağazası",
+          "sellerScore": {
+            "value": 8.1,
+            "color": "#3CCD7D"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "1b3efc0ec0f59a3fffd46fe8086c29cc",
+              "price": {
+                "sellingPrice": {
+                  "value": 2500,
+                  "text": "2.500 TL"
+                }
+              },
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "id": 413071,
+          "name": "E-MRKT",
+          "sellerScore": {
+            "value": 8.9,
+            "color": "#08B449"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "eafbbe971a3e819c2dcac04e99c93547",
+              "price": {
+                "sellingPrice": {
+                  "value": 2599,
+                  "text": "2.599 TL"
+                }
+              },
+              "quantity": 18
+            }
+          ]
+        },
+        {
+          "id": 549022,
+          "name": "Fantom",
+          "sellerScore": {
+            "value": 8.8,
+            "color": "#08B449"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "91180ddae2abd1e58c651f5150dfd0b1",
+              "price": {
+                "sellingPrice": {
+                  "value": 2585,
+                  "text": "2.585 TL"
+                }
+              },
+              "quantity": 123
+            }
+          ]
+        },
+        {
+          "id": 135535,
+          "name": "billhom",
+          "sellerScore": {
+            "value": 9.3,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "e55ee81247c1eb93268cfb129fc13b59",
+              "price": {
+                "sellingPrice": {
+                  "value": 2699,
+                  "text": "2.699 TL"
+                }
+              },
+              "quantity": 415
+            }
+          ]
+        },
+        {
+          "id": 129128,
+          "name": "UCUZAÇEYİZ",
+          "sellerScore": {
+            "value": 8.5,
+            "color": "#08B449"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "40ffd98e1545090c15074e599a5938d0",
+              "price": {
+                "sellingPrice": {
+                  "value": 2799,
+                  "text": "2.799 TL"
+                }
+              },
+              "quantity": 337
+            }
+          ]
+        },
+        {
+          "id": 185942,
+          "name": "EFE FARUK AVM",
+          "sellerScore": {
+            "value": 9.1,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "430cbb5c49bfbb2d791e08f3b95b734f",
+              "price": {
+                "sellingPrice": {
+                  "value": 2890,
+                  "text": "2.890 TL"
+                }
+              },
+              "quantity": 225
+            }
+          ]
+        },
+        {
+          "id": 107903,
+          "name": "BALTACIOĞLU ZÜCCACİYE",
+          "sellerScore": {
+            "value": 8.9,
+            "color": "#08B449"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "50cf39d1de829618703cf9a6aee63981",
+              "price": {
+                "sellingPrice": {
+                  "value": 2899,
+                  "text": "2.899 TL"
+                }
+              },
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": 788589,
+          "name": "Elis Concept",
+          "sellerScore": {
+            "value": 9.4,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "a5bf5d6f1206fb442be328236fed0517",
+              "price": {
+                "sellingPrice": {
+                  "value": 2999,
+                  "text": "2.999 TL"
+                }
+              },
+              "quantity": 682
+            }
+          ]
+        },
+        {
+          "id": 514014,
+          "name": "SNL-MARKETT",
+          "sellerScore": {
+            "value": 9.2,
+            "color": "#049B24"
+          },
+          "variants": [
+            {
+              "itemNumber": 63355555,
+              "listingId": "58ef2760a0967b93c78e79578bf34aac",
+              "price": {
+                "sellingPrice": {
+                  "value": 2999,
+                  "text": "2.999 TL"
+                }
+              },
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

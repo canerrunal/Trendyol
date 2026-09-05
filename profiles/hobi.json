@@ -18,7 +18,7 @@
   "sort": "BEST_SELLER",
   "requireAddToCart": false,
   "listingScrollCount": 5,
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 20,
   "maxConsecutiveZeroPages": 3,
@@ -33,7 +33,7 @@
     { "name": "puzzle-zeka", "url": "https://www.trendyol.com/sr?wc=97&sst=BEST_SELLER", "query": "puzzle yapboz zeka oyunu" },
     { "name": "seramik-epoksi", "url": "https://www.trendyol.com/sr?wc=97&sst=BEST_SELLER", "query": "seramik kil epoksi hobi" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

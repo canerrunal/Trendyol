@@ -167,9 +167,9 @@ function normalizeProduct(product) {
     url: relativeUrl ? new URL(relativeUrl, 'https://www.trendyol.com').toString() : null,
     imageUrl: product.imageUrl || product.image || null, categoryName: product?.category?.name || null,
     price: finalPrice, originalPrice: originalPrice && originalPrice > finalPrice ? originalPrice : null, currency: 'TRY',
-    inStock: product.inStock !== false, runningOut: Boolean(product.isRunningOut),
+    inStock: typeof product.inStock === 'boolean' ? product.inStock : null, runningOut: Boolean(product.isRunningOut),
     rating: Number(product?.ratingScore?.averageRating ?? product.rating ?? 0) || null,
-    ratingCount: Number(product?.ratingScore?.totalCount ?? product.ratingCount ?? 0) || 0,
+    ratingCount: require('./product_metrics.cjs').count(product?.ratingScore?.totalCount ?? product.ratingCount),
     promotions: [...new Set(promotions)], fastDelivery: Boolean(product?.badges?.fastDelivery),
     rushDeliveryHours: Number(product?.winnerVariant?.rushDeliveryDuration ?? 0) || null
   };

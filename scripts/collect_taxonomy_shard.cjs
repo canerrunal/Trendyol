@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const path = require('path');
+const collectionConfig = require('../taxonomy/collection-config.json');
+const { enrichTaxonomy } = require('./enrich_taxonomy.cjs');
 const {
   ROOT, readJson, writeGzipJsonAtomic, writeJsonAtomic, nowIstanbul, sleep,
   launchBrowser, prepareRankingPage, fetchRankingPage, normalizeProduct
@@ -15,9 +17,9 @@ function arg(name, fallback) {
 function dayNumber(date) { return Math.floor(Date.parse(`${date}T00:00:00Z`) / 86400000); }
 function categoryPages(node, date, options = {}) {
   if (options.pages) return Number(options.pages);
-  if (node.level <= 1) return 10;
-  const cycleDays = Number(options.deepCycleDays || 20);
-  return (node.categoryId + dayNumber(date)) % cycleDays === 0 ? 10 : 1;
+  if (node.level <= 1) return collectionConfig.deepPages;
+  const cycleDays = Number(options.deepCycleDays || collectionConfig.deepCycleDays);
+  return (node.categoryId + dayNumber(date)) % cycleDays === 0 ? collectionConfig.deepPages : collectionConfig.dailyPages;
 }
 function shardNodes(nodes, shard, shardCount) {
   const seen = new Set();
@@ -45,6 +47,7 @@ async function collect() {
   const catalogRunId = catalog.runId || catalog.generatedAt;
   writeJsonAtomic(statusFile, { schemaVersion: 2, date, shard, shardCount, status: 'running', startedAt, catalogRunId, catalogGeneratedAt: catalog.generatedAt, totalCategories: nodes.length, completedCategories: 0, failedCategories: 0, products: 0, memberships: 0 });
   const memberships = []; const products = new Map(); const failures = []; const successfulCategoryIds = [];
+  let detailCoverage = null;
   let session = null;
   const closeSession = async () => {
     if (!session) return;
@@ -105,6 +108,9 @@ async function collect() {
       }
       await sleep(360);
     }
+    const enriched = await enrichTaxonomy(session.context, [...products].map(([productKey,p])=>({productKey,...p})), ROOT, shard, date, collectionConfig);
+    for (const p of enriched.products) products.set(p.productKey,p);
+    detailCoverage = enriched.coverage;
   } finally { await closeSession(); }
   const successRate = nodes.length ? Math.round((nodes.length - failures.length) / nodes.length * 10000) / 100 : 0;
   const status = successRate >= 95 ? 'PASS' : 'FAIL';
@@ -112,7 +118,7 @@ async function collect() {
     schemaVersion: 2, date, capturedAt: timestamp, startedAt, finishedAt: new Date().toISOString(),
     catalogRunId, catalogGeneratedAt: catalog.generatedAt, shard, shardCount, status,
     totalCategories: nodes.length, completedCategories: nodes.length, failedCategories: failures.length,
-    successRate, successfulCategoryIds,
+    successRate, successfulCategoryIds, detailCoverage,
     products: [...products.entries()].map(([productKey, product]) => ({ productKey, ...product })), memberships, failures
   };
   writeGzipJsonAtomic(path.join(runtimeDir, `shard-${shard}.json.gz`), result);
