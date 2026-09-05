@@ -16,7 +16,7 @@
   "searchUrl": "https://www.trendyol.com/sr?wc=89,103799&bu=100100,100108,100113,100141,100143,100142,100144&sst=BEST_SELLER",
   "query": "supermarket",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 12,
   "maxConsecutiveZeroPages": 6,
@@ -34,7 +34,7 @@
     { "name": "birim-100142", "bu": "100142" },
     { "name": "birim-100144", "bu": "100144" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

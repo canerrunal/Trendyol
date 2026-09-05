@@ -1,0 +1,292 @@
+{
+  "product": {
+    "id": 1164529918,
+    "name": "Yazlık Dokuma Kumaş Ayarlanabilir Askılı Uzun Elbise",
+    "ratingScore": {
+      "averageRating": 3.9375,
+      "commentCount": 34,
+      "totalCount": 48
+    },
+    "variants": [
+      {
+        "itemNumber": 1630539526,
+        "value": "XS",
+        "beautifiedValue": "xs",
+        "inStock": false,
+        "barcode": "WFT9498BEJXS",
+        "isSelected": false,
+        "price": {
+          "value": 549,
+          "text": "549 TL"
+        }
+      },
+      {
+        "itemNumber": 1630539528,
+        "value": "S",
+        "beautifiedValue": "s",
+        "inStock": false,
+        "barcode": "WFT9498BEJS",
+        "isSelected": false,
+        "price": {
+          "value": 549,
+          "text": "549 TL"
+        }
+      },
+      {
+        "itemNumber": 1630539527,
+        "value": "M",
+        "beautifiedValue": "m",
+        "inStock": true,
+        "barcode": "WFT9498BEJM",
+        "isSelected": true,
+        "price": {
+          "value": 549,
+          "text": "549 TL"
+        },
+        "tagDetails": [
+          {
+            "tagId": 4898,
+            "tag": "turuncu_kampanya_urunu",
+            "displayName": "Çok Avantajlı Ürün",
+            "searchable": true,
+            "priceTagStamp": true,
+            "hasStamp": true
+          },
+          {
+            "tagId": 1,
+            "tag": "lowest_price",
+            "displayName": "",
+            "searchable": true,
+            "priceTagStamp": true,
+            "hasStamp": false
+          },
+          {
+            "tagId": 8581,
+            "tag": "lowest_price_duration_10",
+            "displayName": "Son 10 Günün En Düşük Fiyatı",
+            "searchable": false,
+            "priceTagStamp": true,
+            "hasStamp": true
+          },
+          {
+            "tagId": 9637,
+            "tag": "eventdeal",
+            "displayName": "",
+            "searchable": false,
+            "priceTagStamp": true,
+            "hasStamp": true
+          }
+        ]
+      },
+      {
+        "itemNumber": 1630539529,
+        "value": "L",
+        "beautifiedValue": "l",
+        "inStock": false,
+        "barcode": "WFT9498BEJL",
+        "isSelected": false,
+        "price": {
+          "value": 549,
+          "text": "549 TL"
+        }
+      }
+    ],
+    "merchantListing": {
+      "winnerVariant": {
+        "itemNumber": 1630539527,
+        "listingId": "bf6d434726afb0e0a1fc7a79e0045440",
+        "stockStatus": 1,
+        "price": {
+          "currency": "TRY",
+          "discountedPrice": {
+            "value": 429.9,
+            "text": "429,90 TL"
+          },
+          "sellingPrice": {
+            "value": 429.9,
+            "text": "429,90 TL"
+          },
+          "originalPrice": {
+            "value": 521.77,
+            "text": "521,77 TL"
+          },
+          "rrp": {
+            "text": "NaN TL"
+          },
+          "discountPercentage": 0,
+          "profitMargin": 0,
+          "couponApplicablePrice": {
+            "value": 429.9,
+            "text": "429,90 TL"
+          },
+          "tyPlusCouponApplicablePrice": {
+            "value": 429.9,
+            "text": "429,90 TL"
+          },
+          "discountedPriceAfterNoLimitPromotions": {
+            "value": 429.9,
+            "text": "429,90 TL"
+          }
+        },
+        "rushDeliveryDuration": 0,
+        "sellable": true,
+        "isFasterMerchantAvailable": false,
+        "runningOutQuantity": 0,
+        "isRunningOut": true,
+        "inStock": true,
+        "maxSaleLimit": 11,
+        "freeCargo": true,
+        "groupTagIds": [
+          "ce345ee2-b762-450c-9a0e-d156d4531876",
+          "26961731-bceb-4c33-b716-43d1a2312ada"
+        ],
+        "barcode": "WFT9498BEJM",
+        "hasCollectable": false,
+        "isFlash": false,
+        "quantity": 4,
+        "isTyPlusEligible": false,
+        "tagDetails": [
+          {
+            "tagId": 4898,
+            "tag": "turuncu_kampanya_urunu",
+            "displayName": "Çok Avantajlı Ürün",
+            "searchable": true,
+            "priceTagStamp": true,
+            "hasStamp": true
+          },
+          {
+            "tagId": 1,
+            "tag": "lowest_price",
+            "displayName": "",
+            "searchable": true,
+            "priceTagStamp": true,
+            "hasStamp": false
+          },
+          {
+            "tagId": 8581,
+            "tag": "lowest_price_duration_10",
+            "displayName": "Son 10 Günün En Düşük Fiyatı",
+            "searchable": false,
+            "priceTagStamp": true,
+            "hasStamp": true
+          },
+          {
+            "tagId": 9637,
+            "tag": "eventdeal",
+            "displayName": "",
+            "searchable": false,
+            "priceTagStamp": true,
+            "hasStamp": true
+          }
+        ]
+      },
+      "merchant": {
+        "id": 868610,
+        "name": "World Fashion Trends",
+        "sellerScore": {
+          "value": 8.8,
+          "color": "#08B449"
+        }
+      },
+      "variants": [
+        {
+          "itemNumber": 1630539527,
+          "value": "M",
+          "beautifiedValue": "m",
+          "inStock": true,
+          "isSelected": true,
+          "tagDetails": [
+            {
+              "tagId": 4898,
+              "tag": "turuncu_kampanya_urunu",
+              "displayName": "Çok Avantajlı Ürün",
+              "searchable": true,
+              "priceTagStamp": true,
+              "hasStamp": true
+            },
+            {
+              "tagId": 1,
+              "tag": "lowest_price",
+              "displayName": "",
+              "searchable": true,
+              "priceTagStamp": true,
+              "hasStamp": false
+            },
+            {
+              "tagId": 8581,
+              "tag": "lowest_price_duration_10",
+              "displayName": "Son 10 Günün En Düşük Fiyatı",
+              "searchable": false,
+              "priceTagStamp": true,
+              "hasStamp": true
+            },
+            {
+              "tagId": 9637,
+              "tag": "eventdeal",
+              "displayName": "",
+              "searchable": false,
+              "priceTagStamp": true,
+              "hasStamp": true
+            }
+          ]
+        },
+        {
+          "itemNumber": 1630539526,
+          "value": "XS",
+          "beautifiedValue": "xs",
+          "inStock": false,
+          "isSelected": false
+        },
+        {
+          "itemNumber": 1630539528,
+          "value": "S",
+          "beautifiedValue": "s",
+          "inStock": false,
+          "isSelected": false
+        },
+        {
+          "itemNumber": 1630539529,
+          "value": "L",
+          "beautifiedValue": "l",
+          "inStock": false,
+          "isSelected": false
+        }
+      ],
+      "promotions": [
+        {
+          "id": 27373533,
+          "name": "350 TL ve Üzeri Kargo Bedava (Satıcı Karşılar)",
+          "discountType": 7,
+          "promotionDiscountType": "Cargo",
+          "promotionEndDate": "2094-01-01T00:00:00",
+          "promotionRemainingDays": 24589,
+          "promotionRemainingHours": 13,
+          "promotionRemainingMinutes": 6,
+          "isLimitSatisfied": false,
+          "shortName": "Kargo Bedava",
+          "mocPerUser": 0,
+          "isOnlyAz": false,
+          "isTyPlus": false,
+          "isApplied": true
+        }
+      ],
+      "campaign": {
+        "id": 61,
+        "name": "Tüm Ürünler",
+        "stockTypeId": 7,
+        "startDate": "2010-01-01T17:04:05",
+        "endDate": "2061-01-01T18:04:05",
+        "isMultipleSupplied": false
+      },
+      "isCampaignHitEnabled": false,
+      "isLongTermDelivery": false,
+      "displayGiftBoxInformation": false,
+      "displayCustomizableProductInformation": false,
+      "isChoiceNNStoreProduct": false,
+      "hasPromoExclude": false,
+      "otherMerchantsVariants": []
+    },
+    "inStock": true,
+    "favoriteCount": 26892
+  }
+}

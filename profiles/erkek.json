@@ -14,7 +14,7 @@
   "searchUrl": "https://www.trendyol.com/sr?q=erkek&qt=erkek&st=erkek&os=1&sst=BEST_SELLER",
   "query": "erkek",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 20,
   "searchSegments": [
@@ -25,7 +25,7 @@
     { "name": "erkek-parfum", "query": "erkek parfüm" },
     { "name": "erkek-bakim", "query": "erkek bakım" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

@@ -15,7 +15,7 @@
   "searchUrl": "https://www.trendyol.com/sr?q=kadin&qt=kadin&st=kadin&os=1&sst=BEST_SELLER",
   "query": "kadin",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 20,
   "maxConsecutiveZeroPages": 6,
@@ -27,7 +27,7 @@
     { "name": "kadin-ic-giyim", "query": "kadın iç giyim" },
     { "name": "kadin-bakim", "query": "kadın bakım" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

@@ -17,7 +17,7 @@
   "searchUrl": "https://www.trendyol.com/sr?wc=94,95,104216,104166,1063,101513,1141,1354,1365104448,104201,1112,104489,104198,105328,104480,104465,4506,104474,104510,&sst=BEST_SELLER",
   "query": "ev-yasam",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
+  "maxProducts": 300,
   "minimumProducts": 200,
   "maxPagesPerSegment": 8,
   "firstPageContentAttempts": 3,
@@ -52,7 +52,7 @@
     { "name": "kategori-104474", "wc": "104474" },
     { "name": "kategori-104510", "wc": "104510" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,

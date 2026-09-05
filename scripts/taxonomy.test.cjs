@@ -22,12 +22,12 @@ test('kategori işçilerini çakışmadan shardlara böler', () => {
   assert.deepEqual(assigned.map(item => item.categoryId).sort(), [27,28,29,30]);
 });
 
-test('ana seviyelerde 200, derin seviyelerde günlük 20 ve dönüşümlü 200 uygular', () => {
+test('ana seviyelerde 200, derin seviyelerde günlük 40 ve dönüşümlü 200 uygular', () => {
   assert.equal(categoryPages({categoryId:27,level:0}, '2026-08-21'), 10);
   assert.equal(categoryPages({categoryId:28,level:1}, '2026-08-21'), 10);
   const deepPages = Array.from({length:20}, (_, offset) => categoryPages({categoryId:101+offset,level:2}, '2026-08-21'));
-  assert.equal(deepPages.filter(value => value === 10).length, 1);
-  assert.equal(deepPages.filter(value => value === 1).length, 19);
+  assert.equal(deepPages.filter(value => value === 10).length, 2);
+  assert.equal(deepPages.filter(value => value === 2).length, 18);
 });
 
 test('ürün adını tıklanabilir tam bağlantı ve kampanya bilgisiyle saklar', () => {
