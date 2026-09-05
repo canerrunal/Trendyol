@@ -39,3 +39,9 @@ Kod paketini dağıtmak mevcut veya gelecekteki bütün veri kapsamının doğru
 Canlı 300 ürünlük Erkek koşusu: 299 başarılı detay, başarılı detaylarda %100 sayısal stok; kalite PASS. Soru sayısı başlangıç HTML'inden sonra geldiğinden ürün kimliğiyle eşleşen answered yanıtının yalnız totalElements alanı beklenir. Bu düzeltmeden sonraki altı canlı üründe soru ve stok 6/6; çok satıcılı 35509789 ürününde 16 satıcı, her satıcının fiyat/stok bilgisi ve 8.331 soru doğrulandı.
 
 Supabase metrik migration 5 Eylül 2026 tarihinde canlıda başarıyla uygulandı; iki tablo ve latest görünümde JSONB kolonları doğrulandı.
+
+## Çalışma sırasında giderilen kesintiler
+
+Genel Çok Satanlar profilinde kategori başına 10 ürün sınırı 20'ye çıktı; canlı listeleme 300 benzersiz ürün ile doğrulandı. Eksik bir kategori sekmesi pageStats içinde açık hata olarak kaydedilir ve diğer kategoriler denenir; minimum ürün ve metrik kalite kapıları korunur. Profil işleri meşgul kilitte hemen hata vermek yerine en fazla 15 dakika sıra bekler.
+
+İlk üretim Erkek ölçümü: 300/300 başarılı detay, stok/puan/değerlendirme/yorum/satıcı kimliği %100, soru %68. Soru cevabı erişilemediğinde null kalır; 403 yanıtı aşılmaya çalışılmaz. Supabase mevcut kullanım yaklaşık 875 MB / 500 MB ücretsiz kota; uzun süreli genişletilmiş geçmiş için ek kapasite gerekir.
