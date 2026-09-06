@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-09-05
-✅ 300 ürünlük havuz | 299/300 detay yenilendi | kalite PASS
+📊 Trendyol Hamile Günlük Raporu — 2026-09-06
+✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
 🔥 Trend: 1) Artış Ispanyol Paça Yüksek Bel Esnek Toparlayıcı Hamile Tayt (813.12 TL) | 2) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL) | 3) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş (299.9 TL)
-🎯 Niche: 1) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı | 2) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş | 3) Maison La Femme Kadın Siyah Yüksek Bel Bol Paça Hamile Pantolonu
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-05.md
+🎯 Niche: 1) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı | 2) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş | 3) Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-06.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
