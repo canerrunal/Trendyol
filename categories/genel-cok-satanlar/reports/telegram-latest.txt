@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-04
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Erbatab Magnezyum 3 Lü Form (BİSGLİSİNAT, SİTRAT, MALAT) & Vitamin B2 , B3 , B6 - 60 Kapsül (347.4 TL) | 2) Siyah İnci sarı ekose kareli Nakışlı Düğmeli Biyeli İnce Soft Örme Pijama Takımı 8001 (439.99 TL) | 3) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (199.9 TL)
-🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-04.md
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-06
+✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+♻️ 300 ürünün tamamı günlük detay taramasında
+🔥 Trend: 1) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL) | 2) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi (199.9 TL) | 3) icollagen Kolajen Ve Prebiyotik Tablet (350 TL)
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Penti Bej Daylift Lace Dantel Balenli Sütyen | 3) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-06.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
