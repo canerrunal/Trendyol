@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-09-05
+📊 Trendyol Erkek Günlük Raporu — 2026-09-06
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bargello 709 Erkek Parfüm Edp Orıental 50 ml (370 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL) | 3) ORNATE Karınca Yumurtası Yağlı Tüy Azaltıcı Ve Tüy Serum 30ml %0.5 Formic Acid %10 Aloe Vera (247 TL)
-🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) AC&Co / Altınyıldız Classics Erkek Beyaz-Beyaz Pamuklu Slim Fit Dar Kesim Polo Yaka Tişört
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-05.md
+🔥 Trend: 1) Bargello 709 Erkek Parfüm Edp Orıental 50 ml (370 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (300.19 TL) | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez (268.97 TL)
+🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) POLOGRAND London Orijinal Unisex Ortopedik Sırt Destekli Geniş Hacimli Çok Gözlü Ayarlanabilir Askılı Laptop Bölmeli Astarlı İlkokul Ortaokul Lise Üniversite İçin Öğrenci Yetişkin Çocuk Genç Büyük Siyah Okul Çantası
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-06.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
