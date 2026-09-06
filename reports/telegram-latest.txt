@@ -1,7 +1,7 @@
-📊 Trendyol Çocuk Günlük Raporu — 2026-09-05
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1695.75 TL) | 2) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (2196 TL) | 3) Defacto Kız Çocuk 5'li Pamuklu Uzun Çorap F8983A8NS (124.99 TL)
-🎯 Niche: 1) OYUNKAFASI 20 Adet Suda Büyüyen Dinazor Yumurtası – 3 cm Çatlayan Sürpriz Dinazor Yumurta Hediyelik Oyuncak | 2) Genel Markalar 1 Adet Mini Taş-kağıt-makas Oyunu Anahtarlık,parmak Oyuncağı,parti Hediye,stres Giderici Hediye | 3) None Sihirli Büyüyen Dinazor Yumurtası 1 Adet
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/reports/2026-09-05.md
+📊 Trendyol Çocuk Günlük Raporu — 2026-09-06
+✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+♻️ 300 ürünün tamamı günlük detay taramasında
+🔥 Trend: 1) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1995 TL) | 2) Dragora Ribana Bel Canvas Okul Pantolonu (BİR BÜYÜK BEDEN ALINMASI TAVSİYE EDİLİR) (267 TL) | 3) Go Toys Vakum Molekül 25 Parça Yapı Taşları Fidget Duyusal Eğitici Oyuncak Squigz (235 TL)
+🎯 Niche: 1) Genel Markalar 1 Adet Mini Taş-kağıt-makas Oyunu Anahtarlık,parmak Oyuncağı,parti Hediye,stres Giderici Hediye | 2) LE STYLE DE MARIE Tokyo Renkli Kore Çanta 3’lü Okul Seti – Beslenme Çantası ve Kalemlik | 3) Katia & Bony Kız Çocuk Family Kurdeleli Beyaz Basic Dizaltı Okul Çorabı
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/reports/2026-09-06.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
