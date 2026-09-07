@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-09-06
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-07
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 2) MOMORDİCA Coconut Mix - 250 ml (279 TL) | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez (268.97 TL)
-🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-06.md
+🔥 Trend: 1) MOMORDİCA Coconut Mix - 250 ml (210.87 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 3) HARMANA Hindiba Kahvesi 1 Aylık - (60 Kullanım) Net 150gr (479 TL)
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-07.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
