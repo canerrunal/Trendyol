@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-09-07
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+📊 Trendyol Kadın Günlük Raporu — 2026-09-08
+✅ 300 ürünlük havuz | 299/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL) | 3) LumenaScent Liora Kadın Parfüm Floral Edp 50 ml (499 TL)
-🎯 Niche: 1) RABRAIN Artemisia Bloom EDP Kadın Parfüm 50 ml | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-07.md
+🔥 Trend: 1) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL) | 2) LumenaScent Liora Kadın Parfüm Floral Edp 50 ml (429 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL)
+🎯 Niche: 1) RABRAIN Artemisia Bloom EDP Kadın Parfüm 50 ml | 2) RABRAIN Desert Oud EDP Kadın Parfüm 50 ml | 3) Puma Phase Backpack Unisex Çanta 091164-01 BLACK
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-08.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
