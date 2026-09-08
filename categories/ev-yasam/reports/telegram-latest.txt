@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-07
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-08
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) KATE HOME Standlı 12 Li Kendinden Yapışkanlı Kaşıklı Kapaklı Baharatlık Takımı-etiketli Baharatlık (319.9 TL) | 2) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (301.4 TL) | 3) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (59 TL)
-🎯 Niche: 1) Orvila Sihirli Elbise Askısı 9 Gözlü Akıllı Askı Sihirli Askılık | 2) Vienev 14'lü Takı Makyaj Çekmece Içi Düzenleyici Kozmetik Aksesuar Organizer | 3) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-07.md
+🔥 Trend: 1) Lilac Home Yapay Çiçek Elmas Saksıda 80 Cm Yoğun Yapraklı Koyu Yeşil Okaliptus Sarkıt (159.99 TL) | 2) Emsan Arya Döküm Kek Kalıbı Ekru 24 Cm (349.99 TL) | 3) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz (159 TL)
+🎯 Niche: 1) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 2) Vienev 14'lü Takı Makyaj Çekmece Içi Düzenleyici Kozmetik Aksesuar Organizer | 3) Ezupack 25 Adet Sızdırmaz 120 ml Mini Saklama Kabı Sosluk Buzluk Kabı, Et Suyu, Kemik Suyu, Sos Kabı Mutfak
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-08.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
