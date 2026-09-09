@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-08
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-09
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Lilac Home Yapay Çiçek Elmas Saksıda 80 Cm Yoğun Yapraklı Koyu Yeşil Okaliptus Sarkıt (159.99 TL) | 2) Emsan Arya Döküm Kek Kalıbı Ekru 24 Cm (349.99 TL) | 3) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz (159 TL)
-🎯 Niche: 1) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 2) Vienev 14'lü Takı Makyaj Çekmece Içi Düzenleyici Kozmetik Aksesuar Organizer | 3) Ezupack 25 Adet Sızdırmaz 120 ml Mini Saklama Kabı Sosluk Buzluk Kabı, Et Suyu, Kemik Suyu, Sos Kabı Mutfak
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-08.md
+🔥 Trend: 1) Dream Time Sıvı Geçirmez Soft Micro Fitted Alez | Ultra Sessiz Full Kenarlı Antibakteriyel Su Geçirmez Yatak Koruyucu (123.41 TL) | 2) Formeya Classic Mikro Fitted Full Kenar Su Sıvı Geçirmez Yatak Koruyucu Alez Bebek-Tek-Çift Kişilik Battal (99 TL) | 3) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (280.31 TL)
+🎯 Niche: 1) Orvila Sihirli Elbise Askısı 9 Gözlü Akıllı Askı Sihirli Askılık | 2) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 3) Amentes Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-09.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
