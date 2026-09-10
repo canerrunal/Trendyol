@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-09-09
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+📊 Trendyol Kozmetik Günlük Raporu — 2026-09-10
+✅ 300 ürünlük havuz | 298/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi (199.9 TL) | 2) Embeauty Ultra Siyah Dolgunlaştırıcı Maskara – Hacim ve Uzunluk Etkili (275.72 TL) | 3) Bargello 384 Kadın 50 ml Parfüm Edp Floral (370 TL)
-🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) CALLİEL Aydınlatıcı ve Canlandırıcı Leke Karşıtı Bakım Seti | 3) PİRAYE AKSESUAR DIY Kirpik - Takma Kirpik 600 Adet Kirpik Seti Kitap Model 30-40-50-60-80-100 D Farklı Boylar
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kozmetik/reports/2026-09-09.md
+🔥 Trend: 1) Bath & Body Works Into the Night Vücut Spreyi 236 mL (599 TL) | 2) Bargello 384 Kadın 50 ml Parfüm Edp Floral (600 TL) | 3) TDRS Narcotic 100 ML Bergamot Özel Seri Uzun Süre Kalıcı Erkek Parfüm (586.31 TL)
+🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) PİRAYE AKSESUAR DIY Kirpik - Takma Kirpik 600 Adet Kirpik Seti Kitap Model 30-40-50-60-80-100 D Farklı Boylar | 3) Bath & Body Works Into the Night Vücut Spreyi 236 mL
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kozmetik/reports/2026-09-10.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
