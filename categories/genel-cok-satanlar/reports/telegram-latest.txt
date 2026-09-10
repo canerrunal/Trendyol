@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-09
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-10
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) ReklamX Otomobil Motosiklet sticker seti 1 adet (14.99 TL) | 2) Embeauty Ultra Siyah Dolgunlaştırıcı Maskara – Hacim ve Uzunluk Etkili (275.72 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (249.83 TL)
-🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-09.md
+🔥 Trend: 1) ChildGen Doğal Oyun Hamuru - Eco Cup- 6x125gr Ana Ve Ara Renkler (269.9 TL) | 2) LAVİNİM Palazzo Pantolon Oversize Orjinal Kesim (563.09 TL) | 3) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL)
+🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Genel Markalar Becit Home Pratik Seyahat Tipi Diş Macun Fırça Saklama Ve Taşıma Kabı Diş Fırçalık 1 ADET
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-10.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
