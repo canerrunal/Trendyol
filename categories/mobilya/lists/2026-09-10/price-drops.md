@@ -1,0 +1,8 @@
+# Fiyatı Düşen Ürünler — 2026-09-10
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 58 | 4 | 14.2 | 30 | [Sofmina Balkon, Bahçe, Cafe - Metal Kanepe Koltuk Takımı – Tekli](https://www.trendyol.com/sofmina/balkon-bahce-cafe-metal-kanepe-koltuk-takimi-tekli-p-1136061622?boutiqueId=61&merchantId=1077078) | Sofmina | Sofmina | 2154.62 | InStock |  |  | 3 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Peşin Fiyatına 3 Taksit; Son 10 günün en düşük fiyatı |
+| 51 | -14 | 5.6 | 24.4 | [Cosargroup 2 RAFLI YUVARLAK ÇİÇEKLİK VE SEHPA 1999](https://www.trendyol.com/cosargroup/2-rafli-yuvarlak-ciceklik-ve-sehpa-1999-p-1184669577) | Cosargroup | COSARGROUP | 301.49 | InStock | 2.857142857142857 | 4 | 6 | refreshed |  | Kargo Bedava |
+| 86 | -1 |  | 30 | [VAC HOME Togo İkili Koltuk / Berjer HR Full Sünger](https://www.trendyol.com/vac-home/togo-ikili-koltuk-berjer-hr-full-sunger-p-1128791799?boutiqueId=61&merchantId=185000) | VAC HOME | VAC HOME | 18501.24 | InStock |  |  | 4 | refreshed |  | Kargo Bedava; 300 TL Kupon; Peşin Fiyatına 9 Taksit; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 71 | -5 | 12.2 | 24.4 | [DEKOZUM LİLY Ahşap Ayaklı Retro Puf Minimal Berjer Makyaj Masası Sandalyesi Çok Amaçlı Berjer KREM](https://www.trendyol.com/dekozum/lily-ahsap-ayakli-retro-puf-minimal-berjer-makyaj-masasi-sandalyesi-cok-amacli-berjer-krem-p-1170890685) | DEKOZUM | DEKOZUM | 1306.9 | InStock | 4.5 | 4 | 14 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava; Peşin Fiyatına 3 Taksit |
