@@ -1,0 +1,7 @@
+# Niche Fırsatlar — 2026-09-11
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 104.7 | 33.6 | [lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa](https://www.trendyol.com/lefty/genis-iskandinav-mantar-sehpa-3-lu-zigon-sehpa-takimi-yan-orta-sehpa-traverten-mermer-desen-sehpa-p-867211774) | lefty | lefty | 1049.9 | InStock | 4.347092765201953 | 1338 | 362 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 2 | 1 | 104.2 | 31.6 | [YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi](https://www.trendyol.com/yunusoglu-home/katlanabilir-ahsap-koltuk-kenari-yan-sehpa-amerikan-servisi-kanepe-kenari-koltuk-tepsisi-ceviz-rengi-p-179070299) | YUNUSOĞLU HOME | YUNUSOĞLU HOME | 143.22 | InStock | 3.86745371612557 | 2093 | 200 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 3 | 3 | 104.3 | 31.4 | [Kagu Mdf Alvin Zigon - Orta Sehpa 3'lü](https://www.trendyol.com/kagu/mdf-alvin-zigon-orta-sehpa-3-lu-p-780948024) | Kagu | Kagu | 1699 | InStock | 4.773408863712096 | 1941 | 326 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava; Peşin Fiyatına 3 Taksit |
