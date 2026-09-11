@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-09-10
+📊 Trendyol Kadın Günlük Raporu — 2026-09-11
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (425 TL) | 2) LumenaScent Liora Kadın Parfüm Floral Edp 50 ml (499 TL) | 3) Mad Parfüm Mad V112 Selective 50 ml Kadın Parfüm (599.99 TL)
-🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) RABRAIN Artemisia Bloom EDP Kadın Parfüm 50 ml | 3) Puma Phase Backpack Unisex Çanta 091164-01 BLACK
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-10.md
+🔥 Trend: 1) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (249.83 TL) | 2) LumenaScent Liora Kadın Parfüm Floral Edp 50 ml (450.47 TL) | 3) LAVİNİM Palazzo Pantolon Oversize Orjinal Kesim (515.51 TL)
+🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-11.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
