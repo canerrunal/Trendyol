@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-09-11
+📊 Trendyol Erkek Günlük Raporu — 2026-09-12
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (249.83 TL) | 2) ORNATE Karınca Yumurtası Yağlı Tüy Azaltıcı Ve Tüy Serum 30ml %0.5 Formic Acid %10 Aloe Vera (234.53 TL) | 3) EPİFY Epify Tüy Dökücü Krem (549 TL)
-🎯 Niche: 1) Puma Phase Backpack Unisex Çanta 091164-01 BLACK | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-11.md
+🔥 Trend: 1) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL) | 2) ORNATE Karınca Yumurtası Yağlı Tüy Azaltıcı Ve Tüy Serum 30ml %0.5 Formic Acid %10 Aloe Vera (344.99 TL) | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez (256.28 TL)
+🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) Puma Phase Backpack Unisex Çanta 091164-01 BLACK
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-12.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
