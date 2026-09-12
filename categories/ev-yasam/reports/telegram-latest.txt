@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-11
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-12
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (280.31 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (59 TL) | 3) M&L LUNCH BOX 6 Bölmeli Taşınabilir Yemek Kabı Lunch Box Diyet Beslenme Kutusu Saklama Kabı Çatal Kaşık Sefer Tası (199 TL)
-🎯 Niche: 1) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 2) Orvila Sihirli Elbise Askısı 9 Gözlü Akıllı Askı Sihirli Askılık | 3) Enkado Tuğra Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik-Beyaz
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-11.md
+🔥 Trend: 1) Billhom Etraders Siyah Ahşap Çubuklu Masif Ayakkabılık Kontef (199.9 TL) | 2) Genel Markalar Kare Kırlent Iç Yastık 2 Adet elyaf Dolgulu Kırlent 10 Farklı Ölçü Seçeneği (115 TL) | 3) HaBu Lab Dekoratif Tavşan Kürdanlık – Tavşan Biblo Organizer – 3D Baskı Ev Dekoru (34.9 TL)
+🎯 Niche: 1) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 2) Enkado Tuğra Led Işıklı Usb Şarjlı Dikdörtgen Masa Üstü Makyaj Aynası Makyaj Aynası Dokunmatik-Beyaz | 3) DGM YAPI DOLAP İÇİNE SUNTALAM RAF ÖLÇÜYE GÖRE KESİM YAPILIR
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-12.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
