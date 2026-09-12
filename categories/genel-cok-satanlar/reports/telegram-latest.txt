@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-11
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-12
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) LAVİNİM Palazzo Pantolon Oversize Orjinal Kesim (515.51 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL) | 3) MOMORDİCA Coconut Mix - 250 ml (208.76 TL)
-🎯 Niche: 1) 7GO 7GCB1 65W PD 4'ü 1 Arada Hızlı Şarj Kablosu 1.2M – USB-A / Type-C / Lightning Çoklu Örgülü Şarj | 2) Stradivarius Dik yaka suni deri trençkot | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-11.md
+🔥 Trend: 1) LAVİNİM Palazzo Pantolon Oversize Orjinal Kesim (563.09 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL)
+🎯 Niche: 1) 7GO 7GCB1 65W PD 4'ü 1 Arada Hızlı Şarj Kablosu 1.2M – USB-A / Type-C / Lightning Çoklu Örgülü Şarj | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Kenzlife mobilya kulpu köprü 96-128 mm siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-12.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
