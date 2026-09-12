@@ -1,7 +1,7 @@
-📊 Trendyol Mobilya Günlük Raporu — 2026-09-11
+📊 Trendyol Mobilya Günlük Raporu — 2026-09-12
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa (1049.9 TL) | 2) Kagu Mdf Alvin Zigon - Orta Sehpa 3'lü (1699 TL) | 3) YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi (143.22 TL)
-🎯 Niche: 1) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa | 2) YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi | 3) Kagu Mdf Alvin Zigon - Orta Sehpa 3'lü
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/mobilya/reports/2026-09-11.md
+🔥 Trend: 1) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa (1049.9 TL) | 2) YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi (143.22 TL) | 3) Kagu Mdf Alvin Zigon - Orta Sehpa 3'lü (1699 TL)
+🎯 Niche: 1) fümehome Koyu Kahve Koltuk Tepsisi Yan Sehpa Tesbih Cevizi 20x40 Cm Ortasabit 13,5 Cm Amerikan Servisi | 2) lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa | 3) YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/mobilya/reports/2026-09-12.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
