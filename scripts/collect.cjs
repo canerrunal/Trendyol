@@ -338,7 +338,7 @@ function jsonLdProduct(items) {
   }
   return {};
 }
-async function collectDetail(context, item, index) {
+async function collectDetail(context, item, index, options = {}) {
   const page = await context.newPage();
   // Question totals arrive after the initial HTML. Retain only the aggregate,
   // never question text or customer details, and match this exact product.
@@ -359,7 +359,15 @@ async function collectDetail(context, item, index) {
       Number(config.detailNavigationAttempts || 1),
       Number(config.detailNavigationTimeoutMs || 30000)
     );
-    const questionTotal = await Promise.race([questionsReady, sleep(4000).then(() => null)]);
+    // Most product pages now include the aggregate question count in the initial
+    // product payload. Avoid waiting for the secondary question request when the
+    // public HTML already contains the value.
+    const initialHtml = await page.content();
+    const initialMetrics = extractProductMetrics(initialHtml, item.product_id);
+    const questionTotal = initialMetrics?.question_count ?? await Promise.race([
+      questionsReady,
+      sleep(Number(options.questionWaitMs ?? 4000)).then(() => null)
+    ]);
     const payload = await page.evaluate(() => ({
       body: document.body.innerText,
       html: document.documentElement.outerHTML,
@@ -367,7 +375,7 @@ async function collectDetail(context, item, index) {
       canonical: document.querySelector('link[rel="canonical"]')?.href || location.href
     }));
     const p = jsonLdProduct(payload.jsonld);
-    const metrics = extractProductMetrics(payload.html, item.product_id);
+    const metrics = extractProductMetrics(payload.html, item.product_id) || initialMetrics;
     if (!p.name && !metrics) throw new Error('Product payload missing; refusing successful detail status');
     const body = payload.body;
     const offer = Array.isArray(p.offers) ? (p.offers[0] || {}) : (p.offers || {});
