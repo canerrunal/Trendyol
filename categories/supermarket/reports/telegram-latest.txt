@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-09-12
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-13
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL) | 2) MOMORDİCA Coconut Mix - 250 ml (299 TL) | 3) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (261.16 TL)
-🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Zühre Ana Kekre Termojenik Mix 250 Ml | 3) MOMORDİCA Karnıyarık Otu Mix - 250ml
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-12.md
+🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL) | 2) MOMORDİCA Coconut Mix - 250 ml (208.76 TL) | 3) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (369.9 TL)
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Zühre Ana Kekre Termojenik Mix 250 Ml | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-13.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
