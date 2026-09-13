@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-12
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-13
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) LAVİNİM Palazzo Pantolon Oversize Orjinal Kesim (563.09 TL) | 2) icollagen Kolajen Ve Prebiyotik Tablet 60 adet (350 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL)
-🎯 Niche: 1) 7GO 7GCB1 65W PD 4'ü 1 Arada Hızlı Şarj Kablosu 1.2M – USB-A / Type-C / Lightning Çoklu Örgülü Şarj | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Kenzlife mobilya kulpu köprü 96-128 mm siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-12.md
+🔥 Trend: 1) Embeauty Ultra Siyah Dolgunlaştırıcı Maskara – Hacim ve Uzunluk Etkili (275.72 TL) | 2) Clasy Care Ayak Ve Topuk Çatlak Kremi, Ayak Bakımı, Ayak Kokusu Ve Topuk 100ml (297.63 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (249.83 TL)
+🎯 Niche: 1) Kenzlife mobilya kulpu köprü 96-128 mm siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 2) 7GO 7GCB1 65W PD 4'ü 1 Arada Hızlı Şarj Kablosu 1.2M – USB-A / Type-C / Lightning Çoklu Örgülü Şarj | 3) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-13.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
