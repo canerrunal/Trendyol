@@ -108,7 +108,15 @@ async function collect() {
       }
       await sleep(360);
     }
-    const enriched = await enrichTaxonomy(session.context, [...products].map(([productKey,p])=>({productKey,...p})), ROOT, shard, date, collectionConfig);
+    const enriched = await enrichTaxonomy(
+      session.context,
+      [...products].map(([productKey, p]) => ({ productKey, ...p })),
+      ROOT,
+      shard,
+      date,
+      collectionConfig,
+      memberships,
+    );
     for (const p of enriched.products) products.set(p.productKey,p);
     detailCoverage = enriched.coverage;
   } finally { await closeSession(); }

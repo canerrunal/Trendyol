@@ -3,6 +3,8 @@
   "deepPages": 10,
   "deepCycleDays": 10,
   "detailDailyPerShard": 100,
-  "detailRotationPerShard": 100,
-  "detailConcurrency": 3
+  "detailRotationPerShard": 600,
+  "detailFollowUpPerShard": 600,
+  "detailConcurrency": 5,
+  "detailCoverageMemoryDays": 365
 }
