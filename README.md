@@ -125,7 +125,7 @@ Yük ve veri değeri dengesi:
 - `taxonomy/snapshots/YYYY-MM-DD/summary.json`: kalite ve kapsam özeti
 - `taxonomy/reports/YYYY-MM-DD.md`: günlük okunabilir rapor
 
-Hermes saat planı (Europe/Istanbul): 15:00 katalog keşfi; 15:10, 16:00, 16:50 ve 17:40 dört veri işçisi; 18:40 kalite, rapor, GitHub ve Telegram özeti. Ara işler modelsiz `no-agent` modunda çalışır; yalnız final raporu Telegram'a gider.
+Hermes saat planı (Europe/Istanbul): 15:00 katalog keşfi; 15:10, 16:00, 16:50 ve 17:40 dört veri işçisi; 19:10 kalite, rapor, GitHub ve Telegram özeti. Ara işler modelsiz `no-agent` modunda çalışır; yalnız final raporu Telegram'a gider. Son işçi için 90 dakikalık yayın payı ayrılır.
 
 ```bash
 npm run taxonomy:discover

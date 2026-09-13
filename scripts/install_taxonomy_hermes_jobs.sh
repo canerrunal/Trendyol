@@ -39,6 +39,6 @@ upsert_job "trendyol-taxonomy-shard-0" "10 15 * * *" "trendyol_taxonomy_shard_0.
 upsert_job "trendyol-taxonomy-shard-1" "0 16 * * *" "trendyol_taxonomy_shard_1.sh" "local"
 upsert_job "trendyol-taxonomy-shard-2" "50 16 * * *" "trendyol_taxonomy_shard_2.sh" "local"
 upsert_job "trendyol-taxonomy-shard-3" "40 17 * * *" "trendyol_taxonomy_shard_3.sh" "local"
-upsert_job "trendyol-taxonomy-finalize" "40 18 * * *" "trendyol_taxonomy_finalize.sh" "telegram"
+upsert_job "trendyol-taxonomy-finalize" "10 19 * * *" "trendyol_taxonomy_finalize.sh" "telegram"
 
 echo "TAXONOMY_HERMES_INSTALL_OK jobs=6"
