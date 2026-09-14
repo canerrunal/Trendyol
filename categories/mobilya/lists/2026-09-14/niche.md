@@ -1,0 +1,7 @@
+# Niche Fırsatlar — 2026-09-14
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 101.3 | 37 | [fümehome Koyu Kahve Koltuk Tepsisi Yan Sehpa Tesbih Cevizi 20x40 Cm Ortasabit 13,5 Cm Amerikan Servisi](https://www.trendyol.com/fumehome/koyu-kahve-koltuk-tepsisi-yan-sehpa-tesbih-cevizi-20x40-cm-ortasabit-13-5-cm-amerikan-servisi-p-191488318) | fümehome | Asır Dekorasyon | 104 | InStock | 3.978823529411765 | 511 | 29 | refreshed |  | Kargo Bedava |
+| 2 | -1 | 102.7 | 33.1 | [lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa](https://www.trendyol.com/lefty/genis-iskandinav-mantar-sehpa-3-lu-zigon-sehpa-takimi-yan-orta-sehpa-traverten-mermer-desen-sehpa-p-867211774) | lefty | lefty | 1049.9 | InStock | 4.347326557666814 | 1345 | 362 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 3 |  | 102.2 | 31.1 | [YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi](https://www.trendyol.com/yunusoglu-home/katlanabilir-ahsap-koltuk-kenari-yan-sehpa-amerikan-servisi-kanepe-kenari-koltuk-tepsisi-ceviz-rengi-p-179070299) | YUNUSOĞLU HOME | YUNUSOĞLU HOME | 143.22 | InStock | 3.861327600107498 | 2083 | 201 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
