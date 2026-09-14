@@ -1,7 +1,7 @@
 📊 Trendyol Çocuk Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
-♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Dragora Ribana Bel Canvas Okul Pantolonu (BİR BÜYÜK BEDEN ALINMASI TAVSİYE EDİLİR) (300 TL) | 2) ankahometoys Puzzle City 3D Yapı Blokları - 128 Parça Eğitici Şehir Kurma ve Tasarım Seti (125.98 TL) | 3) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (2140 TL)
+✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Çocuk Akademi 7'den 70'e Türkiye Atlası (349 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (2140 TL) | 3) UNO Kartlar W2087 (65.2 TL)
 🎯 Niche: 1) Puma Phase II Sırt Çantası | 2) potasyum 72 Parça Manyetik Yapı Blokları - Çocuklar için Renkli 3 Boyutlu Karo Oyun Seti Oyuncak Yap-Boz | 3) icone life 72 Parça Manyetik Yapı Blokları - Çocuklar için Renkli 3 Boyutlu Karo Oyun Seti Oyuncak Yap-Boz
 📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/reports/2026-09-14.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
