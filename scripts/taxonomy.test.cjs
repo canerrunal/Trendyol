@@ -115,3 +115,19 @@ test('eski state geçmişini kalıcı kapsam kaydına taşır', () => {
   assert.equal(cohort.lastObserved['1:1'], timestamp);
   assert.equal(cohort.selected[0].product.productKey, '2:1');
 });
+
+test('kurtarılan kategori ürünlerini genel detay dönüşümünden önce tamamlar', () => {
+  const products = [1, 2, 3, 4].map(detailProduct);
+  const memberships = [
+    { categoryId: 10, productKey: '1:1', source: 'top_ranking' },
+    { categoryId: 10, productKey: '4:1', source: 'category_search_fallback' },
+    { categoryId: 20, productKey: '2:1', source: 'top_ranking' },
+    { categoryId: 20, productKey: '3:1', source: 'top_ranking' },
+  ];
+  const cohort = selectDetailCohort(products, memberships, {
+    watch: [], followUp: [], history: {},
+    lastObserved: { '1:1': '2026-09-13T08:00:00Z', '2:1': '2026-09-13T08:00:00Z' },
+  }, { detailDailyPerShard: 0, detailFollowUpPerShard: 0, detailRotationPerShard: 1 });
+  assert.equal(cohort.selected[0].product.productKey, '4:1');
+  assert.equal(cohort.stats.fallbackRotation, 1);
+});

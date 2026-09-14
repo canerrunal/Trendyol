@@ -67,6 +67,7 @@ function selectDetailCohort(products, memberships, state, options = {}) {
 
   const categoryProducts = new Map();
   const productCategories = new Map();
+  const fallbackProductKeys = new Set();
   for (const membership of Array.isArray(memberships) ? memberships : []) {
     const categoryId = Number(membership.categoryId);
     if (!Number.isFinite(categoryId) || !byKey.has(membership.productKey)) continue;
@@ -76,6 +77,7 @@ function selectDetailCohort(products, memberships, state, options = {}) {
     if (!productCategories.has(membership.productKey)) productCategories.set(membership.productKey, []);
     const categoryIds = productCategories.get(membership.productKey);
     if (!categoryIds.includes(categoryId)) categoryIds.push(categoryId);
+    if (membership.source === 'category_search_fallback') fallbackProductKeys.add(membership.productKey);
   }
   const coveredCategories = new Set();
   const selectedCoverage = new Set();
@@ -100,6 +102,12 @@ function selectDetailCohort(products, memberships, state, options = {}) {
   const candidates = [...byKey]
     .filter(([key, item]) => item.url && !selected.has(key))
     .sort(([a], [b]) => a.localeCompare(b));
+  // Finish the products recovered from formerly empty categories before the
+  // general catalog rotation so their full detail backlog does not wait weeks.
+  for (const [key, item] of candidates) {
+    if (rotationCount >= rotation) break;
+    if (fallbackProductKeys.has(key) && !lastObserved[key] && add(item, 'rotation')) rotationCount++;
+  }
   // Exhaust never-observed products deterministically.
   for (const [key, item] of candidates) {
     if (rotationCount >= rotation) break;
@@ -125,6 +133,7 @@ function selectDetailCohort(products, memberships, state, options = {}) {
       dailyWatch: [...selected.values()].filter(item => item.reason === 'daily_watch').length,
       followUps: [...selected.values()].filter(item => item.reason === 'follow_up').length,
       rotation: [...selected.values()].filter(item => item.reason === 'rotation').length,
+      fallbackRotation: [...selected.values()].filter(item => item.reason === 'rotation' && fallbackProductKeys.has(item.product.productKey)).length,
       categoriesWithProducts: categoryProducts.size,
       categoriesObservedBefore: coveredCategories.size,
     },
@@ -228,6 +237,7 @@ async function enrichTaxonomy(context, products, root, shard, date, options, mem
     dailyWatch: cohort.stats.dailyWatch,
     followUps: cohort.stats.followUps,
     rotation: cohort.stats.rotation,
+    fallbackRotation: cohort.stats.fallbackRotation,
     newCoverage,
     cumulativeObserved,
     cumulativeCoverage: byKey.size ? Math.round(cumulativeObserved / byKey.size * 10000) / 100 : 0,

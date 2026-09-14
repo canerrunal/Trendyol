@@ -111,6 +111,7 @@ Yük ve veri değeri dengesi:
 
 - Bütün kategorilerin ilk 40 sıralaması her gün alınır.
 - Çok Satanlar servisi boş dönen kategoriler normal kategori vitrini üzerinden `BEST_SELLER` sırasıyla yeniden taranır; bu ürünler de detay ve stok karşılaştırma kuyruğuna girer.
+- Normal kategori vitriniyle kurtarılan ürünlerin tamamı, kategori başına ilk ölçümlerden sonra genel ürün dönüşümünden önce işlenir.
 - Ana ve birinci seviye kategoriler her gün 200 ürüne kadar taranır.
 - Daha derin kategoriler günlük ilk 40'a ek olarak 10 günlük dönüşümle 200 ürüne kadar genişletilir.
 - Her shard'da 100 ürün günlük sabit izlenir; 700 yeni ürün kategori dengeli biçimde ölçülür ve en çok 700 ürün ertesi gün stok farkı için tekrar ziyaret edilir.
