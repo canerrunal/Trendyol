@@ -2,9 +2,11 @@
   "dailyPages": 2,
   "deepPages": 10,
   "deepCycleDays": 10,
+  "emptyCategoryFallback": true,
+  "fallbackPageSize": 36,
   "detailDailyPerShard": 100,
-  "detailRotationPerShard": 600,
-  "detailFollowUpPerShard": 600,
+  "detailRotationPerShard": 700,
+  "detailFollowUpPerShard": 700,
   "detailConcurrency": 5,
   "detailCoverageMemoryDays": 365
 }
