@@ -110,10 +110,12 @@ Sosyal Yayın Merkezi, `caner8047-coder/verimimaricom` deposunu yerel `gh` oturu
 Yük ve veri değeri dengesi:
 
 - Bütün kategorilerin ilk 40 sıralaması her gün alınır.
+- Çok Satanlar uç noktasının verdiği en yüksek kapsam olan ilk 100 ürün ana, birinci seviye ve dönüşüm günündeki derin kategorilerde alınır.
+- Her ürün döndüren kategorinin normal vitrindeki 3–100. sayfaları 49 günlük dönüşümle günde iki sayfa taranır; kategori başına günlük en çok 72 ek ürün havuza girer. Seçilen sayfa kategori toplamını aşarsa gerçek son sayfa aralığına döndürülür.
 - Çok Satanlar servisi boş dönen kategoriler normal kategori vitrini üzerinden `BEST_SELLER` sırasıyla yeniden taranır; bu ürünler de detay ve stok karşılaştırma kuyruğuna girer.
 - Normal kategori vitriniyle kurtarılan ürünlerin tamamı, kategori başına ilk ölçümlerden sonra genel ürün dönüşümünden önce işlenir.
-- Ana ve birinci seviye kategoriler her gün 200 ürüne kadar taranır.
-- Daha derin kategoriler günlük ilk 40'a ek olarak 10 günlük dönüşümle 200 ürüne kadar genişletilir.
+- Ana ve birinci seviye kategoriler her gün ilk 100 Çok Satanlar ürünüyle taranır.
+- Daha derin kategoriler günlük ilk 40'a ek olarak 10 günlük dönüşümle ilk 100 Çok Satanlar ürününe genişletilir.
 - Her shard'da 100 ürün günlük sabit izlenir; 700 yeni ürün kategori dengeli biçimde ölçülür ve en çok 700 ürün ertesi gün stok farkı için tekrar ziyaret edilir.
 - Ölçülen ürünler 365 gün hatırlanır. Dönüşüm önce hiç detay ölçümü olmayan ürün döndüren kategorileri, ardından hiç ölçülmemiş ürünleri ve son olarak en eski ölçümleri seçer.
 - Ürünler tekilleştirilir; kategori–ürün sıralamaları ayrı tutulur.

@@ -169,6 +169,7 @@ async function fetchSearchPage(page, categoryId, pageNumber, pageSize = 36, atte
       const payload = JSON.parse(result.text);
       const products = payload?.products || payload?.data?.products || payload?.result?.content || [];
       if (!Array.isArray(products)) throw new Error('Kategori arama yedeği beklenen biçimde değil.');
+      products.total = Number(payload?.total ?? payload?.data?.total ?? payload?.result?.total) || null;
       return products;
     } catch (error) {
       lastError = error;

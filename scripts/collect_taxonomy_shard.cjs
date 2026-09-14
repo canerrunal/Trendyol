@@ -15,6 +15,16 @@ function arg(name, fallback) {
   return index >= 0 ? process.argv[index + 1] : fallback;
 }
 function dayNumber(date) { return Math.floor(Date.parse(`${date}T00:00:00Z`) / 86400000); }
+function rotatingExpansionPages(categoryId, date, options = {}) {
+  if (options.catalogExpansion === false) return [];
+  const count = Math.max(0, Number(options.expansionPagesPerCategory || 0));
+  const first = Math.max(1, Number(options.expansionFirstPage || 3));
+  const last = Math.max(first, Number(options.expansionLastPage || first));
+  if (!Number.isInteger(count) || !Number.isInteger(first) || !Number.isInteger(last) || count === 0) return [];
+  const span = last - first + 1;
+  const seed = (Number(categoryId) + dayNumber(date) * count) % span;
+  return Array.from({ length: Math.min(count, span) }, (_, index) => first + ((seed + index) % span));
+}
 function categoryPages(node, date, options = {}) {
   if (options.pages) return Number(options.pages);
   if (node.level <= 1) return collectionConfig.deepPages;
@@ -37,21 +47,22 @@ async function collectCategoryListings(page, categoryId, pages, options = {}) {
   const targetProducts = pages * 20;
   const categoryMemberships = [];
   const categoryProductsByKey = new Map();
-  const addItems = (items, source) => {
-    for (const item of items) {
-      if (categoryMemberships.length >= targetProducts) break;
+  const addItems = (items, source, rankStart = 1, maximumMemberships = Infinity) => {
+    for (let index = 0; index < items.length; index++) {
+      if (categoryMemberships.length >= maximumMemberships) break;
+      const item = items[index];
       const product = normalizeProduct(item);
       if (!product.productId) continue;
       const productKey = `${product.productId}:${product.merchantId}`;
       if (categoryProductsByKey.has(productKey)) continue;
       categoryProductsByKey.set(productKey, product);
-      categoryMemberships.push({ categoryId, rank: categoryMemberships.length + 1, productKey, source });
+      categoryMemberships.push({ categoryId, rank: rankStart + index, productKey, source });
     }
   };
 
   for (let pageNumber = 1; pageNumber <= pages; pageNumber++) {
     const items = await rankingFetch(page, categoryId, pageNumber);
-    addItems(items, 'top_ranking');
+    addItems(items, 'top_ranking', (pageNumber - 1) * 20 + 1, targetProducts);
     if (items.length < 20 || categoryMemberships.length >= targetProducts) break;
     if (pauseMs > 0) await sleep(pauseMs);
   }
@@ -63,13 +74,51 @@ async function collectCategoryListings(page, categoryId, pages, options = {}) {
     const fallbackPages = Math.ceil(targetProducts / pageSize);
     for (let pageNumber = 1; pageNumber <= fallbackPages; pageNumber++) {
       const items = await searchFetch(page, categoryId, pageNumber, pageSize);
-      addItems(items, 'category_search_fallback');
+      addItems(items, 'category_search_fallback', (pageNumber - 1) * pageSize + 1);
       if (items.length < pageSize || categoryMemberships.length >= targetProducts) break;
       if (pauseMs > 0) await sleep(pauseMs);
     }
   }
 
-  return { memberships: categoryMemberships, products: categoryProductsByKey, fallbackUsed };
+  let expansionProducts = 0;
+  let expansionPages = [];
+  const expansionFailures = [];
+  if (categoryMemberships.length) {
+    const pageSize = Number(options.expansionPageSize || 36);
+    expansionPages = rotatingExpansionPages(categoryId, options.date, options);
+    const results = await Promise.allSettled(expansionPages.map(async requestedPage => {
+      let pageNumber = requestedPage;
+      let items = await searchFetch(page, categoryId, pageNumber, pageSize);
+      const totalPages = items.total ? Math.ceil(items.total / pageSize) : null;
+      const first = Math.max(1, Number(options.expansionFirstPage || 3));
+      const configuredLast = Math.max(first, Number(options.expansionLastPage || first));
+      const availableLast = totalPages ? Math.min(configuredLast, totalPages) : configuredLast;
+      if (!items.length && availableLast >= first && pageNumber > availableLast) {
+        pageNumber = first + ((requestedPage - first) % (availableLast - first + 1));
+        items = await searchFetch(page, categoryId, pageNumber, pageSize);
+      }
+      return { requestedPage, pageNumber, items };
+    }));
+    const before = categoryMemberships.length;
+    for (const result of results) {
+      if (result.status === 'fulfilled') {
+        addItems(result.value.items, 'category_search_expansion', (result.value.pageNumber - 1) * pageSize + 1);
+      } else {
+        const requestedPage = expansionPages[results.indexOf(result)];
+        expansionFailures.push({ pageNumber: requestedPage, error: result.reason?.message || String(result.reason) });
+      }
+    }
+    expansionProducts = categoryMemberships.length - before;
+  }
+
+  return {
+    memberships: categoryMemberships,
+    products: categoryProductsByKey,
+    fallbackUsed,
+    expansionPages,
+    expansionProducts,
+    expansionFailures,
+  };
 }
 
 async function collect() {
@@ -89,7 +138,8 @@ async function collect() {
   const catalogRunId = catalog.runId || catalog.generatedAt;
   writeJsonAtomic(statusFile, { schemaVersion: 2, date, shard, shardCount, status: 'running', startedAt, catalogRunId, catalogGeneratedAt: catalog.generatedAt, totalCategories: nodes.length, completedCategories: 0, failedCategories: 0, products: 0, memberships: 0 });
   const memberships = []; const products = new Map(); const failures = []; const successfulCategoryIds = [];
-  const fallbackCategoryIds = []; const emptyCategoryIds = [];
+  const fallbackCategoryIds = []; const expansionCategoryIds = []; const emptyCategoryIds = [];
+  let expansionMemberships = 0; let expansionPageFailures = 0;
   let detailCoverage = null;
   let session = null;
   const closeSession = async () => {
@@ -115,7 +165,7 @@ async function collect() {
       let categoryResult = null; let lastError = null;
       for (let attempt = 1; attempt <= 2 && !categoryResult; attempt++) {
         try {
-          categoryResult = await collectCategoryListings(session.page, node.categoryId, pages, collectionConfig);
+          categoryResult = await collectCategoryListings(session.page, node.categoryId, pages, { ...collectionConfig, date });
         } catch (error) {
           lastError = error;
           console.warn(`TAXONOMY_CATEGORY_RETRY shard=${shard} category=${node.categoryId} attempt=${attempt} error=${JSON.stringify(error.message)}`);
@@ -125,6 +175,9 @@ async function collect() {
       if (categoryResult) {
         successfulCategoryIds.push(node.categoryId);
         if (categoryResult.fallbackUsed && categoryResult.memberships.length) fallbackCategoryIds.push(node.categoryId);
+        if (categoryResult.expansionProducts > 0) expansionCategoryIds.push(node.categoryId);
+        expansionMemberships += categoryResult.expansionProducts || 0;
+        expansionPageFailures += categoryResult.expansionFailures?.length || 0;
         if (!categoryResult.memberships.length) emptyCategoryIds.push(node.categoryId);
         memberships.push(...categoryResult.memberships);
         for (const [key, product] of categoryResult.products) products.set(key, product);
@@ -135,6 +188,7 @@ async function collect() {
           schemaVersion: 2, date, shard, shardCount, status: 'running', startedAt, catalogRunId, catalogGeneratedAt: catalog.generatedAt, updatedAt: new Date().toISOString(),
           totalCategories: nodes.length, completedCategories: categoryIndex + 1, failedCategories: failures.length,
           products: products.size, memberships: memberships.length, fallbackCategories: fallbackCategoryIds.length,
+          expansionCategories: expansionCategoryIds.length, expansionMemberships, expansionPageFailures,
           emptyCategories: emptyCategoryIds.length, lastCategory: node.path, lastCategoryProducts: categoryProducts
         });
         console.log(`TAXONOMY_SHARD_PROGRESS shard=${shard} completed=${categoryIndex + 1}/${nodes.length} failures=${failures.length} memberships=${memberships.length}`);
@@ -159,7 +213,7 @@ async function collect() {
     schemaVersion: 2, date, capturedAt: timestamp, startedAt, finishedAt: new Date().toISOString(),
     catalogRunId, catalogGeneratedAt: catalog.generatedAt, shard, shardCount, status,
     totalCategories: nodes.length, completedCategories: nodes.length, failedCategories: failures.length,
-    successRate, successfulCategoryIds, fallbackCategoryIds, emptyCategoryIds, detailCoverage,
+    successRate, successfulCategoryIds, fallbackCategoryIds, expansionCategoryIds, expansionMemberships, expansionPageFailures, emptyCategoryIds, detailCoverage,
     products: [...products.entries()].map(([productKey, product]) => ({ productKey, ...product })), memberships, failures
   };
   writeGzipJsonAtomic(path.join(runtimeDir, `shard-${shard}.json.gz`), result);
@@ -170,4 +224,4 @@ async function collect() {
 
 if (require.main === module) collect().then(result => console.log(`TAXONOMY_SHARD_OK shard=${result.shard} categories=${result.totalCategories} products=${result.products.length} memberships=${result.memberships.length} success=${result.successRate}`)).catch(error => { console.error(`TAXONOMY_SHARD_FAILED ${error.stack || error.message}`); process.exitCode = 1; });
 
-module.exports = { collect, categoryPages, shardNodes, collectCategoryListings };
+module.exports = { collect, categoryPages, rotatingExpansionPages, shardNodes, collectCategoryListings };

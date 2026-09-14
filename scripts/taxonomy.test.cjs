@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { parseAssignedJson, flattenTree, slugify, normalizeProduct, searchFallbackUrl } = require('./taxonomy_common.cjs');
-const { categoryPages, shardNodes, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
+const { categoryPages, rotatingExpansionPages, shardNodes, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
 const { selectDetailCohort, lastTimestamp } = require('./enrich_taxonomy.cjs');
 
 test('Trendyol fragmentindeki atanmış JSON verisini ayrıştırır', () => {
@@ -23,12 +23,25 @@ test('kategori işçilerini çakışmadan shardlara böler', () => {
   assert.deepEqual(assigned.map(item => item.categoryId).sort(), [27,28,29,30]);
 });
 
-test('ana seviyelerde 200, derin seviyelerde günlük 40 ve dönüşümlü 200 uygular', () => {
-  assert.equal(categoryPages({categoryId:27,level:0}, '2026-08-21'), 10);
-  assert.equal(categoryPages({categoryId:28,level:1}, '2026-08-21'), 10);
+test('ana seviyelerde 100, derin seviyelerde günlük 40 ve dönüşümlü 100 uygular', () => {
+  assert.equal(categoryPages({categoryId:27,level:0}, '2026-08-21'), 5);
+  assert.equal(categoryPages({categoryId:28,level:1}, '2026-08-21'), 5);
   const deepPages = Array.from({length:20}, (_, offset) => categoryPages({categoryId:101+offset,level:2}, '2026-08-21'));
-  assert.equal(deepPages.filter(value => value === 10).length, 2);
+  assert.equal(deepPages.filter(value => value === 5).length, 2);
   assert.equal(deepPages.filter(value => value === 2).length, 18);
+});
+
+test('normal kategori sayfalarını 49 günde 3–100 aralığının tamamında döndürür', () => {
+  const pages = new Set();
+  for (let offset = 0; offset < 49; offset++) {
+    const date = new Date(Date.UTC(2026, 8, 1 + offset)).toISOString().slice(0, 10);
+    for (const page of rotatingExpansionPages(103498, date, {
+      expansionPagesPerCategory: 2, expansionFirstPage: 3, expansionLastPage: 100,
+    })) pages.add(page);
+  }
+  assert.equal(pages.size, 98);
+  assert.equal(Math.min(...pages), 3);
+  assert.equal(Math.max(...pages), 100);
 });
 
 test('ürün adını tıklanabilir tam bağlantı ve kampanya bilgisiyle saklar', () => {
@@ -56,6 +69,7 @@ test('çok satanlar boşsa normal kategori ürünlerini ayrıntı kuyruğuna haz
     tagStockBar: { isSoldOut: false }, ratingScore: { averageRating: 4.5, totalCount: 12 },
   }));
   const result = await collectCategoryListings(null, 103537, 2, {
+    catalogExpansion: false,
     pauseMs: 0,
     fetchRankingPage: async () => [],
     fetchSearchPage: async (_page, _categoryId, pageNumber) => pageNumber === 1 ? fallbackRows : fallbackRows.slice(0, 4).map((row, index) => ({
@@ -69,6 +83,63 @@ test('çok satanlar boşsa normal kategori ürünlerini ayrıntı kuyruğuna haz
   assert.equal(result.memberships.at(-1).rank, 40);
   assert.equal(result.products.get('1000:7').brand, 'Marka');
   assert.equal(result.products.get('1000:7').inStock, true);
+});
+
+test('çok satanların yanına dönen uzak kategori sayfalarından yeni ürün ekler', async () => {
+  const rankingRows = Array.from({ length: 20 }, (_, index) => ({
+    id: 1000 + index, merchantId: 7, name: `Çok satan ${index + 1}`, url: `/m/a-p-${1000 + index}`,
+  }));
+  const expansionRows = Array.from({ length: 36 }, (_, index) => ({
+    id: 2000 + index, merchantId: 8, name: `Katalog ${index + 1}`, url: `/m/b-p-${2000 + index}`,
+  }));
+  const result = await collectCategoryListings(null, 103498, 1, {
+    date: '2026-09-14', pauseMs: 0,
+    expansionPagesPerCategory: 2, expansionFirstPage: 20, expansionLastPage: 21,
+    fetchRankingPage: async (_page, _categoryId, pageNumber) => pageNumber === 1 ? rankingRows : [],
+    fetchSearchPage: async (_page, _categoryId, pageNumber) => pageNumber === 20
+      ? expansionRows
+      : expansionRows.map((row, index) => ({ ...row, id: 3000 + index, url: `/m/c-p-${3000 + index}` })),
+  });
+  assert.equal(result.fallbackUsed, false);
+  assert.deepEqual(result.expansionPages.sort((a, b) => a - b), [20, 21]);
+  assert.equal(result.expansionProducts, 72);
+  assert.equal(result.products.size, 92);
+  assert.equal(result.memberships.filter(row => row.source === 'category_search_expansion').length, 72);
+  assert.equal(result.memberships.find(row => row.productKey === '2000:8').rank, 685);
+});
+
+test('uzak sayfalardan biri hata verirse çok satan sonuçlarını kaybetmez', async () => {
+  const result = await collectCategoryListings(null, 27, 1, {
+    date: '2026-09-14', pauseMs: 0,
+    expansionPagesPerCategory: 2, expansionFirstPage: 20, expansionLastPage: 21,
+    fetchRankingPage: async () => [{ id: 1, merchantId: 2, name: 'Ürün', url: '/m/a-p-1' }],
+    fetchSearchPage: async (_page, _categoryId, pageNumber) => {
+      if (pageNumber === 20) throw new Error('geçici hata');
+      return [{ id: 3, merchantId: 4, name: 'Yeni ürün', url: '/m/b-p-3' }];
+    },
+  });
+  assert.equal(result.products.size, 2);
+  assert.equal(result.expansionProducts, 1);
+  assert.deepEqual(result.expansionFailures, [{ pageNumber: 20, error: 'geçici hata' }]);
+});
+
+test('seçilen sayfa kategori toplamını aşarsa gerçek sayfa aralığına döner', async () => {
+  const calls = [];
+  const result = await collectCategoryListings(null, 27, 1, {
+    date: '2026-09-14', pauseMs: 0,
+    expansionPagesPerCategory: 1, expansionFirstPage: 3, expansionLastPage: 100,
+    fetchRankingPage: async () => [{ id: 1, merchantId: 2, name: 'Ürün', url: '/m/a-p-1' }],
+    fetchSearchPage: async (_page, _categoryId, pageNumber) => {
+      calls.push(pageNumber);
+      const rows = pageNumber > 10 ? [] : [{ id: pageNumber, merchantId: 4, name: 'Yeni ürün', url: `/m/b-p-${pageNumber}` }];
+      rows.total = 360;
+      return rows;
+    },
+  });
+  assert.equal(calls.length, 2);
+  assert.ok(calls[0] > 10);
+  assert.ok(calls[1] >= 3 && calls[1] <= 10);
+  assert.equal(result.expansionProducts, 1);
 });
 
 function detailProduct(id) {
