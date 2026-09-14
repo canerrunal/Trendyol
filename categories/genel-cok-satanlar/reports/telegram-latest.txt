@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-15
+✅ 300 ürünlük havuz | 299/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (199.9 TL) | 2) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 3) Zühre Ana Karadut Özü 670 Gr (229.9 TL)
-🎯 Niche: 1) Kenzlife mobilya kulpu köprü 96-128 mm siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 2) WLS studio Bitki Gövde Destek ve Sabitleme Klipsi | Dikey Büyüme İçin Pratik & BİTKİ TUTUCU(4lüSet) | 3) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-14.md
+🔥 Trend: 1) Clasy Care Ayak Ve Topuk Çatlak Kremi, Ayak Bakımı, Ayak Kokusu Ve Topuk 100ml (375 TL) | 2) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL) | 3) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL)
+🎯 Niche: 1) Vi Caro Kyk Yurt dolap kilidi spor salonu dolap kilidi Askeri dolap kilidi dolap zincir kilit | 2) Soqotra İKİ ADET Eşofman Altı Düz Siyah Gri Bol Paça Rahat Kalıp Eşofman | 3) Genel Markalar 50 Adet Kraft A4 A4 120 gr 50 Li Paket
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
