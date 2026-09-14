@@ -77,6 +77,7 @@ function finalize({ shardCount = 4 } = {}) {
   const detailAttempts = shards.reduce((total, shard) => total + Number(shard.detailCoverage?.attempted || 0), 0);
   const detailRefreshed = shards.reduce((total, shard) => total + Number(shard.detailCoverage?.refreshed || 0), 0);
   const detailNewCoverage = shards.reduce((total, shard) => total + Number(shard.detailCoverage?.newCoverage || 0), 0);
+  const fallbackDetailAttempts = shards.reduce((total, shard) => total + Number(shard.detailCoverage?.fallbackRotation || 0), 0);
   const summary = {
     schemaVersion: 2, date, generatedAt: timestamp, status,
     catalogRunId, catalogGeneratedAt: catalog.generatedAt, totalCategoryPaths: catalog.stats.total,
@@ -89,6 +90,7 @@ function finalize({ shardCount = 4 } = {}) {
       attempted: detailAttempts,
       refreshed: detailRefreshed,
       newProductHistory: detailNewCoverage,
+      fallbackDetailAttempted: fallbackDetailAttempts,
       categoriesWithDetailHistory,
       detailCategoryCoverage,
     },
@@ -109,6 +111,7 @@ function finalize({ shardCount = 4 } = {}) {
     `- **Normal kategori vitriniyle kurtarılan:** ${formatNumber(fallbackCategoryIds.size)}\n` +
     `- **Detay geçmişi olan kategori:** ${formatNumber(categoriesWithDetailHistory)}/${formatNumber(categoriesWithProducts.size)} (%${detailCategoryCoverage.toLocaleString('tr-TR')})\n` +
     `- **Bugün yenilenen ürün detayı:** ${formatNumber(detailRefreshed)}/${formatNumber(detailAttempts)}; ilk kez ölçülen ${formatNumber(detailNewCoverage)}\n` +
+    `- **Öncelikli fallback ürün detayı:** ${formatNumber(fallbackDetailAttempts)}\n` +
     `- **Hatalı kategori:** ${formatNumber(failures.length)}\n\n` +
     `## Tarama stratejisi\n\nBütün kategorilerin ilk 40 ürünü her gün izlenir. Çok Satanlar servisi boş dönerse aynı kategori normal ürün aramasında en çok satan sırasıyla otomatik yeniden taranır. Ana ve birinci seviye kategoriler günlük 200 ürüne kadar taranır. Daha derin kategoriler 10 günlük dönüşümle sırayla 200 ürüne kadar genişletilir. Bu ürünler aynı detay ve ertesi gün stok karşılaştırma kuyruğuna girer.\n\n` +
     `## Ana kategori kapsamı\n\n| Ana kategori | Kapsanan / Toplam | Oran |\n|---|---:|---:|\n${rootRows}\n\n` +
