@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
-♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (199.9 TL) | 2) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 3) Zühre Ana Karadut Özü 670 Gr (229.9 TL)
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-15
+✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Zühre Ana Bromelain Ananas İçeren Detox Şurubu (199.9 TL) | 2) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 3) Zühre Ana Kids Arı Sütü Pekmez Bal ve Vitamin Katkılı Kakaolu Macun 240 gr (229.9 TL)
 🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Zühre Ana Kekre Termojenik Mix 250 Ml | 3) icollagen Gummies Jelibon Hidrolizat Kolajen & Prebiyotik
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-14.md
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
