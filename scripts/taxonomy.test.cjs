@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { parseAssignedJson, flattenTree, slugify, normalizeProduct, searchFallbackUrl } = require('./taxonomy_common.cjs');
-const { categoryPages, rotatingExpansionPages, shardNodes, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
+const { categoryPages, rotatingExpansionPages, shardNodes, collectNewestListings, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
 const { selectDetailCohort, lastTimestamp } = require('./enrich_taxonomy.cjs');
 
 test('Trendyol fragmentindeki atanmış JSON verisini ayrıştırır', () => {
@@ -60,6 +60,41 @@ test('normal kategori yedeği aynı kategori ve en çok satan sırasını kullan
   assert.equal(url.searchParams.get('pi'), '2');
   assert.equal(url.searchParams.get('pageSize'), '36');
   assert.equal(url.searchParams.get('sst'), 'BEST_SELLER');
+});
+
+test('en yeni ürün kanalı MOST_RECENT sıralamasını kullanır', () => {
+  const url = new URL(searchFallbackUrl(103537, 1, 36, 'MOST_RECENT'));
+  assert.equal(url.searchParams.get('sst'), 'MOST_RECENT');
+});
+
+test('en yeni ürün taraması önceki kontrol ürünlerine ulaşana kadar ilerler', async () => {
+  const calls = [];
+  const rows = ids => ids.map(id => ({ id, merchantId: 7, name: `Ürün ${id}`, url: `/m/u-p-${id}` }));
+  const result = await collectNewestListings(null, 103498, {
+    newestDiscovery: true, newestKnownProductIds: ['90', '91', '92'], newestCheckpointHits: 3,
+    newestPageSize: 4, newestMaxPagesPerCategory: 10,
+    fetchSearchPage: async (_page, _categoryId, pageNumber, _pageSize, _attempts, sort) => {
+      calls.push([pageNumber, sort]);
+      return pageNumber === 1 ? rows([110, 109, 108, 107]) : rows([106, 90, 91, 92]);
+    },
+  });
+  assert.deepEqual(calls, [[1, 'MOST_RECENT'], [2, 'MOST_RECENT']]);
+  assert.equal(result.caughtUp, true);
+  assert.equal(result.checkpointHits, 3);
+  assert.deepEqual(result.headProductIds, ['110', '109', '108', '107']);
+});
+
+test('ilk en yeni ürün çalışması iki sayfalık kontrol tabanı kurar', async () => {
+  const result = await collectNewestListings(null, 27, {
+    newestDiscovery: true, newestPageSize: 2, newestFirstRunPages: 2, newestMaxPagesPerCategory: 10,
+    fetchSearchPage: async (_page, _categoryId, pageNumber) => [
+      { id: pageNumber * 10 + 1, merchantId: 1, url: `/m/a-p-${pageNumber * 10 + 1}` },
+      { id: pageNumber * 10 + 2, merchantId: 1, url: `/m/a-p-${pageNumber * 10 + 2}` },
+    ],
+  });
+  assert.equal(result.baseline, true);
+  assert.equal(result.caughtUp, null);
+  assert.equal(result.pages.length, 2);
 });
 
 test('çok satanlar boşsa normal kategori ürünlerini ayrıntı kuyruğuna hazırlar', async () => {
@@ -201,4 +236,18 @@ test('kurtarılan kategori ürünlerini genel detay dönüşümünden önce tama
   }, { detailDailyPerShard: 0, detailFollowUpPerShard: 0, detailRotationPerShard: 1 });
   assert.equal(cohort.selected[0].product.productKey, '4:1');
   assert.equal(cohort.stats.fallbackRotation, 1);
+});
+
+test('en yeni sıralamasında bulunan ürünü kategori detay tabanında önce seçer', () => {
+  const products = [1, 2, 3].map(detailProduct);
+  const memberships = [
+    { categoryId: 10, productKey: '1:1', source: 'top_ranking' },
+    { categoryId: 10, productKey: '3:1', source: 'category_search_newest' },
+    { categoryId: 20, productKey: '2:1', source: 'top_ranking' },
+  ];
+  const cohort = selectDetailCohort(products, memberships, {
+    watch: [], followUp: [], history: {}, lastObserved: {},
+  }, { detailDailyPerShard: 0, detailFollowUpPerShard: 0, detailRotationPerShard: 1 });
+  assert.equal(cohort.selected[0].product.productKey, '3:1');
+  assert.equal(cohort.stats.newestRotation, 1);
 });

@@ -68,6 +68,7 @@ function selectDetailCohort(products, memberships, state, options = {}) {
   const categoryProducts = new Map();
   const productCategories = new Map();
   const fallbackProductKeys = new Set();
+  const newestProductKeys = new Set();
   for (const membership of Array.isArray(memberships) ? memberships : []) {
     const categoryId = Number(membership.categoryId);
     if (!Number.isFinite(categoryId) || !byKey.has(membership.productKey)) continue;
@@ -78,6 +79,9 @@ function selectDetailCohort(products, memberships, state, options = {}) {
     const categoryIds = productCategories.get(membership.productKey);
     if (!categoryIds.includes(categoryId)) categoryIds.push(categoryId);
     if (membership.source === 'category_search_fallback') fallbackProductKeys.add(membership.productKey);
+    if (membership.source === 'category_search_newest' || membership.source === 'category_search_newest_baseline') {
+      newestProductKeys.add(membership.productKey);
+    }
   }
   const coveredCategories = new Set();
   const selectedCoverage = new Set();
@@ -91,7 +95,9 @@ function selectDetailCohort(products, memberships, state, options = {}) {
   // rest of the batch. A single product can satisfy several category paths.
   for (const [categoryId, keys] of [...categoryProducts].sort(([a], [b]) => a - b)) {
     if (rotationCount >= rotation || coveredCategories.has(categoryId) || selectedCoverage.has(categoryId)) continue;
-    const key = keys.find(candidate => !lastObserved[candidate] && !selected.has(candidate) && byKey.get(candidate)?.url);
+    const key = keys.find(candidate => newestProductKeys.has(candidate) && !lastObserved[candidate] && !selected.has(candidate) && byKey.get(candidate)?.url)
+      || keys.find(candidate => fallbackProductKeys.has(candidate) && !lastObserved[candidate] && !selected.has(candidate) && byKey.get(candidate)?.url)
+      || keys.find(candidate => !lastObserved[candidate] && !selected.has(candidate) && byKey.get(candidate)?.url);
     if (!key) continue;
     if (add(byKey.get(key), 'rotation')) {
       rotationCount++;
@@ -102,6 +108,12 @@ function selectDetailCohort(products, memberships, state, options = {}) {
   const candidates = [...byKey]
     .filter(([key, item]) => item.url && !selected.has(key))
     .sort(([a], [b]) => a.localeCompare(b));
+  // Newly surfaced products are time-sensitive; capture their detail baseline
+  // before working through the older general catalog backlog.
+  for (const [key, item] of candidates) {
+    if (rotationCount >= rotation) break;
+    if (newestProductKeys.has(key) && !lastObserved[key] && add(item, 'rotation')) rotationCount++;
+  }
   // Finish the products recovered from formerly empty categories before the
   // general catalog rotation so their full detail backlog does not wait weeks.
   for (const [key, item] of candidates) {
@@ -134,6 +146,7 @@ function selectDetailCohort(products, memberships, state, options = {}) {
       followUps: [...selected.values()].filter(item => item.reason === 'follow_up').length,
       rotation: [...selected.values()].filter(item => item.reason === 'rotation').length,
       fallbackRotation: [...selected.values()].filter(item => item.reason === 'rotation' && fallbackProductKeys.has(item.product.productKey)).length,
+      newestRotation: [...selected.values()].filter(item => item.reason === 'rotation' && newestProductKeys.has(item.product.productKey)).length,
       categoriesWithProducts: categoryProducts.size,
       categoriesObservedBefore: coveredCategories.size,
     },
@@ -238,6 +251,7 @@ async function enrichTaxonomy(context, products, root, shard, date, options, mem
     followUps: cohort.stats.followUps,
     rotation: cohort.stats.rotation,
     fallbackRotation: cohort.stats.fallbackRotation,
+    newestRotation: cohort.stats.newestRotation,
     newCoverage,
     cumulativeObserved,
     cumulativeCoverage: byKey.size ? Math.round(cumulativeObserved / byKey.size * 10000) / 100 : 0,

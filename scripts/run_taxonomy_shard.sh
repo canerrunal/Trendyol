@@ -19,5 +19,5 @@ mkdir -p .runtime/cron-logs
 
 echo "TAXONOMY_SHARD_START shard=$SHARD/$SHARD_COUNT time=$(TZ=Europe/Istanbul date +%FT%T%z)"
 "$PYTHON_BIN" scripts/run_with_timeout.py --timeout 6600 --heartbeat 30 -- \
-  "$NODE_BIN" scripts/collect_taxonomy_shard.cjs --shard "$SHARD" --shards "$SHARD_COUNT"
+  "$NODE_BIN" --max-old-space-size=2048 scripts/collect_taxonomy_shard.cjs --shard "$SHARD" --shards "$SHARD_COUNT"
 echo "TAXONOMY_SHARD_DONE shard=$SHARD/$SHARD_COUNT"

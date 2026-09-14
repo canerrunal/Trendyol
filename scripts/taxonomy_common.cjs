@@ -146,18 +146,18 @@ async function fetchRankingPage(page, categoryId, pageNumber, attempts = 3) {
   }
   throw new Error(`Kategori ${categoryId}, sayfa ${pageNumber}: ${lastError?.message || 'bilinmeyen hata'}`);
 }
-function searchFallbackUrl(categoryId, page = 1, pageSize = 36) {
+function searchFallbackUrl(categoryId, page = 1, pageSize = 36, sort = 'BEST_SELLER') {
   const url = new URL(SEARCH_API_BASE);
   const params = {
     promotionSearch: 'false', stickyShellNavigation: 'true', isDynamicRenderingAgent: 'false',
     channelId: '1', subPathStrategy: 'no-subpath', wc: String(categoryId),
-    tyPlusStripViewEnabled: 'true', pi: String(page), pageSize: String(pageSize), sst: 'BEST_SELLER'
+    tyPlusStripViewEnabled: 'true', pi: String(page), pageSize: String(pageSize), sst: String(sort)
   };
   for (const [key, value] of Object.entries(params)) url.searchParams.set(key, value);
   return url.toString();
 }
-async function fetchSearchPage(page, categoryId, pageNumber, pageSize = 36, attempts = 3) {
-  const url = searchFallbackUrl(categoryId, pageNumber, pageSize);
+async function fetchSearchPage(page, categoryId, pageNumber, pageSize = 36, attempts = 3, sort = 'BEST_SELLER') {
+  const url = searchFallbackUrl(categoryId, pageNumber, pageSize, sort);
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
@@ -176,7 +176,7 @@ async function fetchSearchPage(page, categoryId, pageNumber, pageSize = 36, atte
       if (attempt < attempts) await sleep(1000 * attempt);
     }
   }
-  throw new Error(`Kategori arama yedeği ${categoryId}, sayfa ${pageNumber}: ${lastError?.message || 'bilinmeyen hata'}`);
+  throw new Error(`Kategori araması ${categoryId}, ${sort}, sayfa ${pageNumber}: ${lastError?.message || 'bilinmeyen hata'}`);
 }
 function moneyValue(value) {
   if (value == null) return null;

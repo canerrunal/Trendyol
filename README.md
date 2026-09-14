@@ -112,6 +112,7 @@ Yük ve veri değeri dengesi:
 - Bütün kategorilerin ilk 40 sıralaması her gün alınır.
 - Çok Satanlar uç noktasının verdiği en yüksek kapsam olan ilk 100 ürün ana, birinci seviye ve dönüşüm günündeki derin kategorilerde alınır.
 - Her ürün döndüren kategorinin normal vitrindeki 3–100. sayfaları 49 günlük dönüşümle günde iki sayfa taranır; kategori başına günlük en çok 72 ek ürün havuza girer. Seçilen sayfa kategori toplamını aşarsa gerçek son sayfa aralığına döndürülür.
+- Her kategori `MOST_RECENT` sırasıyla ayrıca taranır. Önceki günün ilk ürünlerinden en az üçü görülene kadar sayfalama sürer; yoğun kategorilerde günlük üst sınır 10 sayfa/360 üründür. İlk gün iki sayfalık kontrol tabanı oluşturulur.
 - Çok Satanlar servisi boş dönen kategoriler normal kategori vitrini üzerinden `BEST_SELLER` sırasıyla yeniden taranır; bu ürünler de detay ve stok karşılaştırma kuyruğuna girer.
 - Normal kategori vitriniyle kurtarılan ürünlerin tamamı, kategori başına ilk ölçümlerden sonra genel ürün dönüşümünden önce işlenir.
 - Ana ve birinci seviye kategoriler her gün ilk 100 Çok Satanlar ürünüyle taranır.
