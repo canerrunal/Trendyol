@@ -9,6 +9,7 @@ const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Conte
 const TIMEZONE = 'Europe/Istanbul';
 const ROOT_URL = 'https://www.trendyol.com/cok-satanlar?type=bestSeller&webGenderId=1';
 const API_BASE = 'https://apigw.trendyol.com/discovery-sfint-browsing-service/api/top-rankings-v2/top-ranking-contents';
+const SEARCH_API_BASE = 'https://apigw.trendyol.com/discovery-sfint-search-service/api/search/products/';
 
 function mkdir(directory) { fs.mkdirSync(directory, { recursive: true }); }
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
@@ -145,6 +146,37 @@ async function fetchRankingPage(page, categoryId, pageNumber, attempts = 3) {
   }
   throw new Error(`Kategori ${categoryId}, sayfa ${pageNumber}: ${lastError?.message || 'bilinmeyen hata'}`);
 }
+function searchFallbackUrl(categoryId, page = 1, pageSize = 36) {
+  const url = new URL(SEARCH_API_BASE);
+  const params = {
+    promotionSearch: 'false', stickyShellNavigation: 'true', isDynamicRenderingAgent: 'false',
+    channelId: '1', subPathStrategy: 'no-subpath', wc: String(categoryId),
+    tyPlusStripViewEnabled: 'true', pi: String(page), pageSize: String(pageSize), sst: 'BEST_SELLER'
+  };
+  for (const [key, value] of Object.entries(params)) url.searchParams.set(key, value);
+  return url.toString();
+}
+async function fetchSearchPage(page, categoryId, pageNumber, pageSize = 36, attempts = 3) {
+  const url = searchFallbackUrl(categoryId, pageNumber, pageSize);
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      const result = await page.evaluate(async target => {
+        const response = await fetch(target, { credentials: 'include', headers: { accept: 'application/json' } });
+        return { ok: response.ok, status: response.status, text: await response.text() };
+      }, url);
+      if (!result.ok) throw new Error(`HTTP ${result.status}`);
+      const payload = JSON.parse(result.text);
+      const products = payload?.products || payload?.data?.products || payload?.result?.content || [];
+      if (!Array.isArray(products)) throw new Error('Kategori arama yedeği beklenen biçimde değil.');
+      return products;
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await sleep(1000 * attempt);
+    }
+  }
+  throw new Error(`Kategori arama yedeği ${categoryId}, sayfa ${pageNumber}: ${lastError?.message || 'bilinmeyen hata'}`);
+}
 function moneyValue(value) {
   if (value == null) return null;
   if (typeof value === 'number') return value;
@@ -154,7 +186,11 @@ function moneyValue(value) {
 }
 function normalizeProduct(product) {
   const finalPrice = moneyValue(product?.sanitizedPrice?.finalPrice ?? product?.price?.discountedPrice ?? product?.price);
-  const originalPrice = moneyValue(product?.sanitizedPrice?.originalPrice ?? product?.price?.originalPrice);
+  const originalCandidates = [
+    product?.sanitizedPrice?.originalPrice, product?.price?.originalPrice, product?.price?.current,
+    product?.singlePrice?.strikethroughPriceNumeric, product?.recommendedRetailPrice?.sellingPriceNumerized,
+  ].map(moneyValue).filter(value => Number.isFinite(value));
+  const originalPrice = originalCandidates.length ? Math.max(...originalCandidates) : null;
   const promotions = [
     ...(Array.isArray(product.promotions) ? product.promotions : product.promotions ? [product.promotions] : []),
     ...(Array.isArray(product.promotion) ? product.promotion : product.promotion ? [product.promotion] : [])
@@ -163,14 +199,14 @@ function normalizeProduct(product) {
   const relativeUrl = product.url || product.productUrl || '';
   return {
     productId: String(product.id || product.productId || ''), merchantId: String(product.merchantId || product?.winnerVariant?.merchantId || ''),
-    name: product.name || product.title || null, brand: product?.brandInfo?.name || product.brandName || null,
+    name: product.name || product.title || null, brand: product?.brandInfo?.name || product.brandName || (typeof product.brand === 'string' ? product.brand : null),
     url: relativeUrl ? new URL(relativeUrl, 'https://www.trendyol.com').toString() : null,
     imageUrl: product.imageUrl || product.image || null, categoryName: product?.category?.name || null,
     price: finalPrice, originalPrice: originalPrice && originalPrice > finalPrice ? originalPrice : null, currency: 'TRY',
-    inStock: typeof product.inStock === 'boolean' ? product.inStock : null, runningOut: Boolean(product.isRunningOut),
+    inStock: typeof product.inStock === 'boolean' ? product.inStock : typeof product?.tagStockBar?.isSoldOut === 'boolean' ? !product.tagStockBar.isSoldOut : null, runningOut: Boolean(product.isRunningOut),
     rating: Number(product?.ratingScore?.averageRating ?? product.rating ?? 0) || null,
     ratingCount: require('./product_metrics.cjs').count(product?.ratingScore?.totalCount ?? product.ratingCount),
-    promotions: [...new Set(promotions)], fastDelivery: Boolean(product?.badges?.fastDelivery),
+    promotions: [...new Set(promotions)], fastDelivery: Boolean(product?.badges?.fastDelivery || product.hasFastDeliveryTag),
     rushDeliveryHours: Number(product?.winnerVariant?.rushDeliveryDuration ?? 0) || null
   };
 }
@@ -178,5 +214,5 @@ function normalizeProduct(product) {
 module.exports = {
   ROOT, ROOT_URL, TIMEZONE, mkdir, sleep, readJson, writeJsonAtomic, writeGzipJsonAtomic, readGzipJson,
   nowIstanbul, slugify, writeCsvAtomic, parseAssignedJson, flattenTree, launchBrowser, prepareRankingPage,
-  fetchRankingPage, normalizeProduct
+  fetchRankingPage, searchFallbackUrl, fetchSearchPage, normalizeProduct
 };

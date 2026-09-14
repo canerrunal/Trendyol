@@ -5,7 +5,7 @@ const collectionConfig = require('../taxonomy/collection-config.json');
 const { enrichTaxonomy } = require('./enrich_taxonomy.cjs');
 const {
   ROOT, readJson, writeGzipJsonAtomic, writeJsonAtomic, nowIstanbul, sleep,
-  launchBrowser, prepareRankingPage, fetchRankingPage, normalizeProduct
+  launchBrowser, prepareRankingPage, fetchRankingPage, fetchSearchPage, normalizeProduct
 } = require('./taxonomy_common.cjs');
 
 function arg(name, fallback) {
@@ -30,6 +30,48 @@ function shardNodes(nodes, shard, shardCount) {
   });
 }
 
+async function collectCategoryListings(page, categoryId, pages, options = {}) {
+  const rankingFetch = options.fetchRankingPage || fetchRankingPage;
+  const searchFetch = options.fetchSearchPage || fetchSearchPage;
+  const pauseMs = Number(options.pauseMs ?? 260);
+  const targetProducts = pages * 20;
+  const categoryMemberships = [];
+  const categoryProductsByKey = new Map();
+  const addItems = (items, source) => {
+    for (const item of items) {
+      if (categoryMemberships.length >= targetProducts) break;
+      const product = normalizeProduct(item);
+      if (!product.productId) continue;
+      const productKey = `${product.productId}:${product.merchantId}`;
+      if (categoryProductsByKey.has(productKey)) continue;
+      categoryProductsByKey.set(productKey, product);
+      categoryMemberships.push({ categoryId, rank: categoryMemberships.length + 1, productKey, source });
+    }
+  };
+
+  for (let pageNumber = 1; pageNumber <= pages; pageNumber++) {
+    const items = await rankingFetch(page, categoryId, pageNumber);
+    addItems(items, 'top_ranking');
+    if (items.length < 20 || categoryMemberships.length >= targetProducts) break;
+    if (pauseMs > 0) await sleep(pauseMs);
+  }
+
+  let fallbackUsed = false;
+  if (!categoryMemberships.length && options.emptyCategoryFallback !== false) {
+    fallbackUsed = true;
+    const pageSize = Number(options.fallbackPageSize || 36);
+    const fallbackPages = Math.ceil(targetProducts / pageSize);
+    for (let pageNumber = 1; pageNumber <= fallbackPages; pageNumber++) {
+      const items = await searchFetch(page, categoryId, pageNumber, pageSize);
+      addItems(items, 'category_search_fallback');
+      if (items.length < pageSize || categoryMemberships.length >= targetProducts) break;
+      if (pauseMs > 0) await sleep(pauseMs);
+    }
+  }
+
+  return { memberships: categoryMemberships, products: categoryProductsByKey, fallbackUsed };
+}
+
 async function collect() {
   const shard = Number(arg('shard', '0'));
   const shardCount = Number(arg('shards', '4'));
@@ -47,6 +89,7 @@ async function collect() {
   const catalogRunId = catalog.runId || catalog.generatedAt;
   writeJsonAtomic(statusFile, { schemaVersion: 2, date, shard, shardCount, status: 'running', startedAt, catalogRunId, catalogGeneratedAt: catalog.generatedAt, totalCategories: nodes.length, completedCategories: 0, failedCategories: 0, products: 0, memberships: 0 });
   const memberships = []; const products = new Map(); const failures = []; const successfulCategoryIds = [];
+  const fallbackCategoryIds = []; const emptyCategoryIds = [];
   let detailCoverage = null;
   let session = null;
   const closeSession = async () => {
@@ -72,20 +115,7 @@ async function collect() {
       let categoryResult = null; let lastError = null;
       for (let attempt = 1; attempt <= 2 && !categoryResult; attempt++) {
         try {
-          const categoryMemberships = []; const categoryProductsByKey = new Map();
-          for (let pageNumber = 1; pageNumber <= pages; pageNumber++) {
-            const items = await fetchRankingPage(session.page, node.categoryId, pageNumber);
-            for (let index = 0; index < items.length; index++) {
-              const product = normalizeProduct(items[index]);
-              if (!product.productId) continue;
-              const productKey = `${product.productId}:${product.merchantId}`;
-              categoryProductsByKey.set(productKey, product);
-              categoryMemberships.push({ categoryId: node.categoryId, rank: (pageNumber - 1) * 20 + index + 1, productKey });
-            }
-            if (items.length < 20) break;
-            await sleep(260);
-          }
-          categoryResult = { memberships: categoryMemberships, products: categoryProductsByKey };
+          categoryResult = await collectCategoryListings(session.page, node.categoryId, pages, collectionConfig);
         } catch (error) {
           lastError = error;
           console.warn(`TAXONOMY_CATEGORY_RETRY shard=${shard} category=${node.categoryId} attempt=${attempt} error=${JSON.stringify(error.message)}`);
@@ -94,6 +124,8 @@ async function collect() {
       }
       if (categoryResult) {
         successfulCategoryIds.push(node.categoryId);
+        if (categoryResult.fallbackUsed && categoryResult.memberships.length) fallbackCategoryIds.push(node.categoryId);
+        if (!categoryResult.memberships.length) emptyCategoryIds.push(node.categoryId);
         memberships.push(...categoryResult.memberships);
         for (const [key, product] of categoryResult.products) products.set(key, product);
         categoryProducts = categoryResult.memberships.length;
@@ -102,7 +134,8 @@ async function collect() {
         writeJsonAtomic(statusFile, {
           schemaVersion: 2, date, shard, shardCount, status: 'running', startedAt, catalogRunId, catalogGeneratedAt: catalog.generatedAt, updatedAt: new Date().toISOString(),
           totalCategories: nodes.length, completedCategories: categoryIndex + 1, failedCategories: failures.length,
-          products: products.size, memberships: memberships.length, lastCategory: node.path, lastCategoryProducts: categoryProducts
+          products: products.size, memberships: memberships.length, fallbackCategories: fallbackCategoryIds.length,
+          emptyCategories: emptyCategoryIds.length, lastCategory: node.path, lastCategoryProducts: categoryProducts
         });
         console.log(`TAXONOMY_SHARD_PROGRESS shard=${shard} completed=${categoryIndex + 1}/${nodes.length} failures=${failures.length} memberships=${memberships.length}`);
       }
@@ -126,7 +159,7 @@ async function collect() {
     schemaVersion: 2, date, capturedAt: timestamp, startedAt, finishedAt: new Date().toISOString(),
     catalogRunId, catalogGeneratedAt: catalog.generatedAt, shard, shardCount, status,
     totalCategories: nodes.length, completedCategories: nodes.length, failedCategories: failures.length,
-    successRate, successfulCategoryIds, detailCoverage,
+    successRate, successfulCategoryIds, fallbackCategoryIds, emptyCategoryIds, detailCoverage,
     products: [...products.entries()].map(([productKey, product]) => ({ productKey, ...product })), memberships, failures
   };
   writeGzipJsonAtomic(path.join(runtimeDir, `shard-${shard}.json.gz`), result);
@@ -137,4 +170,4 @@ async function collect() {
 
 if (require.main === module) collect().then(result => console.log(`TAXONOMY_SHARD_OK shard=${result.shard} categories=${result.totalCategories} products=${result.products.length} memberships=${result.memberships.length} success=${result.successRate}`)).catch(error => { console.error(`TAXONOMY_SHARD_FAILED ${error.stack || error.message}`); process.exitCode = 1; });
 
-module.exports = { collect, categoryPages, shardNodes };
+module.exports = { collect, categoryPages, shardNodes, collectCategoryListings };

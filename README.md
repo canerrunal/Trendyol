@@ -110,9 +110,10 @@ Sosyal Yayın Merkezi, `caner8047-coder/verimimaricom` deposunu yerel `gh` oturu
 Yük ve veri değeri dengesi:
 
 - Bütün kategorilerin ilk 40 sıralaması her gün alınır.
+- Çok Satanlar servisi boş dönen kategoriler normal kategori vitrini üzerinden `BEST_SELLER` sırasıyla yeniden taranır; bu ürünler de detay ve stok karşılaştırma kuyruğuna girer.
 - Ana ve birinci seviye kategoriler her gün 200 ürüne kadar taranır.
 - Daha derin kategoriler günlük ilk 40'a ek olarak 10 günlük dönüşümle 200 ürüne kadar genişletilir.
-- Her shard'da 100 ürün günlük sabit izlenir; 600 yeni ürün kategori dengeli biçimde ölçülür ve en çok 600 ürün ertesi gün stok farkı için tekrar ziyaret edilir.
+- Her shard'da 100 ürün günlük sabit izlenir; 700 yeni ürün kategori dengeli biçimde ölçülür ve en çok 700 ürün ertesi gün stok farkı için tekrar ziyaret edilir.
 - Ölçülen ürünler 365 gün hatırlanır. Dönüşüm önce hiç detay ölçümü olmayan ürün döndüren kategorileri, ardından hiç ölçülmemiş ürünleri ve son olarak en eski ölçümleri seçer.
 - Ürünler tekilleştirilir; kategori–ürün sıralamaları ayrı tutulur.
 - Dört işçi çıktısı tamamlanmadan kalite kapısı GitHub'a veri göndermez; son geçerli rapor korunur.

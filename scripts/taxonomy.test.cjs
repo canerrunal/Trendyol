@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { parseAssignedJson, flattenTree, slugify, normalizeProduct } = require('./taxonomy_common.cjs');
-const { categoryPages, shardNodes } = require('./collect_taxonomy_shard.cjs');
+const { parseAssignedJson, flattenTree, slugify, normalizeProduct, searchFallbackUrl } = require('./taxonomy_common.cjs');
+const { categoryPages, shardNodes, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
 const { selectDetailCohort, lastTimestamp } = require('./enrich_taxonomy.cjs');
 
 test('Trendyol fragmentindeki atanmış JSON verisini ayrıştırır', () => {
@@ -39,6 +39,36 @@ test('ürün adını tıklanabilir tam bağlantı ve kampanya bilgisiyle saklar'
   });
   assert.equal(product.url, 'https://www.trendyol.com/marka/ornek-urun-p-123');
   assert.deepEqual(product.promotions, ['Sepette İndirim']);
+});
+
+test('normal kategori yedeği aynı kategori ve en çok satan sırasını kullanır', () => {
+  const url = new URL(searchFallbackUrl(103537, 2, 36));
+  assert.equal(url.searchParams.get('wc'), '103537');
+  assert.equal(url.searchParams.get('pi'), '2');
+  assert.equal(url.searchParams.get('pageSize'), '36');
+  assert.equal(url.searchParams.get('sst'), 'BEST_SELLER');
+});
+
+test('çok satanlar boşsa normal kategori ürünlerini ayrıntı kuyruğuna hazırlar', async () => {
+  const fallbackRows = Array.from({ length: 36 }, (_, index) => ({
+    id: 1000 + index, merchantId: 7, name: `Ürün ${index + 1}`, brand: 'Marka',
+    url: `/marka/urun-${index + 1}-p-${1000 + index}`, price: { discountedPrice: 99 },
+    tagStockBar: { isSoldOut: false }, ratingScore: { averageRating: 4.5, totalCount: 12 },
+  }));
+  const result = await collectCategoryListings(null, 103537, 2, {
+    pauseMs: 0,
+    fetchRankingPage: async () => [],
+    fetchSearchPage: async (_page, _categoryId, pageNumber) => pageNumber === 1 ? fallbackRows : fallbackRows.slice(0, 4).map((row, index) => ({
+      ...row, id: 2000 + index, url: `/marka/ikinci-${index + 1}-p-${2000 + index}`,
+    })),
+  });
+  assert.equal(result.fallbackUsed, true);
+  assert.equal(result.memberships.length, 40);
+  assert.equal(result.products.size, 40);
+  assert.equal(result.memberships[0].source, 'category_search_fallback');
+  assert.equal(result.memberships.at(-1).rank, 40);
+  assert.equal(result.products.get('1000:7').brand, 'Marka');
+  assert.equal(result.products.get('1000:7').inStock, true);
 });
 
 function detailProduct(id) {
