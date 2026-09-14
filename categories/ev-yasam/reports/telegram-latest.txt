@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
-♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (280.31 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (49.9 TL) | 3) M&B WATER BOTTLE 10'lu Ayıcık Şişe – Okul ve Piknik İçin Eğlenceli Çocuk Meyve Suyu Şişesi 250 ml BPA FREE (169 TL)
-🎯 Niche: 1) DGM YAPI DOLAP İÇİNE SUNTALAM RAF ÖLÇÜYE GÖRE KESİM YAPILIR | 2) M&B WATER BOTTLE 10'lu Ayıcık Şişe – Okul ve Piknik İçin Eğlenceli Çocuk Meyve Suyu Şişesi 250 ml BPA FREE | 3) thebestnzm ÇT Çeçem Ticaret Duvara Monte Mop Ve Paspas Tutucu Gold
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-14.md
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-15
+✅ 1000 ürünlük havuz | 306/306 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (280.31 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (49.9 TL) | 3) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz (189.9 TL)
+🎯 Niche: 1) DGM YAPI DOLAP İÇİNE SUNTALAM RAF ÖLÇÜYE GÖRE KESİM YAPILIR | 2) M&B WATER BOTTLE 10'lu Ayıcık Şişe – Okul ve Piknik İçin Eğlenceli Çocuk Meyve Suyu Şişesi 250 ml BPA FREE | 3) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
