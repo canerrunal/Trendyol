@@ -1,7 +1,7 @@
-📊 Trendyol Hobi Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
-♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 2) Unichrome 300 Ledli 10 Sarkıt Perde Led Işık Yılbaşı Oda Dekorasyon 8 Fonksiyon, Kumandalı, 3x3 Mt, Düz Askı (257.99 TL) | 3) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı (47.49 TL)
+📊 Trendyol Hobi Günlük Raporu — 2026-09-15
+✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı (47.49 TL) | 3) Unichrome 300 Ledli 10 Sarkıt Perde Led Işık Yılbaşı Oda Dekorasyon 8 Fonksiyon, Kumandalı, 3x3 Mt, Düz Askı (257.99 TL)
 🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı | 3) ZEYMERADE 100 Adet Gümüş Toplu İğne, Türban Eşarp Başörtüsü Şal Düğün Nikah Nişan Kına Sünnet Takı İğnesi
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-14.md
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
