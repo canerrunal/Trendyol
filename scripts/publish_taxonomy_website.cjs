@@ -7,6 +7,7 @@ const zlib = require('zlib');
 const ROOT = path.resolve(__dirname, '..');
 const BATCH_SIZE = Number(process.env.TAXONOMY_PUBLISH_BATCH_SIZE || 500);
 const CONCURRENCY = Number(process.env.TAXONOMY_PUBLISH_CONCURRENCY || 6);
+const MAX_PUBLISHED_RANK = 1000;
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -24,6 +25,19 @@ function readNdjsonGzip(file) {
 function batches(rows, size = BATCH_SIZE) {
   return Array.from({ length: Math.ceil(rows.length / size) }, (_, index) =>
     rows.slice(index * size, index * size + size)
+  );
+}
+
+function publishableRankings(rows) {
+  return rows.filter(
+    row =>
+      Number.isInteger(row?.rank) &&
+      row.rank > 0 &&
+      row.rank <= MAX_PUBLISHED_RANK &&
+      Number.isInteger(row?.categoryId) &&
+      row.categoryId > 0 &&
+      typeof row?.productKey === 'string' &&
+      row.productKey.length > 0
   );
 }
 
@@ -106,10 +120,20 @@ async function main() {
   }
   const snapshotRoot = path.join(ROOT, 'taxonomy', 'snapshots', summary.date);
   const products = readNdjsonGzip(path.join(snapshotRoot, 'products.ndjson.gz'));
-  const rankings = readNdjsonGzip(path.join(snapshotRoot, 'rankings.ndjson.gz'));
-  if (products.length !== summary.uniqueProducts || rankings.length !== summary.rankingMemberships) {
+  const sourceRankings = readNdjsonGzip(path.join(snapshotRoot, 'rankings.ndjson.gz'));
+  if (
+    products.length !== summary.uniqueProducts ||
+    sourceRankings.length !== summary.rankingMemberships
+  ) {
     throw new Error(
-      `Taksonomi dosya sayıları özetle eşleşmiyor: products=${products.length}/${summary.uniqueProducts} rankings=${rankings.length}/${summary.rankingMemberships}`
+      `Taksonomi dosya sayıları özetle eşleşmiyor: products=${products.length}/${summary.uniqueProducts} rankings=${sourceRankings.length}/${summary.rankingMemberships}`
+    );
+  }
+  const rankings = publishableRankings(sourceRankings);
+  if (!rankings.length) throw new Error('Yayınlanabilir kategori sıralaması bulunamadı.');
+  if (rankings.length !== sourceRankings.length) {
+    console.log(
+      `TAXONOMY_PUBLISH_RANK_LIMIT kept=${rankings.length} omitted=${sourceRankings.length - rankings.length} max=${MAX_PUBLISHED_RANK}`
     );
   }
 
@@ -117,6 +141,7 @@ async function main() {
     action: 'start',
     summary: {
       ...summary,
+      rankingMemberships: rankings.length,
       catalogRunId: catalog.runId || catalog.generatedAt
     },
     sourceCommit: process.env.GITHUB_SHA || null
@@ -145,4 +170,10 @@ if (require.main === module) {
   });
 }
 
-module.exports = { batches, readNdjsonGzip, publishBatches, requestJson };
+module.exports = {
+  batches,
+  publishableRankings,
+  readNdjsonGzip,
+  publishBatches,
+  requestJson
+};

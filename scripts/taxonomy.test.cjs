@@ -3,6 +3,17 @@ const assert = require('node:assert/strict');
 const { parseAssignedJson, flattenTree, slugify, normalizeProduct, searchFallbackUrl } = require('./taxonomy_common.cjs');
 const { categoryPages, rotatingExpansionPages, shardNodes, collectNewestListings, collectCategoryListings } = require('./collect_taxonomy_shard.cjs');
 const { selectDetailCohort, lastTimestamp } = require('./enrich_taxonomy.cjs');
+const { publishableRankings } = require('./publish_taxonomy_website.cjs');
+
+test('canlı veritabanına yalnız desteklenen ilk 1.000 kategori sırasını yollar', () => {
+  const rows = [
+    { categoryId: 28, rank: 1, productKey: '1:1' },
+    { categoryId: 28, rank: 1000, productKey: '2:1' },
+    { categoryId: 28, rank: 1001, productKey: '3:1' },
+    { categoryId: 0, rank: 5, productKey: '4:1' },
+  ];
+  assert.deepEqual(publishableRankings(rows), rows.slice(0, 2));
+});
 
 test('Trendyol fragmentindeki atanmış JSON verisini ayrıştırır', () => {
   const props = parseAssignedJson('<script>window["__top-ranking__PROPS"]={"data":{"ok":true,"label":"a}b"}};</script>');
