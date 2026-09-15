@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-09-14
+📊 Trendyol Kadın Günlük Raporu — 2026-09-15
 ✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) Life Butter Genital Bölge Koku Giderici Beyazlatıcı Sıkılaştırıcı Akıntı Mantar Siğil Isilik Giderici Jel2 (1 TL) | 2) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL) | 3) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL)
-🎯 Niche: 1) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) GRIMELANGE Basıl Kadın %100 Pamuk Bisiklet Yaka Oversize Fit Uzun Kollu Beyaz T-shirt
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-14.md
+🔥 Trend: 1) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL) | 2) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (229 TL)
+🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
