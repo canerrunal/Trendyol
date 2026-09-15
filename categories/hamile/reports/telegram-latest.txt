@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-09-14
-✅ 300 ürünlük havuz | 299/300 detay yenilendi | kalite PASS
-♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL) | 2) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş (299.9 TL) | 3) Miss Dünya Lissa Önden Bağlamalı Geniş Şerit Yakalı Hamile ve Lohusa Pijama Takımı (949.99 TL)
+📊 Trendyol Hamile Günlük Raporu — 2026-09-15
+✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL) | 2) Defacto İspanyol Paça Hamile Altı H2273AX26SM (359.99 TL) | 3) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş (299.9 TL)
 🎯 Niche: 1) Maison La Femme Kadın Siyah Yüksek Bel Bol Paça Hamile Pantolonu | 2) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş | 3) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-14.md
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
