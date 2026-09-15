@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T17:24:27+03:00",
+  "status": "PARTIAL",
+  "catalogRunId": "2026-09-15T15:00:06+03:00",
+  "catalogGeneratedAt": "2026-09-15T15:00:06+03:00",
+  "totalCategoryPaths": 4006,
+  "totalCategories": 3955,
+  "coveredCategories": 3743,
+  "coverage": 94.64,
+  "freshCoveredCategories": 970,
+  "freshCoverage": 24.53,
+  "carriedForwardCategories": 2773,
+  "missingShards": [
+    1,
+    2,
+    3
+  ],
+  "previousSnapshotDate": "2026-09-13",
+  "qualityGateStatus": "FAIL",
+  "uniqueProducts": 248705,
+  "metricCoverage": {
+    "numericStock": 521,
+    "detail": 1944,
+    "total": 248705,
+    "attempted": 1500,
+    "refreshed": 1480,
+    "newProductHistory": 700,
+    "fallbackDetailAttempted": 0,
+    "newestDetailAttempted": 699,
+    "categoriesWithDetailHistory": 970,
+    "detailCategoryCoverage": 25.92
+  },
+  "rankingMemberships": 281389,
+  "categoriesWithProducts": 3743,
+  "fallbackCategories": 62,
+  "expansionCategories": 912,
+  "expansionPageFailures": 0,
+  "priorityPages": 0,
+  "priorityProducts": 0,
+  "listingSources": {
+    "topRanking": 31451,
+    "categoryExpansion": 63225,
+    "categoryFallback": 3732,
+    "priorityCategorySearch": 0,
+    "newest": 75125,
+    "newestBaseline": 0
+  },
+  "newestDiscovery": {
+    "products": 68779,
+    "memberships": 75125,
+    "categories": 952,
+    "pages": 2218,
+    "baselineCategories": 0,
+    "caughtUpCategories": 898,
+    "uncaughtCategories": 72,
+    "pageFailures": 0
+  },
+  "emptyCategories": 0,
+  "failedCategories": 0,
+  "roots": [
+    {
+      "categoryId": 27,
+      "name": "Aksesuar",
+      "descendants": 155,
+      "totalCategories": 156,
+      "coveredCategories": 151,
+      "coverage": 96.79,
+      "productCount": 10661,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 144835,
+      "name": "Anne & Bebek & Çocuk",
+      "descendants": 108,
+      "totalCategories": 107,
+      "coveredCategories": 87,
+      "coverage": 81.31,
+      "productCount": 9100,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 114,
+      "name": "Ayakkabı",
+      "descendants": 45,
+      "totalCategories": 46,
+      "coveredCategories": 45,
+      "coverage": 97.83,
+      "productCount": 3366,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 103719,
+      "name": "Bahçe & Yapı Market",
+      "descendants": 362,
+      "totalCategories": 363,
+      "coveredCategories": 347,
+      "coverage": 95.59,
+      "productCount": 22559,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 144649,
+      "name": "Digital Goods",
+      "descendants": 5,
+      "totalCategories": 6,
+      "coveredCategories": 6,
+      "coverage": 100,
+      "productCount": 170,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 104024,
+      "name": "Elektronik",
+      "descendants": 406,
+      "totalCategories": 379,
+      "coveredCategories": 363,
+      "coverage": 95.78,
+      "productCount": 26413,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 145704,
+      "name": "Ev ve Mobilya",
+      "descendants": 411,
+      "totalCategories": 406,
+      "coveredCategories": 358,
+      "coverage": 88.18,
+      "productCount": 26915,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 82,
+      "name": "Giyim",
+      "descendants": 201,
+      "totalCategories": 199,
+      "coveredCategories": 188,
+      "coverage": 94.47,
+      "productCount": 15956,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 104625,
+      "name": "Hamile Giyim",
+      "descendants": 51,
+      "totalCategories": 52,
+      "coveredCategories": 46,
+      "coverage": 88.46,
+      "productCount": 2005,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 97,
+      "name": "Hobi",
+      "descendants": 258,
+      "totalCategories": 259,
+      "coveredCategories": 255,
+      "coverage": 98.46,
+      "productCount": 16265,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 104125,
+      "name": "Kırtasiye & Ofis Malzemeleri",
+      "descendants": 125,
+      "totalCategories": 126,
+      "coveredCategories": 125,
+      "coverage": 99.21,
+      "productCount": 9574,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 91,
+      "name": "Kitap",
+      "descendants": 133,
+      "totalCategories": 134,
+      "coveredCategories": 107,
+      "coverage": 79.85,
+      "productCount": 7420,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 177086,
+      "name": "Kompakt Fotoğraf Makinesi",
+      "descendants": 0,
+      "totalCategories": 1,
+      "coveredCategories": 1,
+      "coverage": 100,
+      "productCount": 2,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 89,
+      "name": "Kozmetik & Kişisel Bakım",
+      "descendants": 179,
+      "totalCategories": 180,
+      "coveredCategories": 174,
+      "coverage": 96.67,
+      "productCount": 12992,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 105777,
+      "name": "Otomobil & Motosiklet",
+      "descendants": 415,
+      "totalCategories": 416,
+      "coveredCategories": 411,
+      "coverage": 98.8,
+      "productCount": 23704,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 142625,
+      "name": "Sanat Eseri",
+      "descendants": 8,
+      "totalCategories": 9,
+      "coveredCategories": 7,
+      "coverage": 77.78,
+      "productCount": 67,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 104593,
+      "name": "Spor&Outdoor",
+      "descendants": 470,
+      "totalCategories": 471,
+      "coveredCategories": 458,
+      "coverage": 97.24,
+      "productCount": 21519,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 103799,
+      "name": "Süpermarket",
+      "descendants": 655,
+      "totalCategories": 652,
+      "coveredCategories": 620,
+      "coverage": 95.09,
+      "productCount": 40317,
+      "minimumProducts": 1000
+    },
+    {
+      "categoryId": 173890,
+      "name": "Takı & Aksesuar Setleri",
+      "descendants": 0,
+      "totalCategories": 1,
+      "coveredCategories": 1,
+      "coverage": 100,
+      "productCount": 100,
+      "minimumProducts": 1000
+    }
+  ],
+  "levels": {
+    "0": 19,
+    "1": 182,
+    "2": 993,
+    "3": 1889,
+    "4": 879,
+    "5": 44
+  },
+  "shards": [
+    {
+      "shard": 0,
+      "categories": 970,
+      "successRate": 100,
+      "products": 164686,
+      "memberships": 173533
+    },
+    {
+      "shard": 1,
+      "categories": 990,
+      "successRate": 0,
+      "products": 0,
+      "memberships": 0
+    },
+    {
+      "shard": 2,
+      "categories": 992,
+      "successRate": 0,
+      "products": 0,
+      "memberships": 0
+    },
+    {
+      "shard": 3,
+      "categories": 1003,
+      "successRate": 0,
+      "products": 0,
+      "memberships": 0
+    }
+  ]
+}

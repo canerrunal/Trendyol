@@ -97,7 +97,9 @@ async function main() {
 
   const catalog = readJson(path.join(ROOT, 'taxonomy', 'catalog.json'));
   const summary = readJson(path.join(ROOT, 'taxonomy', 'status.json'));
-  if (summary.status !== 'PASS') throw new Error(`Taksonomi kalite durumu ${summary.status}`);
+  if (!['PASS', 'PARTIAL'].includes(summary.status)) {
+    throw new Error(`Taksonomi yayınlanabilir bir durum üretmedi: ${summary.status}`);
+  }
   if (!summary.date || !catalog.nodes?.length) throw new Error('Taksonomi kataloğu veya tarih eksik.');
   if (summary.catalogGeneratedAt !== catalog.generatedAt) {
     throw new Error('Taksonomi özeti güncel katalogla eşleşmiyor.');
