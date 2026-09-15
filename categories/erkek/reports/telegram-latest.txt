@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-09-14
-✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+📊 Trendyol Erkek Günlük Raporu — 2026-09-15
+✅ 1000 ürünlük havuz | 320/325 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) Imprime Mer Edp Erkek Parfüm 100ml | Marin Ve Fresh | Deniz, Bergamot, Nilüfer, Paçuli, Sandal Ağacı (639 TL) | 2) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (419 TL) | 3) TDRS Narcotic 100 ML Bergamot Özel Seri Uzun Süre Kalıcı Erkek Parfüm (393.56 TL)
-🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) AC&Co / Altınyıldız Classics Erkek Beyaz-Beyaz Pamuklu Slim Fit Dar Kesim Polo Yaka Tişört
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-14.md
+🔥 Trend: 1) Biorgin Collagen+Biotin Anti Hairloss Şampuan 400ML (279 TL) | 2) Bargello 561 Erkek 50 ml Parfüm Edp Fresh (370 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (229 TL)
+🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) H&M Kapüşonlu ve Fermuarlı Üst Loose Fit | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-15.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
