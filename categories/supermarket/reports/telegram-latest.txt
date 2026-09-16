@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-09-16
-✅ 1000 ürünlük havuz | 322/322 detay yenilendi | kalite PASS
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 320/320 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
 🔥 Trend: 1) MOMORDİCA Coconut Mix - 250 ml (199 TL) | 2) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 3) Zühre Ana Karadut Özü 670 Gr (229.9 TL)
-🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Zühre Ana Kekre Termojenik Mix 250 Ml | 3) icollagen Gummies Jelibon Hidrolizat Kolajen & Prebiyotik
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-16.md
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Zühre Ana Kekre Termojenik Mix 250 Ml | 3) MOMORDİCA Karnıyarık Otu Mix - 250ml
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
