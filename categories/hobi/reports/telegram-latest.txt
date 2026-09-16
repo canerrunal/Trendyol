@@ -1,7 +1,7 @@
-📊 Trendyol Hobi Günlük Raporu — 2026-09-15
-✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+📊 Trendyol Hobi Günlük Raporu — 2026-09-16
+✅ 1000 ürünlük havuz | 321/321 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı (47.49 TL) | 3) Unichrome 300 Ledli 10 Sarkıt Perde Led Işık Yılbaşı Oda Dekorasyon 8 Fonksiyon, Kumandalı, 3x3 Mt, Düz Askı (257.99 TL)
-🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı | 3) ZEYMERADE 100 Adet Gümüş Toplu İğne, Türban Eşarp Başörtüsü Şal Düğün Nikah Nişan Kına Sünnet Takı İğnesi
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-15.md
+🔥 Trend: 1) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 2) sgeteknoloji Hareket Sensörlü 16 Led 400mah 7 mod Şarjlı 3 Renk Beyaz-Gün-Nötr Işık Led Auto Dolap Içi, Koridor Type-c. (149.9 TL) | 3) ZEYMERADE Beyaz Süsleme Tülü, Boy 1 MT En Sabit 3 MT, Bohça Çeyiz Gelin Araba Konvoy Valiz Hastane Kapı Doğum Günü Dekor Parti El İşi Damat Kına Düğün Söz Nişan Nikah Bride Bekarlığa Veda Sünnet Hediye Süsleme (33.63 TL)
+🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı | 3) ZEYMERADE Beyaz Gül Yaprağı Yapay, 100 Adet Kutlama Yıl Dönümü Konfeti Evlilik Teklifi Gelin Damat Düğün Kına Söz Nişan Parti Süsleme Romantik Dekor Hediye
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-16.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
