@@ -65,9 +65,11 @@
 - Uygulama tabloları (`rag_documents`, `visitor_sessions`, `profiles`): ~1.72 MB
 - **Toplam Kalacak Hacim:** **~386.4 MB**
 
-> **Net Sonuç:**
+> **Net Sonuç & Kota Güvenlik Eşikleri:**
 > Tarihsel tablolar ClickHouse'a aktarılıp Supabase'te dual-write mutabakatı tamamlandıktan sonra, Supabase disk kullanımı **2.075 MB'tan ~386 MB'a düşecektir**.
-> Bu işlem Supabase'i **500 MB kota sınırının güvenle altına (%77 doluluk oranına)** indirecektir.
+> Ancak entity tarafı organik büyümeye devam edeceği için şu **Kota Uyarı Eşikleri (Guardrails)** zorunlu kılınmıştır:
+> - **425 MB (Kota %85): WARNING Eşiği.** Günlük büyüme hızı (`growth/day`) ve kalan gün sayısı (`days-to-limit`) izlenir; pasif ürün arşivleme hazırlığı başlatılır.
+> - **475 MB (Kota %95): CRITICAL Eşiği.** Kota aşımı riskine karşı 60 günden eski pasif master ürünler soğuk depolamaya taşınır.
 
 ---
 
@@ -107,5 +109,17 @@ Canlı veritabanından alınan indeks dökümü, ilişkisel B-Tree indeks maliye
 ### İndeks Maliyeti Özeti:
 - **Tarihsel İndeks Yükü (Rankings + Observations):** `316 + 136 + 226 + 111` = **~789 MB**!
 - Bu iki tablodaki toplam 1.518 MB alanın **%52'si** salt ilişkisel B-Tree indeksleridir.
-- **ClickHouse Kazancı:** ClickHouse'un 8192 satırda 1 işaret koyan seyrek (sparse) birincil indeksi sayesinde bu 789 MB'lık B-Tree yükü %95 oranında ortadan kalkacaktır.
+- **ClickHouse Seyrek İndeks Kazancı:** ClickHouse'un 8192 satırda 1 işaret koyan seyrek (sparse) birincil indeksi sayesinde bu 789 MB'lık B-Tree indeks yükünün ClickHouse tarafında **<10-20 MB bandına inmesi beklenmektedir** *(tahmin / benchmark gerektirir / estimate, benchmark-required)*.
+
+---
+
+## 6. Supabase Tarihsel Veri Temizliği ve Parquet Doğrulama Kapısı
+
+Mevcut Supabase production şemasında hiçbir indeks drop edilmeyecek, hiçbir satır silinmeyecektir. İleride dual-write mutabakatı (7-14 gün) tamamlandıktan sonra Supabase tarihsel tablolarının (`product_observations`, `rankings`, `market_observations`) arşivlenmesi ve truncate edilmesi için şu **3 zorunlu kapı (Verification Gates)** şart koşulmuştur:
+
+1. **Exact Row-Count Match:** Supabase satır sayısı == Parquet dışa aktarım satır sayısı == ClickHouse satır sayısı.
+2. **Cryptographic Checksum Match:** Dışa aktarılan verinin SHA256 içerik sağlama toplamı doğrulanmalıdır.
+3. **Restore-Test PASS:** Parquet yedeğinin geçici/staging bir veritabanına geri yüklenerek (restore test) veri kaybı veya bozulma olmadığı teyit edilmeli ve **RESTORE-TEST PASS** onayı alınmalıdır.
+4. **Yazılı Kullanıcı Onayı:** Tüm bu adımlar geçilmeden Supabase'ten tek bir satır silinmeyecektir.
+
 
