@@ -1,7 +1,7 @@
-📊 Trendyol Elektronik Günlük Raporu — 2026-09-16
-✅ 1000 ürünlük havuz | 319/320 detay yenilendi | kalite PASS
+📊 Trendyol Elektronik Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 317/318 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) comedones Dijital Baskül Yağ Su Kas Vücut Kitle Endeksi Kilo Ölçer Tartı (438.8 TL) | 2) FANTOM Pratıc-S P1200 Toz Torbasız Dikey Süpürge Antrasit (2283 TL) | 3) Xiaomi Redmi Buds 6 Play Siyah Kulakiçi Kulaklık-Gürültü Önleme BT5.4 IOS&Android (Xiaomi TR Garantili) (949 TL)
-🎯 Niche: 1) Philips 7000 Serisi 13in1, Erkek Bakım Seti, Yüz/Saç/Vücut Tıraş Makinesi, Islak /Kuru Kullanım, MG7922/15 | 2) Samsung Galaxy A16 128 GB 4 GB Ram Siyah Cep Telefonu (Samsung Türkiye Garantili) | 3) Go Aksesuar Iphone 13 - 14 Ve 15 Uyumlu Kaliteli Gerçek Magsafe Özellikli Şeffaf Kılıf
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/elektronik/reports/2026-09-16.md
+🔥 Trend: 1) Aprilla Ahs 2013 Saç Düzleştirici, Seramik plaka, Otomatik kapanma, 230 derece, 45W (199 TL) | 2) comedones Dijital Baskül Yağ Su Kas Vücut Kitle Endeksi Kilo Ölçer Tartı (438.8 TL) | 3) FANTOM Pratıc-S P1200 Toz Torbasız Dikey Süpürge Antrasit (2370 TL)
+🎯 Niche: 1) Philips 7000 Serisi 13in1, Erkek Bakım Seti, Yüz/Saç/Vücut Tıraş Makinesi, Islak /Kuru Kullanım, MG7922/15 | 2) Samsung Galaxy A16 128 GB 4 GB Ram Siyah Cep Telefonu (Samsung Türkiye Garantili) | 3) Grundig TM 1520 S Çay Makinesi
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/elektronik/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
