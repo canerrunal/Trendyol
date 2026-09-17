@@ -189,17 +189,18 @@ function finalize({ shardCount = 4 } = {}) {
   });
 
   const currentStatus = readJson(path.join(ROOT, 'taxonomy', 'status.json'), {});
-  const previousPublished = currentStatus.latest_published || (currentStatus.status === 'PASS' ? {
+  const previousPass = currentStatus.latest_pass || (currentStatus.status === 'PASS' ? {
     runId: currentStatus.runId || currentStatus.catalogRunId,
     date: currentStatus.date,
-    publishedAt: currentStatus.generatedAt,
+    generatedAt: currentStatus.generatedAt,
     status: 'PASS',
     qualityGateStatus: 'PASS',
-    sourceGitCommit: currentStatus.lineage?.source_git_commit || null,
     uniqueProducts: currentStatus.uniqueProducts,
     coveredCategories: currentStatus.coveredCategories,
     coverage: currentStatus.coverage
   } : null);
+
+  const previousPublished = currentStatus.latest_published || null;
 
   const latestAttempt = {
     runId: catalogRunId,
@@ -223,13 +224,27 @@ function finalize({ shardCount = 4 } = {}) {
     failedCategories: failures.length
   };
 
-  const latestPublished = (qualityPass && status === 'PASS')
+  const latestPass = (qualityPass && status === 'PASS')
+    ? {
+        runId: catalogRunId,
+        date,
+        generatedAt: timestamp,
+        status: 'PASS',
+        qualityGateStatus: 'PASS',
+        uniqueProducts: products.length,
+        coveredCategories: covered.size,
+        coverage
+      }
+    : previousPass;
+
+  const latestPublished = (publishStatus === 'PUBLISHED')
     ? {
         runId: catalogRunId,
         date,
         publishedAt: timestamp,
         status: 'PASS',
         qualityGateStatus: 'PASS',
+        publishStatus: 'PUBLISHED',
         sourceGitCommit: lineage.source_git_commit,
         uniqueProducts: products.length,
         coveredCategories: covered.size,
@@ -242,6 +257,7 @@ function finalize({ shardCount = 4 } = {}) {
     publishStatus,
     qualityGateStatus: qualityPass ? 'PASS' : 'FAIL',
     latest_attempt: latestAttempt,
+    latest_pass: latestPass,
     latest_published: latestPublished,
     lineage,
     catalogRunId, catalogGeneratedAt: catalog.generatedAt, totalCategoryPaths: catalog.stats.total,

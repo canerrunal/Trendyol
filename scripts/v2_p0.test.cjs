@@ -153,15 +153,16 @@ test('node runtime is pinned to Node 24 LTS in package.json and .nvmrc', () => {
   assert.equal(fs.readFileSync(nvmrcPath, 'utf8').trim(), '24');
 });
 
-test('dual status segregation preserves latest_published when latest_attempt is PARTIAL', () => {
+test('3-tier status segregation separates latest_attempt, latest_pass, and latest_published', () => {
   const previousPublished = {
     runId: 'trendyol-20260913-151000-pass1',
     date: '2026-09-13',
     status: 'PASS',
-    qualityGateStatus: 'PASS'
+    qualityGateStatus: 'PASS',
+    publishStatus: 'PUBLISHED'
   };
 
-  // Simulate a PARTIAL run today
+  // Scenario 1: A PARTIAL run today
   const partialAttempt = {
     runId: 'trendyol-20260917-151000-part1',
     date: '2026-09-17',
@@ -170,17 +171,39 @@ test('dual status segregation preserves latest_published when latest_attempt is 
     publishStatus: 'BLOCKED_PARTIAL'
   };
 
-  // In status.json:
-  const statusJson = {
+  const statusJsonPartial = {
     schemaVersion: 2,
     runId: partialAttempt.runId,
     status: partialAttempt.status,
     latest_attempt: partialAttempt,
-    latest_published: previousPublished // Must remain the previous PASS!
+    latest_pass: previousPublished, // No new pass today, so previous pass is kept
+    latest_published: previousPublished // Not published, so previous published is kept
   };
 
-  assert.equal(statusJson.latest_attempt.status, 'PARTIAL');
-  assert.equal(statusJson.latest_attempt.runId, 'trendyol-20260917-151000-part1');
-  assert.equal(statusJson.latest_published.status, 'PASS');
-  assert.equal(statusJson.latest_published.runId, 'trendyol-20260913-151000-pass1');
+  assert.equal(statusJsonPartial.latest_attempt.status, 'PARTIAL');
+  assert.equal(statusJsonPartial.latest_pass.status, 'PASS');
+  assert.equal(statusJsonPartial.latest_published.status, 'PASS');
+  assert.equal(statusJsonPartial.latest_published.runId, 'trendyol-20260913-151000-pass1');
+
+  // Scenario 2: A PASS run that failed network during publish
+  const passAttemptUnpublished = {
+    runId: 'trendyol-20260918-151000-pass2',
+    date: '2026-09-18',
+    status: 'PASS',
+    qualityGateStatus: 'PASS',
+    publishStatus: 'READY_FOR_PUBLISH' // Quality passed, but not yet verified published
+  };
+
+  const statusJsonUnpublished = {
+    schemaVersion: 2,
+    runId: passAttemptUnpublished.runId,
+    status: passAttemptUnpublished.status,
+    latest_attempt: passAttemptUnpublished,
+    latest_pass: passAttemptUnpublished, // Successfully passed quality gate!
+    latest_published: previousPublished // But latest_published ONLY updates when PUBLISHED!
+  };
+
+  assert.equal(statusJsonUnpublished.latest_attempt.runId, 'trendyol-20260918-151000-pass2');
+  assert.equal(statusJsonUnpublished.latest_pass.runId, 'trendyol-20260918-151000-pass2');
+  assert.equal(statusJsonUnpublished.latest_published.runId, 'trendyol-20260913-151000-pass1');
 });

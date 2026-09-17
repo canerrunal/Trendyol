@@ -341,6 +341,7 @@ function buildTaxonomyStatus(jobByName, executions, today) {
       publishStatus: latest.latest_attempt?.publishStatus || latest.publishStatus || (latest.status === 'PASS' ? 'READY_FOR_PUBLISH' : 'BLOCKED_PARTIAL'),
       qualityGateStatus: latest.latest_attempt?.qualityGateStatus || latest.qualityGateStatus || latest.status || 'WAITING',
       latest_attempt: latest.latest_attempt || null,
+      latest_pass: latest.latest_pass || null,
       latest_published: latest.latest_published || null,
       coveredCategories: latest.coveredCategories || 0,
       totalCategories: latest.totalCategories || catalog.stats?.total || 0,
