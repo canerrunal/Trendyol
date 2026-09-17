@@ -1,7 +1,7 @@
-📊 Trendyol Çocuk Günlük Raporu — 2026-09-16
-✅ 1000 ürünlük havuz | 322/322 detay yenilendi | kalite PASS
+📊 Trendyol Çocuk Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 324/324 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) Monalisa Çocuk Renkli Ponpon Toka 10’Lu (23.05 TL) | 2) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (2745 TL) | 3) Çocuk Akademi 7'den 70'e Türkiye Atlası (349 TL)
-🎯 Niche: 1) H&M 2 Parçalı Pamuklu ve Ribanalı Set | 2) H&M 10'lu Çorap | 3) Çocuk Akademi Ülkeler Ve Kültürler
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/reports/2026-09-16.md
+🔥 Trend: 1) Monalisa Çocuk Renkli Ponpon Toka 10’Lu (23.05 TL) | 2) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (2745 TL) | 3) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (2090 TL)
+🎯 Niche: 1) H&M 2 Parçalı Pamuklu ve Ribanalı Set | 2) H&M 10'lu Çorap | 3) ADİL OYUNCAK 72 Parça Manyetik Yapı Blokları | Montessori Eğitici Oyuncak | 3D Mıknatıslı Blok Seti
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
