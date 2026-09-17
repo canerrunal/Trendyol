@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-09-16
-✅ 1000 ürünlük havuz | 323/323 detay yenilendi | kalite PASS
+📊 Trendyol Kadın Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
 🔥 Trend: 1) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL) | 2) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL) | 3) Biorgin Collagen+Biotin Anti Hairloss Şampuan 400ML (279 TL)
-🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) GRIMELANGE Basıl Kadın %100 Pamuk Bisiklet Yaka Oversize Fit Uzun Kollu Beyaz T-shirt
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-16.md
+🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) Stradivarius Dik yaka suni deri trençkot
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
