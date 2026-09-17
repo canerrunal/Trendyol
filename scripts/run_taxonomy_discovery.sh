@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT_DIR="/Users/canerramazanunal/Documents/Trendyol"
-NODE_BIN="/Users/canerramazanunal/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
-NODE_MODULES="/Users/canerramazanunal/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules"
-PYTHON_BIN="/usr/bin/python3"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+NODE_BIN="${NODE_BIN:-$(which node)}"
+PYTHON_BIN="${PYTHON_BIN:-$(which python3 || echo /usr/bin/python3)}"
 
 cd "$PROJECT_DIR"
-export NODE_PATH="$NODE_MODULES"
 mkdir -p .runtime/cron-logs
 
 echo "TAXONOMY_DISCOVERY_START time=$(TZ=Europe/Istanbul date +%FT%T%z)"

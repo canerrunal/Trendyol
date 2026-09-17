@@ -5,16 +5,16 @@
   <key>Label</key><string>com.caner.trendyol-dashboard</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/canerramazanunal/.local/node/bin/node</string>
-    <string>/Users/canerramazanunal/Documents/Trendyol/dashboard/server.cjs</string>
+    <string>node</string>
+    <string>dashboard/server.cjs</string>
   </array>
-  <key>WorkingDirectory</key><string>/Users/canerramazanunal/Documents/Trendyol</string>
+  <key>WorkingDirectory</key><string>.</string>
   <key>RunAtLoad</key><true/>
   <key>KeepAlive</key><true/>
   <key>ThrottleInterval</key><integer>10</integer>
   <key>EnvironmentVariables</key>
   <dict><key>TZ</key><string>Europe/Istanbul</string><key>DASHBOARD_PORT</key><string>4317</string></dict>
-  <key>StandardOutPath</key><string>/Users/canerramazanunal/Documents/Trendyol/.runtime/dashboard.stdout.log</string>
-  <key>StandardErrorPath</key><string>/Users/canerramazanunal/Documents/Trendyol/.runtime/dashboard.stderr.log</string>
+  <key>StandardOutPath</key><string>.runtime/dashboard.stdout.log</string>
+  <key>StandardErrorPath</key><string>.runtime/dashboard.stderr.log</string>
 </dict>
 </plist>

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-PROJECT_DIR="/Users/canerramazanunal/Documents/Trendyol"
+PROJECT_DIR="${PROJECT_DIR:-${TRENDYOL_PROJECT_DIR:-$HOME/Documents/Trendyol}}"
 LOG_DIR="$PROJECT_DIR/.runtime/cron-logs"
 LOG_FILE="$LOG_DIR/taxonomy-discovery-$(TZ=Europe/Istanbul date +%F-%H%M%S).log"
 mkdir -p "$LOG_DIR"

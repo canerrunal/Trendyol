@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-exec bash "/Users/canerramazanunal/Documents/Trendyol/scripts/run_profile.sh" elektronik
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec bash "$SCRIPT_DIR/run_profile.sh" elektronik

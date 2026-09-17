@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PROJECT_DIR="/Users/canerramazanunal/Documents/Trendyol"
-PYTHON_BIN="/usr/bin/python3"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+PYTHON_BIN="${PYTHON_BIN:-$(which python3 || echo /usr/bin/python3)}"
 
 if [[ "$#" -lt 2 ]]; then
   echo "Kullanım: $0 <commit mesajı> <yol> [yol...]" >&2

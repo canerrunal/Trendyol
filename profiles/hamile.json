@@ -18,8 +18,8 @@
   "sort": "BEST_SELLER",
   "requireAddToCart": false,
   "listingScrollCount": 5,
-  "maxProducts": 200,
-  "minimumProducts": 200,
+  "maxProducts": 1000,
+  "minimumProducts": 1000,
   "maxPagesPerSegment": 20,
   "maxConsecutiveZeroPages": 3,
   "firstPageContentAttempts": 3,
@@ -33,13 +33,13 @@
     { "name": "lohusa-pijama-gecelik", "url": "https://www.trendyol.com/sr?wc=104625&sst=BEST_SELLER", "query": "lohusa pijama gecelik" },
     { "name": "hamile-destek", "url": "https://www.trendyol.com/sr?wc=104625&sst=BEST_SELLER", "query": "hamile korsesi kemeri karın bandı" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
-  "detailConcurrency": 3,
+  "detailConcurrency": 5,
   "requestDelayMs": 1000,
   "detailNavigationAttempts": 1,
   "detailNavigationTimeoutMs": 30000,
   "timezone": "Europe/Istanbul",
-  "dailyRunTime": "14:00"
+  "dailyRunTime": "06:00"
 }

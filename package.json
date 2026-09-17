@@ -28,7 +28,8 @@
     "quality:otomobil-motosiklet": "node scripts/quality_check.cjs --profile otomobil-motosiklet",
     "quality:hamile": "node scripts/quality_check.cjs --profile hamile",
     "quality:hobi": "node scripts/quality_check.cjs --profile hobi",
-    "test:contract": "node --test scripts/collect.contract.test.cjs scripts/publish_website.test.cjs",
+    "test": "node --test scripts/*.test.cjs dashboard/*.test.cjs",
+    "test:contract": "node --test scripts/collect.contract.test.cjs scripts/publish_website.test.cjs scripts/product_metrics.test.cjs",
     "publish:website": "node scripts/publish_website.cjs",
     "dashboard": "node dashboard/server.cjs",
     "dashboard:test": "node --test dashboard/status.test.cjs",
@@ -39,5 +40,11 @@
     "taxonomy:finalize": "node scripts/finalize_taxonomy_run.cjs",
     "taxonomy:test": "node --test scripts/taxonomy.test.cjs",
     "taxonomy:install": "bash scripts/install_taxonomy_hermes_jobs.sh"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
   }
 }

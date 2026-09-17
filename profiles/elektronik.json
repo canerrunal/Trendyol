@@ -16,8 +16,8 @@
   "searchUrl": "https://www.trendyol.com/elektronik-x-c104024?sst=BEST_SELLER",
   "query": "elektronik",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
-  "minimumProducts": 200,
+  "maxProducts": 1000,
+  "minimumProducts": 1000,
   "maxPagesPerSegment": 20,
   "maxConsecutiveZeroPages": 6,
   "firstPageContentAttempts": 3,
@@ -31,13 +31,13 @@
     { "name": "giyilebilir-teknoloji", "url": "https://www.trendyol.com/sr?wc=104024&sst=BEST_SELLER", "query": "akıllı saat" },
     { "name": "kucuk-ev-aletleri", "url": "https://www.trendyol.com/sr?wc=104024&sst=BEST_SELLER", "query": "küçük ev aletleri" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
-  "detailConcurrency": 3,
+  "detailConcurrency": 5,
   "requestDelayMs": 1000,
   "detailNavigationAttempts": 1,
   "detailNavigationTimeoutMs": 30000,
   "timezone": "Europe/Istanbul",
-  "dailyRunTime": "12:30"
+  "dailyRunTime": "03:00"
 }

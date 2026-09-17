@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "timezone": "Europe/Istanbul",
+  "repository": "canerrunal/Trendyol",
+  "trendyol": {
+    "taxonomy": {
+      "discovery": "15:00",
+      "shards": [
+        "15:10",
+        "15:20",
+        "15:30",
+        "15:40"
+      ],
+      "finalize": "19:10"
+    },
+    "profiles": {
+      "cocuk": "20:00",
+      "erkek": "21:00",
+      "ev-yasam": "22:00",
+      "kadin": "23:00",
+      "genel-cok-satanlar": "00:00",
+      "supermarket": "01:00",
+      "kozmetik": "02:00",
+      "elektronik": "03:00",
+      "mobilya": "04:00",
+      "otomobil-motosiklet": "05:00",
+      "hamile": "06:00",
+      "hobi": "07:00"
+    }
+  }
+}

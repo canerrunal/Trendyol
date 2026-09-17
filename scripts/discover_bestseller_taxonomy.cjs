@@ -6,6 +6,7 @@ const {
   ROOT, ROOT_URL, launchBrowser, parseAssignedJson, flattenTree, nowIstanbul,
   writeJsonAtomic, writeCsvAtomic
 } = require('./taxonomy_common.cjs');
+const { generateRunId } = require('./lib/lineage.cjs');
 
 const OUTPUT_DIR = path.join(ROOT, 'taxonomy');
 
@@ -30,8 +31,9 @@ async function discover() {
     const { timestamp } = nowIstanbul();
     const levels = Object.fromEntries([...new Set(nodes.map(node => node.level))].sort((a, b) => a - b).map(level => [level, nodes.filter(node => node.level === level).length]));
     const uniqueCategoryIds = new Set(nodes.map(node => node.categoryId));
+    const runId = generateRunId('trendyol', timestamp);
     const catalog = {
-      schemaVersion: 2, runId: timestamp, sourceUrl: ROOT_URL, generatedAt: timestamp,
+      schemaVersion: 2, runId, sourceUrl: ROOT_URL, generatedAt: timestamp,
       stats: {
         total: nodes.length, uniqueCategoryIds: uniqueCategoryIds.size, duplicatePaths: nodes.length - uniqueCategoryIds.size,
         roots: nodes.filter(node => node.level === 0).length, leaves: nodes.filter(node => !node.hasChildren).length,

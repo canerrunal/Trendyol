@@ -1,6 +1,12 @@
+node_modules/
+.env
+.env.local
+.env.*.local
 .DS_Store
 .runtime/
 *.tmp
+*.tmp.*
 *.log
 categories/*/data/listing-cache.json
 data/listing-cache.json
+

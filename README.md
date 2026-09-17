@@ -88,6 +88,8 @@ Günlük profil çalışmaları tek bir global kilitle sıralanır; aynı anda i
 - Ürün sayısı, detay başarısı, stok/satıcı/puan/yorum/soru/teslimat kapsamı
 - Telegram teslim durumu, GitHub commit'i, yerel rapor ve teknik log bağlantıları
 - Devam eden işlerde listeleme/detay ilerlemesi
+- Veri Mimarı'nın Instagram, Facebook, LinkedIn ve X otomasyon durumu
+- Sosyal yayın etiketleri, son GitHub Actions çalışmaları ve hata kayıtları
 
 Kurulum ve kullanım:
 
@@ -99,15 +101,24 @@ npm run dashboard:test      # API/veri modeli kontrollerini çalıştırır
 
 Servis yönetimi için LaunchAgent etiketi `com.caner.trendyol-dashboard`'dur. Dashboard salt okunurdur; görev çalıştırmaz, durdurmaz veya veri dosyalarını değiştirmez.
 
+Sosyal Yayın Merkezi, `caner8047-coder/verimimaricom` deposunu yerel `gh` oturumu üzerinden salt okunur izler. GitHub Actions değişkenlerini, `social/<platform>/<duyuru>` yayın etiketlerini ve son workflow sonuçlarını gösterir; sosyal ağ erişim jetonlarını okumaz veya tarayıcıya göndermez. Farklı bir depo ya da workflow izlemek için `SOCIAL_REPOSITORY` ve `SOCIAL_WORKFLOW` ortam değişkenleri kullanılabilir.
+
 ## Otomatik Çok Satanlar kategori evreni
 
 `taxonomy/` hattı, Trendyol Çok Satanlar menüsünü yalnız görünen ana sekmelerle sınırlamadan bütün alt dallarıyla keşfeder. Kategori bağlantılarının elle verilmesi gerekmez. Güncel katalog 19 ana kategori altında 4.003 menü yolu, 3.952 benzersiz kategori kimliği ve 6 seviye içerir. Aynı kategori 51 farklı ek menü yolunda tekrar görünür; veri havuzunda ürün sıralamaları kategori kimliğine göre tekilleştirilir. Trendyol ağaca yeni bir dal eklediğinde günlük keşif görevi bunu otomatik kataloğa alır.
 
 Yük ve veri değeri dengesi:
 
-- Bütün kategorilerin ilk 20 sıralaması her gün alınır.
-- Ana ve birinci seviye kategoriler her gün 200 ürüne kadar taranır.
-- Daha derin kategoriler günlük ilk 20'ye ek olarak 20 günlük dönüşümle 200 ürüne kadar genişletilir.
+- Bütün kategorilerin ilk 40 sıralaması her gün alınır.
+- Çok Satanlar uç noktasının verdiği en yüksek kapsam olan ilk 100 ürün ana, birinci seviye ve dönüşüm günündeki derin kategorilerde alınır.
+- Her ürün döndüren kategorinin normal vitrindeki 3–100. sayfaları 49 günlük dönüşümle günde iki sayfa taranır; kategori başına günlük en çok 72 ek ürün havuza girer. Seçilen sayfa kategori toplamını aşarsa gerçek son sayfa aralığına döndürülür.
+- Her kategori `MOST_RECENT` sırasıyla ayrıca taranır. Önceki günün ilk ürünlerinden en az üçü görülene kadar sayfalama sürer; yoğun kategorilerde günlük üst sınır 10 sayfa/360 üründür. İlk gün iki sayfalık kontrol tabanı oluşturulur.
+- Çok Satanlar servisi boş dönen kategoriler normal kategori vitrini üzerinden `BEST_SELLER` sırasıyla yeniden taranır; bu ürünler de detay ve stok karşılaştırma kuyruğuna girer.
+- Normal kategori vitriniyle kurtarılan ürünlerin tamamı, kategori başına ilk ölçümlerden sonra genel ürün dönüşümünden önce işlenir.
+- Ana ve birinci seviye kategoriler her gün ilk 100 Çok Satanlar ürünüyle taranır.
+- Daha derin kategoriler günlük ilk 40'a ek olarak 10 günlük dönüşümle ilk 100 Çok Satanlar ürününe genişletilir.
+- Her shard'da 100 ürün günlük sabit izlenir; 700 yeni ürün kategori dengeli biçimde ölçülür ve en çok 700 ürün ertesi gün stok farkı için tekrar ziyaret edilir.
+- Ölçülen ürünler 365 gün hatırlanır. Dönüşüm önce hiç detay ölçümü olmayan ürün döndüren kategorileri, ardından hiç ölçülmemiş ürünleri ve son olarak en eski ölçümleri seçer.
 - Ürünler tekilleştirilir; kategori–ürün sıralamaları ayrı tutulur.
 - Dört işçi çıktısı tamamlanmadan kalite kapısı GitHub'a veri göndermez; son geçerli rapor korunur.
 
@@ -119,7 +130,7 @@ Yük ve veri değeri dengesi:
 - `taxonomy/snapshots/YYYY-MM-DD/summary.json`: kalite ve kapsam özeti
 - `taxonomy/reports/YYYY-MM-DD.md`: günlük okunabilir rapor
 
-Hermes saat planı (Europe/Istanbul): 15:00 katalog keşfi; 15:10, 16:00, 16:50 ve 17:40 dört veri işçisi; 18:40 kalite, rapor, GitHub ve Telegram özeti. Ara işler modelsiz `no-agent` modunda çalışır; yalnız final raporu Telegram'a gider.
+Hermes saat planı (Europe/Istanbul): 15:00 katalog keşfi; 15:10, 16:00, 16:50 ve 17:40 dört veri işçisi; 19:10 kalite, rapor, GitHub ve Telegram özeti. Ara işler modelsiz `no-agent` modunda çalışır; yalnız final raporu Telegram'a gider. Son işçi için 90 dakikalık yayın payı ayrılır.
 
 ```bash
 npm run taxonomy:discover

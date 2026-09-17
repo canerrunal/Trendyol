@@ -12,8 +12,8 @@
   "searchUrl": "https://www.trendyol.com/sr?q=%C3%A7ocuk&qt=%C3%A7ocuk&st=%C3%A7ocuk&os=1&sst=BEST_SELLER",
   "query": "çocuk",
   "sort": "BEST_SELLER",
-  "maxProducts": 200,
-  "minimumProducts": 200,
+  "maxProducts": 1000,
+  "minimumProducts": 1000,
   "maxPagesPerSegment": 20,
   "searchSegments": [
     { "name": "genel-cocuk", "query": "çocuk" },
@@ -26,7 +26,7 @@
     { "name": "cocuk-oda", "query": "çocuk odası" },
     { "name": "cocuk-bisiklet", "query": "çocuk bisikleti" }
   ],
-  "dailyFullDetailTopN": 200,
+  "dailyFullDetailTopN": 300,
   "dailyRotatingDetailN": 0,
   "hotDetailLimit": 25,
   "detailConcurrency": 3,
@@ -34,5 +34,5 @@
   "detailNavigationAttempts": 1,
   "detailNavigationTimeoutMs": 30000,
   "timezone": "Europe/Istanbul",
-  "dailyRunTime": "09:00"
+  "dailyRunTime": "20:00"
 }

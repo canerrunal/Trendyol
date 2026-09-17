@@ -63,8 +63,15 @@ function discoverProfiles(root = ROOT) {
     seen.add(profile.slug);
   }
 
+  const runOrderKey = (time) => {
+    const [h, m] = String(time || '99:99').split(':').map(Number);
+    if (Number.isNaN(h) || Number.isNaN(m)) return 9999;
+    const minutes = h * 60 + m;
+    return minutes >= 1200 ? minutes - 1200 : minutes + 240;
+  };
+
   return discovered.sort(
-    (a, b) => a.runTime.localeCompare(b.runTime) || a.discoveryIndex - b.discoveryIndex
+    (a, b) => runOrderKey(a.runTime) - runOrderKey(b.runTime) || a.discoveryIndex - b.discoveryIndex
   );
 }
 

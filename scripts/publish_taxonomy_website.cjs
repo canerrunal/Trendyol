@@ -97,7 +97,10 @@ async function main() {
 
   const catalog = readJson(path.join(ROOT, 'taxonomy', 'catalog.json'));
   const summary = readJson(path.join(ROOT, 'taxonomy', 'status.json'));
-  if (summary.status !== 'PASS') throw new Error(`Taksonomi kalite durumu ${summary.status}`);
+  if (summary.status !== 'PASS') {
+    console.log(`TAXONOMY_PUBLISH_BLOCKED status=${summary.status} reason=quality-gate-partial-or-fail`);
+    return;
+  }
   if (!summary.date || !catalog.nodes?.length) throw new Error('Taksonomi kataloğu veya tarih eksik.');
   if (summary.catalogGeneratedAt !== catalog.generatedAt) {
     throw new Error('Taksonomi özeti güncel katalogla eşleşmiyor.');
@@ -129,7 +132,8 @@ async function main() {
   const completed = await requestJson(baseUrl, secret, 'PUT', {
     action: 'complete',
     runId,
-    catalogGeneratedAt: catalog.generatedAt
+    catalogGeneratedAt: catalog.generatedAt,
+    finalStatus: summary.status
   });
   console.log(
     `TAXONOMY_PUBLISH_OK run=${runId} categories=${completed.counts.categories} paths=${completed.counts.paths} products=${completed.counts.products} rankings=${completed.counts.rankings}`
