@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-09-17
-✅ 1000 ürünlük havuz | 309/309 detay yenilendi | kalite PASS
+📊 Trendyol Kozmetik Günlük Raporu — 2026-09-18
+✅ 1000 ürünlük havuz | 313/313 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) WIWIFY Su Bazlı Yoğun Nemlendirici Yüz Kremi 100 ml Tüm Cilt Tipleri 24 Saat Etkili (199.9 TL) | 2) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL) | 3) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL)
-🎯 Niche: 1) WIWIFY Su Bazlı Günlük Nemlendirici Jel Krem 100 ML | Hyaluronic Acid, Prebiyotik, Squalene, Niacinamide | 2) MOZIUR Protez Tırnak Kalıcı Oje Buffer 100-180 | 3) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kozmetik/reports/2026-09-17.md
+🔥 Trend: 1) ILLUSIONE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk (479 TL) | 2) WIWIFY Su Bazlı Günlük Nemlendirici Jel Krem 100 ML | Hyaluronic Acid, Prebiyotik, Squalene, Niacinamide (199.9 TL) | 3) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL)
+🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) WIWIFY Su Bazlı Günlük Nemlendirici Jel Krem 100 ML | Hyaluronic Acid, Prebiyotik, Squalene, Niacinamide | 3) CALLİEL Leke ve Akne Karşıtı Aydınlatıcı Bakım Seti
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kozmetik/reports/2026-09-18.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
