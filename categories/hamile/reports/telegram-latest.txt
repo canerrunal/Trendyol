@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-09-16
-✅ 1000 ürünlük havuz | 318/318 detay yenilendi | kalite PASS
+📊 Trendyol Hamile Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 317/319 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) H&M MAMA Ribanalı Dikişsiz Tayt (749.99 TL) | 2) H&M MAMA Straight Low Waist Jeans (1399 TL) | 3) Pierre Cardin Kadın Ten 1031 Pamuklu Göğüs Ucu Belli Etmeyen Kaplı Emzirme Atleti (439.9 TL)
-🎯 Niche: 1) H&M MAMA Sigaret Pantolon | 2) Defacto Regular Fit Emzirme Atleti H2280AX26SM | 3) H&M MAMA 5'li Hipster Külot
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-16.md
+🔥 Trend: 1) H&M MAMA Sigaret Pantolon (779.99 TL) | 2) H&M MAMA Dikişsiz Tayt (599.99 TL) | 3) H&M MAMA 2'li Jarse Tayt (749.99 TL)
+🎯 Niche: 1) H&M MAMA Sigaret Pantolon | 2) Pierre Cardin 6118 Premium Comfort Kaplı Emzirme Sütyeni – Dikişsiz, İz Yapmaz, Ayarlanabilir Askılı | 3) H&M MAMA 5'li Hipster Külot
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
