@@ -1,137 +1,108 @@
-# Supabase Veritabanı Boyut, Şema ve Büyüme Audit Raporu — 2026-09-17
+# Supabase Veritabanı Canlı Boyut, Şema ve Büyüme Audit Raporu — 2026-09-17
 
-> **Mevcut Kota Durumu:** Supabase ücretsiz kota (500 MB) aşılmış durumda (~875 MB canlı kullanım).
-> **Kritik Mimari Karar:** Hiçbir history tablosu P1 ClickHouse migrasyonu tamamlanmadan ve 7-14 günlük dual-write doğrulanmadan silinmeyecektir.
+> **Canlı Ölçüm Tarihi:** 2026-09-17 21:43 (Supabase Dashboard SQL Editor üzerinden canlı çalıştırıldı)
+> **Toplam Veritabanı Boyutu:** **2.075 MB** (2.176.248.979 bytes) — *Supabase Ücretsiz Kotası (500 MB) aşılmış durumda ("EXCEEDING USAGE LIMITS")*
+> **Temel Mimari İlke:** P1 dual-write doğrulanmadan ve 7-14 günlük mutabakat sağlanmadan hiçbir veri silinmeyecektir.
 
-## 1. Tablo Envanteri ve Gelecek Hedef Ayrımı
+---
 
-| Table Name | Büyüme Tipi | Hedef DB | Günlük Satır Artışı | Tahmini Boyut / Büyüme | Eylem Planı |
-|---|---|---|---|---|---|
-| `market_taxonomy_product_observations` | History (Daily Observations) | **ClickHouse** | 60.000 - 120.000 | ~350 MB - 600 MB | ClickHouse product_observations tablosuna taşınacak. Supabase dual-write sonrası arşivlenecek. |
-| `market_taxonomy_rankings` | History (Daily Observations) | **ClickHouse** | 80.000 - 150.000 | ~250 MB - 400 MB | ClickHouse category_rank_observations tablosuna taşınacak. |
-| `market_observations` | History (Daily Observations) | **ClickHouse** | 3.600 - 6.000 | ~20 MB - 40 MB | ClickHouse profile_observations tablosuna taşınacak. |
-| `market_taxonomy_products` | Entity (Slowly Changing Dimension) | **Supabase** | Yeni ürünler eklendikçe artar (~480.000 toplam ürün) | ~80 MB - 120 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_products` | Entity (Slowly Changing Dimension) | **Supabase** | Yeni ürünler eklendikçe artar (~30.000 toplam ürün) | ~15 MB - 25 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_taxonomy_categories` | Entity (Dimensions) | **Supabase** | Sabit (~3.955 kategori) | ~2 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_taxonomy_category_paths` | Entity (Dimensions) | **Supabase** | Sabit (~4.006 yol) | ~3 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_merchants` | Entity (Dimensions) | **Supabase** | Yeni satıcılar eklendikçe artar (~50.000 satıcı) | ~10 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_taxonomy_runs` | Operational / Audit | **Supabase** | 1 satır/gün | < 1 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_pipeline_runs` | Operational / Audit | **Supabase** | 12 satır/gün | < 1 MB | Supabase Current/Entity DB olarak korunacak. |
-| `market_profiles` | Configuration | **Supabase** | Sabit (12 profil) | < 1 MB | Supabase Current/Entity DB olarak korunacak. |
-| `submissions` | Operational / App | **Supabase** | Organik kullanıcı trafiği | < 1 MB | Supabase App DB olarak korunacak. |
+## 1. Şema Bazında Fiziksel Boyut Dağılımı
 
-## 2. Boyut Analizi ve Büyüme Özeti
+| Şema Adı | Toplam Boyut | Byte Değeri | Payı (%) | Durum |
+|---|---|---|:---:|---|
+| **`public`** | **2.064 MB** | 2.164.031.488 | **%99.44** | Asıl veri yükünün tamamı bu şemada |
+| `auth` | 1.120 kB | 1.146.880 | %0.05 | Supabase dahili kimlik doğrulama |
+| `storage` | 240 kB | 245.760 | %0.01 | Supabase dosya depolama metadataları |
+| `realtime` | 56 kB | 57.344 | < %0.01 | Abonelik takibi |
+| `vault` | 24 kB | 24.576 | < %0.01 | Şifreli ortam anahtarları |
+| *Sistem & Catalog* | ~9.5 MB | ~10.742.931 | %0.49 | PostgreSQL dahili katalogları |
+| **TOPLAM** | **2.075 MB** | **2.176.248.979** | **%100.0** | |
 
-### ClickHouse'a Taşınacak Tarihsel Tablolar (Toplam hacmin ~%85'i)
-- `market_taxonomy_product_observations`: En büyük tablo. Her run için ~100.000 satır observation üretir.
-- `market_taxonomy_rankings`: İkinci en büyük tablo. Her kategori sırası için bir observation satırı üretir.
-- `market_observations`: 12 profilin günlük 300'er ürünlük detay ve rank kayıtları.
+> **Analiz:** 2.075 MB'ın **%99.44**'ü doğrudan `public` şemasındaki tablolardan kaynaklanmaktadır. Sistem şemalarının payı ihmal edilebilir düzeydedir (< 2 MB).
 
-> **Tasarruf Tahmini:** ClickHouse devreye alınıp bu 3 tablo taşındığında Supabase boyutu 875 MB'tan ~120 MB seviyesine düşecek ve 500 MB kotasının altına inecektir.
+---
 
-### Supabase'te Kalacak Güncel / Varlık (Entity) Tabloları (Toplam hacmin ~%15'i)
-- `market_taxonomy_products` & `market_products`: Ürün master entity tabloları (yalnızca taze katalog ürünleri).
-- `market_taxonomy_categories` & `market_taxonomy_category_paths`: Sabit taksonomi ağacı (~4.000 kayıt).
-- `market_merchants`: Satıcı master entity tablosu.
-- `market_taxonomy_runs` & `market_pipeline_runs`: Çalışma logları ve kalite durumu.
-- `market_profiles` & `submissions`: Uygulama ayarları ve formlar.
+## 2. Public Tabloların Ayrıntılı Ölçümü (Data vs. Index vs. TOAST)
 
-## 3. Canlı Boyut Ölçümü İçin 3 Aşamalı SQL Denetimi
+| Tablo Adı | Canlı Satır Sayısı | Data (Heap) | Index Boyutu | TOAST / Diğer | Toplam Boyut | Toplam Byte | Hedef DB |
+|---|---|---|---|---|---|---|:---:|
+| `market_taxonomy_product_observations` | 2.092.368 | 478 MB | 337 MB | 920 kB | **816 MB** | 855.670.784 | **ClickHouse** |
+| `market_taxonomy_rankings` | 2.549.090 | 249 MB | **452 MB** | 96 kB | **702 MB** | 735.617.024 | **ClickHouse** |
+| `market_taxonomy_products` | 542.410 | 300 MB | 69 MB | 120 kB | **369 MB** | 387.006.464 | **Supabase** |
+| `market_observations` | 95.199 | 122 MB | 23 MB | 15 MB | **160 MB** | 167.968.768 | **ClickHouse** |
+| `market_products` | 17.135 | 6.248 kB | 944 kB | 40 kB | **7.23 MB** | 7.405.568 | **Supabase** |
+| `market_taxonomy_category_paths` | 4.006 | 3.080 kB | 1.056 kB | 40 kB | **4.18 MB** | 4.276.224 | **Supabase** |
+| `market_taxonomy_categories` | 3.955 | 1.784 kB | 640 kB | 40 kB | **2.46 MB** | 2.523.136 | **Supabase** |
+| `rag_documents` | 0 | 0 bytes | 1.632 kB | 8.192 bytes | **1.64 MB** | 1.679.360 | **Supabase** |
+| `market_pipeline_runs` | 329 | 688 kB | 120 kB | 40 kB | **0.85 MB** | 868.352 | **Supabase** |
+| `market_merchants` | 5.708 | 456 kB | 288 kB | 40 kB | **0.78 MB** | 802.816 | **Supabase** |
+| `market_taxonomy_runs` | 23 | 32 kB | 64 kB | 32 kB | **0.13 MB** | 131.072 | **Supabase** |
+| `visitor_sessions` | 0 | 8.192 bytes | 32 kB | 8.192 bytes | **0.05 MB** | 49.152 | **Supabase** |
+| `market_profiles` | 12 | 8.192 bytes | 16 kB | 8.192 bytes | **0.03 MB** | 32.768 | **Supabase** |
 
-> **Teknik Not:** `pg_database_size(current_database())` PostgreSQL WAL (`pg_wal`) dizinini **içermez**. 
-> Veritabanı boyutundaki fark; heap tablosu dışındaki **TOAST tabloları (`toast_and_other_size`)**, **indeksler (`index_size`)** ve **public dışındaki Supabase sistem şemalarından (`auth`, `storage`, `realtime`, `vault`)** kaynaklanmaktadır.
+---
 
-Supabase Dashboard → SQL Editor ekranında sırasıyla şu 3 sorgu çalıştırılmalıdır:
+## 3. Mimari Ayrım ve Kapasite Rahatlama Analizi
 
-### 1. Veritabanı Toplam Fiziksel Disk Boyutu
-```sql
-SELECT
-  pg_size_pretty(pg_database_size(current_database())) AS total_database_size,
-  pg_database_size(current_database()) AS total_database_bytes;
-```
+### A. ClickHouse'a Taşınacak Tarihsel Gözlem Tabloları (%81.3)
+1. `market_taxonomy_product_observations`: **816 MB**
+2. `market_taxonomy_rankings`: **702 MB**
+3. `market_observations`: **160 MB**
+- **Toplam Taşınacak Hacim:** **1.678 MB** (~1.68 GB)
+- **Public Tablolardaki Payı:** **%81.29**
+- **Tüm Veritabanındaki Payı:** **%80.85**
 
-### 2. Public Tabloların Ayrıntılı Boyut Dağılımı (Data, Index, TOAST)
-```sql
-SELECT
-  n.nspname AS schema_name,
-  c.relname AS table_name,
-  COALESCE(s.n_live_tup, 0) AS estimated_row_count,
-  pg_size_pretty(pg_relation_size(c.oid)) AS data_size,
-  pg_size_pretty(pg_indexes_size(c.oid)) AS index_size,
-  pg_size_pretty(
-    pg_total_relation_size(c.oid)
-    - pg_relation_size(c.oid)
-    - pg_indexes_size(c.oid)
-  ) AS toast_and_other_size,
-  pg_size_pretty(pg_total_relation_size(c.oid)) AS total_size,
-  pg_total_relation_size(c.oid) AS total_bytes
-FROM pg_class c
-JOIN pg_namespace n ON n.oid = c.relnamespace
-LEFT JOIN pg_stat_user_tables s ON s.relid = c.oid
-WHERE n.nspname = 'public'
-  AND c.relkind = 'r'
-ORDER BY total_bytes DESC;
-```
+> **Kritik Bulgu — İndeks Şişmesi (Index Bloat):**
+> - `market_taxonomy_rankings` tablosunda Data boyutu **249 MB** iken, İndeks boyutu **452 MB**'tır! Tablonun **%64.4**'ünü B-Tree indeksleri kaplamaktadır.
+> - Bu 4 sütunlu compound indeks (`run_id, category_id, rank, product_key`), ClickHouse'ın sparse index yapısında (`ORDER BY (marketplace, category_id, observed_date, rank)`) %95 oranında küçülecektir.
 
-### 3. Şema Bazında Toplam Boyut Dağılımı
-> **Teknik Düzeltme:** `pg_total_relation_size(base_table)` zaten o tablonun TOAST verisini içerir. `pg_toast` şemasını ayrıca toplamak mükerrer sayıma (double-counting) yol açacağı için `pg_toast` ve geçici şemalar hariç tutulmalıdır.
+### B. Supabase'te Kalacak Varlık & Operasyonel Tablolar (%18.7)
+- `market_taxonomy_products` (542k ürün master): 369 MB
+- `market_products` (profil ürün master): 7.23 MB
+- Taksonomi ağacı (`category_paths` + `categories`): 6.64 MB
+- Satıcılar (`market_merchants`): 0.78 MB
+- Run kayıtları (`pipeline_runs` + `taxonomy_runs`): 0.98 MB
+- Uygulama tabloları (`rag_documents`, `visitor_sessions`, `profiles`): ~1.72 MB
+- **Toplam Kalacak Hacim:** **~386.4 MB**
 
-```sql
-SELECT
-  n.nspname AS schema_name,
-  pg_size_pretty(SUM(pg_total_relation_size(c.oid))) AS total_size,
-  SUM(pg_total_relation_size(c.oid)) AS total_bytes
-FROM pg_class c
-JOIN pg_namespace n ON n.oid = c.relnamespace
-WHERE c.relkind = 'r'
-  AND n.nspname NOT IN (
-    'pg_catalog',
-    'information_schema',
-    'pg_toast'
-  )
-  AND n.nspname NOT LIKE 'pg_toast_temp_%'
-  AND n.nspname NOT LIKE 'pg_temp_%'
-GROUP BY n.nspname
-ORDER BY total_bytes DESC;
-```
+> **Net Sonuç:**
+> Tarihsel tablolar ClickHouse'a aktarılıp Supabase'te dual-write mutabakatı tamamlandıktan sonra, Supabase disk kullanımı **2.075 MB'tan ~386 MB'a düşecektir**.
+> Bu işlem Supabase'i **500 MB kota sınırının güvenle altına (%77 doluluk oranına)** indirecektir.
 
-### 4. En Fazla Yer Kaplayan İndekslerin Analizi
-> Bu sorgu ile `market_taxonomy_rankings` ve `market_taxonomy_product_observations` tablolarındaki compound indeks şişmesi (B-Tree index bloat) somut olarak tespit edilir.
+---
+
+## 4. Günlük ve Aylık Büyüme Hızı Projeksiyonu
+
+Canlı sistemdeki `market_taxonomy_runs` (23 tamamlanmış run) ve `market_pipeline_runs` (329 run) kayıtlarına göre:
+
+- **Günlük Satır Artışı:**
+  - `product_observations`: ~90.970 satır / gün
+  - `rankings`: ~110.830 satır / gün
+  - `market_observations`: ~3.500 satır / gün
+  - **Toplam Günlük:** **~205.300 satır / gün**
+- **PostgreSQL'de Günlük Disk Tüketimi (Uncompressed + Indexes):**
+  - Observations: ~37.2 MB / gün
+  - Rankings: ~32.0 MB / gün
+  - Profil obs: ~6.2 MB / gün
+  - **Toplam Günlük Büyüme:** **~75.4 MB / gün**
+- **Aylık Veri Büyümesi:**
+  - **Supabase'te kalsaydı:** `75.4 MB * 30` = **~2.26 GB / ay** (Her ay kotayı 4.5 kat aşma riski!)
+  - **ClickHouse'ta (LZ4/ZSTD Columnar Sıkıştırma ile ~7x-10x oran):** **~220 MB - 320 MB / ay**.
+
+---
+
+## 5. İndeks Sorgusu Teknik Düzeltmesi (Sorgu 4)
+
+`pg_stat_user_indexes` kataloğunda tablo adı sütunu `tablename` değil `relname`'dir. İndeks adı ise `indexrelname`'dir:
 
 ```sql
 SELECT
   schemaname,
-  tablename,
-  indexname,
+  relname AS table_name,
+  indexrelname AS index_name,
   pg_size_pretty(pg_relation_size(indexrelid)) AS index_size,
   pg_relation_size(indexrelid) AS index_bytes
 FROM pg_stat_user_indexes
 ORDER BY index_bytes DESC
 LIMIT 30;
 ```
-
-## 4. ClickHouse Engine Seçim Stratejisi (MergeTree vs. ReplacingMergeTree)
-
-Tüm tarihsel observation tablolarına otomatik olarak `ReplacingMergeTree` verilmeyecektir:
-1. **Saf Append-Only / Değişmez Observation Akışları (`MergeTree`):**
-   - Tekil run_id ve zaman damgasıyla bir defa yazılan, geçmişe dönük update almayan ve immutable olan gözlemler için `MergeTree` tercih edilecektir. Böylece arka plan merge yükü ve deduplication belirsizliği olmadan en yüksek yazma performansı ve öngörülebilir sıkıştırma sağlanır.
-2. **Idempotent Snapshot / Son Durum Güncellemeleri (`ReplacingMergeTree`):**
-   - Aynı gün/run içinde tekrar çalıştırılan veya belirli bir business key üzerinde son halini koruması gereken durumlar için `ReplacingMergeTree(version)` veya `ReplacingMergeTree()` değerlendirilecektir.
-3. **Kesin Karar Aşaması:** Tablo bazlı engine seçimi, canlı Supabase satır tekillik (uniqueness) ve yeniden çalıştırma (re-run/update) senaryoları netleştikten sonra P1 tasarımında belirlenecektir.
-
-## 5. 3 Aşamalı Çalışma Durumu Modeli (3-Tier Status Architecture)
-
-Sistem durumu ve pipeline güvenliği 3 ayrı kavrama ayrılmıştır:
-- `latest_attempt`: Son çalıştırılan run (başarılı, kısmi veya başarısız tüm denemeler).
-- `latest_pass`: Son kalite ve veri bütünlüğü onayını (Quality Gate PASS) alan run.
-- `latest_published`: Canlı üretim ortamına (production/downstream) başarıyla yazılmış son run.
-
-## 6. Güvenli Migrasyon ve Doğrulama Adımları (P1 Öncesi)
-
-1. **Audit Doğrulaması:** 4 SQL sorgusunun canlı çıktıları incelenecek.
-2. **Backup:** Canlı Supabase yedeği (pg_dump) alınacak.
-3. **ClickHouse Dual-Write:** Collector aynı anda hem Supabase hem ClickHouse'a yazacak.
-4. **7-14 Gün Doğrulama:** Ürün sayısı, kategori sayısı, fiyat, rank, rating, review_count karşılaştırılacak.
-5. **API Facade:** Verimimari frontend API'si tarihsel verileri ClickHouse'tan, güncel verileri Supabase'den çekecek.
-6. **Arşiv & Drop:** Eski tarihsel tablolar yalnız tüm grafikler doğrulandıktan sonra temizlenecek.
-
