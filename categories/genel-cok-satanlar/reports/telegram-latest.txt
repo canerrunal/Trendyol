@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-17
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-18
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) MOMORDİCA Coconut Mix - 250 ml (199 TL) | 2) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 3) Zühre Ana Karadut Özü 670 Gr (229.9 TL)
-🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) Tükendi | 3) Kenzlife mobilya kulpu köprü 96-128 mm siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-17.md
+🔥 Trend: 1) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 2) Monalisa Çocuk Renkli Ponpon Toka 10’Lu (23.05 TL) | 3) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL)
+🎯 Niche: 1) Timaş Yayınları Vatanın Kalbi | 2) H&M 3'lü Pamuklu Jogger Pantolon | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-18.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
