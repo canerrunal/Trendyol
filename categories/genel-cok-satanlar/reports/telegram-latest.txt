@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-18
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-19
 ✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
 ♻️ 300 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 2) Monalisa Çocuk Renkli Ponpon Toka 10’Lu (23.05 TL) | 3) Bargello 122 Kadın 50 ml Parfüm Edp Orıental (370 TL)
-🎯 Niche: 1) Timaş Yayınları Vatanın Kalbi | 2) H&M 3'lü Pamuklu Jogger Pantolon | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-18.md
+🔥 Trend: 1) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 2) Kiwi Kmx-3608 El Mikseri (299 TL) | 3) Aprilla Ahs 2013 Saç Düzleştirici, Seramik plaka, Otomatik kapanma, 230 derece, 45W (199 TL)
+🎯 Niche: 1) Timaş Yayınları Vatanın Kalbi | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) House Bird Büyük Boy 25 cm Katlanır Kore Yelpazesi Desenli Hafif Taşınabilir Çantalı El Yelpazesi - 1 ADET
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
