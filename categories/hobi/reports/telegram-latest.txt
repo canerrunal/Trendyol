@@ -1,7 +1,7 @@
-📊 Trendyol Hobi Günlük Raporu — 2026-09-17
-✅ 1000 ürünlük havuz | 325/325 detay yenilendi | kalite PASS
+📊 Trendyol Hobi Günlük Raporu — 2026-09-18
+✅ 1000 ürünlük havuz | 323/323 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 2) sgeteknoloji Hareket Sensörlü 16 Led 400mah 7 mod Şarjlı 3 Renk Beyaz-Gün-Nötr Işık Led Auto Dolap Içi, Koridor Type-c. (174.9 TL) | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet (47.4 TL)
-🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı | 3) House Bird Büyük Boy 25 cm Katlanır Kore Yelpazesi Desenli Hafif Taşınabilir Çantalı El Yelpazesi - 1 ADET
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-17.md
+🔥 Trend: 1) sgeteknoloji Hareket Sensörlü 16 Led 400mah 7 mod Şarjlı 3 Renk Beyaz-Gün-Nötr Işık Led Auto Dolap Içi, Koridor Type-c. (149 TL) | 2) İTHALCİM 300 Ledli 10 Sarkıt Perde Led Işık-8 Fonksiyon, Uzaktan Kumandalı, 3x3 Metre (199 TL) | 3) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet (47.4 TL)
+🎯 Niche: 1) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 2) House Bird Büyük Boy 25 cm Katlanır Kore Yelpazesi Desenli Hafif Taşınabilir Çantalı El Yelpazesi - 1 ADET | 3) Kitchen Beauty 100 Adet Kraft Kağıt Kek Kapsülü | Muffin Cupcake Kek Kapsülü | 100'lü Kağıt Kek Kalıbı
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hobi/reports/2026-09-18.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
