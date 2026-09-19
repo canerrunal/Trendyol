@@ -1,7 +1,7 @@
-📊 Trendyol Elektronik Günlük Raporu — 2026-09-18
-✅ 1000 ürünlük havuz | 322/323 detay yenilendi | kalite PASS
+📊 Trendyol Elektronik Günlük Raporu — 2026-09-19
+✅ 1000 ürünlük havuz | 319/320 detay yenilendi | kalite PASS
 ♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
-🔥 Trend: 1) Aprilla Ahs 2013 Saç Düzleştirici, Seramik plaka, Otomatik kapanma, 230 derece, 45W (199 TL) | 2) Kiwi Kmx-3608 El Mikseri (299 TL) | 3) Karaca Hatır Közde Türk Kahvesi ve Türk Kahve Makinesi Shiny Black 5 Fincan Kapasiteli Bol Köpüklü (1299 TL)
-🎯 Niche: 1) DYSON Airsmooth™ saç şekillendirme fırçası (Ceramic pink/Rose gold) | 2) Philips 7000 Serisi 13in1, Erkek Bakım Seti, Yüz/Saç/Vücut Tıraş Makinesi, Islak /Kuru Kullanım, MG7922/15 | 3) Grundig TM 1520 S Çay Makinesi
-📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/elektronik/reports/2026-09-18.md
+🔥 Trend: 1) Aprilla Ahs 2013 Saç Düzleştirici, Seramik plaka, Otomatik kapanma, 230 derece, 45W (199 TL) | 2) Karaca Hatır Közde Türk Kahvesi ve Türk Kahve Makinesi Shiny Black 5 Fincan Kapasiteli Bol Köpüklü (1299 TL) | 3) Kiwi Kmx-3608 El Mikseri (599 TL)
+🎯 Niche: 1) DYSON Airsmooth™ saç şekillendirme fırçası (Ceramic pink/Rose gold) | 2) Grundig TM 1520 S Çay Makinesi | 3) OSVELD Detox Vücut Yağ Analiz Özellikli Akıllı Tartı
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/elektronik/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

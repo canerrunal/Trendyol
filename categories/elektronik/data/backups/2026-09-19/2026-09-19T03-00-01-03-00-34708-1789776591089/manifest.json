@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "profile": "elektronik",
+  "date": "2026-09-19",
+  "capturedAt": "2026-09-19T03:00:01+03:00",
+  "savedAt": "2026-09-19T00:09:51.089Z",
+  "status": "partial_success",
+  "reason": "detail_partial",
+  "listedCount": 1000,
+  "detailResultCount": 320,
+  "productCount": 1000,
+  "quality": {
+    "status": "PASS",
+    "productCount": 1000,
+    "coreCoverage": 99.9,
+    "detailTarget": 300,
+    "detailAttempted": 320,
+    "detailRefreshed": 319,
+    "detailSuccessRate": 99.7,
+    "carriedForward": 179,
+    "listingOnly": 502,
+    "coverage": {
+      "stock_quantity": 0,
+      "seller_count_observed": 31.9,
+      "variant_id": 31.9,
+      "inventory_key": 31.9,
+      "product_id": 100,
+      "title": 99.9,
+      "url": 100,
+      "price": 99.9,
+      "seller_name": 49.7,
+      "stock_status": 100,
+      "rating": 94.7,
+      "rating_count": 94.7,
+      "review_count": 49.5,
+      "question_count": 49.4,
+      "delivery_summary": 11.2
+    },
+    "detailCoverage": {
+      "stock_quantity": 0,
+      "seller_count_observed": 100,
+      "variant_id": 100,
+      "inventory_key": 100,
+      "product_id": 100,
+      "title": 100,
+      "url": 100,
+      "price": 100,
+      "seller_name": 100,
+      "stock_status": 100,
+      "rating": 100,
+      "rating_count": 100,
+      "review_count": 100,
+      "question_count": 100,
+      "delivery_summary": 0.3
+    },
+    "lowCoverageFields": [
+      "stock_quantity",
+      "seller_count_observed",
+      "variant_id",
+      "inventory_key",
+      "seller_name",
+      "review_count",
+      "question_count",
+      "delivery_summary"
+    ],
+    "thresholds": {
+      "minimumRatingCountCoverage": 80
+    },
+    "date": "2026-09-19",
+    "generatedAt": "2026-09-19T03:00:01+03:00",
+    "selection": {
+      "topN": 300,
+      "rotationN": 0,
+      "rotationIndex": 416,
+      "rotationBlocks": 700,
+      "hotN": 25
+    }
+  },
+  "error": null
+}
