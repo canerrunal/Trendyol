@@ -1,0 +1,8 @@
+# Fiyatı Düşen Ürünler — 2026-09-13
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 46 | 14 | 28.4 | 12.2 | [interGO Yuvarlak Yan Sehpa Ahşap Ayaklı Tekli Zigon Sehpa](https://www.trendyol.com/intergo/yuvarlak-yan-sehpa-ahsap-ayakli-tekli-zigon-sehpa-p-831877594) | interGO | interGO | 300.46 | InStock | 4.583864118895966 | 297 | 62 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 18 | 8 | 70.1 | 36.8 | [GOOD NİGHT Twist Yeni Nesil Kanepe & Puf & Berjer Takım](https://www.trendyol.com/good-night/twist-yeni-nesil-kanepe-puf-berjer-takim-p-812573985?boutiqueId=61&merchantId=1134952) | GOOD NİGHT | Katt | 3868.25 | InStock | 4.217391304347826 | 13 | 20 | refreshed |  | Sepette %5 İndirim; 100 TL Kupon; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 44 | 56 | 38.6 | 11.1 | [PEKA Fasülye Orta Sehpa Ahşap Ayaklı Sehpa Iki Raflı Sehpa Dekoratif Sehpa Gazetelikli - Beyaz](https://www.trendyol.com/peka/fasulye-orta-sehpa-ahsap-ayakli-sehpa-iki-rafli-sehpa-dekoratif-sehpa-gazetelikli-beyaz-p-744730905) | PEKA | Peka Mobilya | 914.96 | InStock | 4.5136186770428015 | 548 | 79 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 68 | 20 | 19.7 | 10.3 | [Givayo Mobilya Milan Tv Ünitesi Duvara Monte - Ayaklı Kullanım 240 Cm](https://www.trendyol.com/givayo-mobilya/milan-tv-unitesi-duvara-monte-ayakli-kullanim-240-cm-p-873734538) | Givayo Mobilya | Givayo Mobilya | 3037.49 | InStock | 4.218333333333334 | 290 | 460 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |

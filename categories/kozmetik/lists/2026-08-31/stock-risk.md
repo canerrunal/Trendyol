@@ -1,0 +1,9 @@
+# Stok Riski — 2026-08-31
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 27 | - | 41.8 | 25.7 | [Bath & Body Works A Thousand Wishes Seyahat Boy Vücut Spreyi 75 ml](https://www.trendyol.com/bath-body-works/a-thousand-wishes-seyahat-boy-vucut-spreyi-75-ml-p-899906303?boutiqueId=61&merchantId=129468) | Bath & Body Works | Emily Collection | 949 | InStock | 4.3 | 93 | 14 | refreshed |  | Kargo Bedava |
+| 48 | 1 | 34.4 | 11.4 | [KIKO Ruj - Smart Fusion Lipstick 405 Vintage Rose 8025272631426](https://www.trendyol.com/kiko/ruj-smart-fusion-lipstick-405-vintage-rose-8025272631426-p-4360139?boutiqueId=61&merchantId=1096785) | KIKO | TWİN BEAUTY | 619 | InStock | 4.6 | - | 198 | refreshed |  | Kargo Bedava |
+| 133 | - | 25.5 | 4.5 | [beaulis Finish It Transparan Sabitleyici Pudra 540 - 2050000097508](https://www.trendyol.com/beaulis/finish-it-transparan-sabitleyici-pudra-540-2050000097508-p-111314051?boutiqueId=61&merchantId=425039) | beaulis | Feyabu | 262.35 | InStock | 4.4 | 1557 | 457 | refreshed |  | Sepette %1 İndirim; Kargo Bedava; Son 10 Günün En Düşük Fiyatı |
+| 136 | 8 | 26.7 | 3.3 | [La Cire Kaş Şekillendirici Wax 50 Ml](https://www.trendyol.com/la-cire/kas-sekillendirici-wax-50-ml-p-208029821?boutiqueId=61&merchantId=1179323) | La Cire | SOYKAN KOZMETİK | 98.9 | InStock | 4.2 | - | 179 | refreshed |  | Kargo Bedava |
+| 165 | -39 |  | - | [KIKO Ruj - Smart Fusion Lipstick 404 Rosy Biscuit 8025272631419](https://www.trendyol.com/kiko/ruj-smart-fusion-lipstick-404-rosy-biscuit-8025272631419-p-4360169?boutiqueId=61&merchantId=1181597) | KIKO | - | 578.75 | InStock | - | - | - | refreshed |  | Kargo Bedava; Sepette %25 İndirim; 48 TL Kupon; 830,91 TL Kupon; Son 10 Günün En Düşük Fiyatı |

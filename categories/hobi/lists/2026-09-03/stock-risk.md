@@ -1,0 +1,8 @@
+# Stok Riski — 2026-09-03
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 93 | - | 9.1 | 31.8 | [heptex Okuluna Hoş geldin Tacı 10 adet](https://www.trendyol.com/heptex/okuluna-hos-geldin-taci-10-adet-p-964904404) | heptex | Hep En Uygun | 284.9 | InStock | 4.7 | 1 | 10 | refreshed |  | Sepette %5 İndirim; 399 TL Kupon; 40 TL Kupon; Kargo Bedava |
+| 3 | - | 86.6 | 40.9 | [ALMİŞ Almiş Perle Etamin-kanaviçe 10'lu Iplik Seti (10 Gr-No:8)](https://www.trendyol.com/almis/almis-perle-etamin-kanavice-10-lu-iplik-seti-10-gr-no-8-p-870846978?merchantId=281194) | ALMİŞ | -AlmilaOnline- | 349.99 | InStock | 4.7 | - | 23 | refreshed |  | Kargo Bedava; Trendyol Plus'a Özel |
+| 38 | 43 | 14 | 26 | [ZEYMERADE Bordo Gelin Nedime Tefi Dantel 3D Süslemeli, Düğün Kına Sünnet Bride To Be](https://www.trendyol.com/zeymerade/bordo-gelin-nedime-tefi-dantel-3d-suslemeli-dugun-kina-sunnet-bride-to-be-p-866937885?boutiqueId=61&merchantId=134783) | ZEYMERADE | ZEYMERADE | 134.9 | InStock | 4.6 | - | 6 | refreshed |  | Kargo Bedava |
+| 54 | 26 | 20.7 | 9.3 | [ZEYMERADE Doğal Toz Kına 250 gr, Gelin, Damat, Düğün, Kına Gecesi, Sünnet, Asker Eğlencesi](https://www.trendyol.com/zeymerade/dogal-toz-kina-250-gr-gelin-damat-dugun-kina-gecesi-sunnet-asker-eglencesi-p-234242094?boutiqueId=61&merchantId=134783) | ZEYMERADE | ZEYMERADE | 139.9 | InStock | 4.5 | 382 | 60 | refreshed |  | Sepette %1 İndirim; 125 TL Kupon; 15 TL Kupon; Kargo Bedava; Trendyol Plus'a Özel |

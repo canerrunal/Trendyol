@@ -1,0 +1,7 @@
+# Niche Fırsatlar — 2026-09-05
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 5 | 1 | 89.4 | 41.7 | [Myplas Modern Ahşap Dikdörtgen Koltuk Sehpası Tepsi Dekoratif](https://www.trendyol.com/myplas/modern-ahsap-dikdortgen-koltuk-sehpasi-tepsi-dekoratif-p-1088897900) | Myplas | MYPLAS | 281.05 | InStock | 4.402985074626866 | 73 | 31 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |
+| 1 |  | 104.7 | 33.7 | [lefty Geniş Iskandinav Mantar Sehpa 3 Lü Zigon Sehpa Takımı Yan Orta Sehpa Traverten Mermer Desen Sehpa](https://www.trendyol.com/lefty/genis-iskandinav-mantar-sehpa-3-lu-zigon-sehpa-takimi-yan-orta-sehpa-traverten-mermer-desen-sehpa-p-867211774) | lefty | lefty | 1049.9 | InStock | 4.347942754919499 | 1330 | 358 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 3 | -1 | 109.2 | 31.1 | [YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi](https://www.trendyol.com/yunusoglu-home/katlanabilir-ahsap-koltuk-kenari-yan-sehpa-amerikan-servisi-kanepe-kenari-koltuk-tepsisi-ceviz-rengi-p-179070299) | YUNUSOĞLU HOME | YUNUSOĞLU HOME | 139.6 | InStock | 3.869309051955008 | 2106 | 202 | refreshed |  | Trendyol Plus'a Özel; Kargo Bedava |

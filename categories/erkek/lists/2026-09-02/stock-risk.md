@@ -1,0 +1,10 @@
+# Stok Riski — 2026-09-02
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 46 | 13 | 30.8 | 30.4 | [Puma Phase Backpack Unisex Çanta 091164-01 BLACK](https://www.trendyol.com/puma/phase-backpack-unisex-canta-091164-01-black-p-873178956?boutiqueId=61&merchantId=1086784) | Puma | PixelPazar | 1243 | InStock | 4.7 | - | 145 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 91 | 79 |  | - | [Tutku 6'lı Penye Klasik Beyaz Erkek Atlet](https://www.trendyol.com/tutku/6-li-penye-klasik-beyaz-erkek-atlet-p-69269013?boutiqueId=61&merchantId=640343) | Tutku | B YOU LİFE | 480 | InStock | - | - | - | refreshed |  | Kargo Bedava |
+| 93 | 82 |  | - | [Gezer Yazlık Erkek Eva Banyo Bahçe Islak Zemine Uygun Terlik](https://www.trendyol.com/gezer/yazlik-erkek-eva-banyo-bahce-islak-zemine-uygun-terlik-p-1148216602?boutiqueId=61&merchantId=162965) | Gezer | - | 175 | InStock | - | - | - | refreshed |  |  |
+| 134 | -31 | 1 | - | [Tutku 8'li Fırsat Ürünü! Erkek Penye Havlu Bel Boxer Karışık Renk](https://www.trendyol.com/tutku/8-li-firsat-urunu-erkek-penye-havlu-bel-boxer-karisik-renk-p-66684752?boutiqueId=61&merchantId=916319) | Tutku | USLU GYM | 618.75 | InStock | - | - | - | refreshed |  | Kargo Bedava |
+| 142 | 45 | 20.7 | 9.3 | [mayback Erkek Günlük Ortopedik Sneaker Ayakkabı](https://www.trendyol.com/mayback/erkek-gunluk-ortopedik-sneaker-ayakkabi-p-1093288545?boutiqueId=61&merchantId=903040) | mayback | TRENDLİNE01 | 803.26 | InStock | 4.2 | - | 70 | refreshed |  | 40 TL Kupon; Kargo Bedava; Trendyol Plus'a Özel |
+| 45 | 105 | 56 | 10.5 | [Yves Rocher Moment De Bonheur Leau - Edt 50 ml](https://www.trendyol.com/yves-rocher/moment-de-bonheur-leau-edt-50-ml-p-156348481?boutiqueId=61&merchantId=670277) | Yves Rocher | AreSStore | 1160.59 | InStock | 4.3 | 563 | 60 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Sepette %25 İndirim; Son 10 günün en düşük fiyatı |

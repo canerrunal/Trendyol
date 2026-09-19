@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "productCount": 1000,
+  "coreCoverage": 100,
+  "detailTarget": 300,
+  "detailAttempted": 307,
+  "detailRefreshed": 307,
+  "detailSuccessRate": 100,
+  "carriedForward": 66,
+  "listingOnly": 627,
+  "coverage": {
+    "stock_quantity": 0,
+    "seller_count_observed": 30.6,
+    "variant_id": 30.6,
+    "inventory_key": 30.6,
+    "product_id": 100,
+    "title": 100,
+    "url": 100,
+    "price": 100,
+    "seller_name": 37.2,
+    "stock_status": 100,
+    "rating": 81.4,
+    "rating_count": 81.4,
+    "review_count": 37.3,
+    "question_count": 32.2,
+    "delivery_summary": 21
+  },
+  "detailCoverage": {
+    "stock_quantity": 0,
+    "seller_count_observed": 99.7,
+    "variant_id": 99.7,
+    "inventory_key": 99.7,
+    "product_id": 100,
+    "title": 100,
+    "url": 100,
+    "price": 100,
+    "seller_name": 99.7,
+    "stock_status": 100,
+    "rating": 100,
+    "rating_count": 100,
+    "review_count": 100,
+    "question_count": 83.4,
+    "delivery_summary": 47.9
+  },
+  "lowCoverageFields": [
+    "stock_quantity",
+    "seller_count_observed",
+    "variant_id",
+    "inventory_key",
+    "seller_name",
+    "review_count",
+    "question_count",
+    "delivery_summary"
+  ],
+  "thresholds": {
+    "minimumRatingCountCoverage": 80
+  },
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T22:00:36+03:00",
+  "selection": {
+    "topN": 300,
+    "rotationN": 0,
+    "rotationIndex": 412,
+    "rotationBlocks": 700,
+    "hotN": 25
+  }
+}

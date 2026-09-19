@@ -1,0 +1,8 @@
+# Stok Riski — 2026-08-31
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 66 | -37 | 34.4 | 10.4 | [KUMTEL KTF-258W Kule Tipi Beyaz Vantilatör – 50W, Zaman Ayarlı, 3 Hız Kademeli, Sessiz Çalışma](https://www.trendyol.com/kumtel/ktf-258w-kule-tipi-beyaz-vantilator-50w-zaman-ayarli-3-hiz-kademeli-sessiz-calisma-p-317122440?boutiqueId=61&merchantId=127448) | KUMTEL | evimponcik | 1409 | InStock | 4.3 | 6097 | 1895 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 111 | 56 | 18.8 | 11.2 | [Philips Lumea 9900 Serisi BRI953/01 IPL Tüy Alma, SkinAI Uygulama,Vücut,Yüz ve Bikini,3 Başlık,Çanta](https://www.trendyol.com/philips/lumea-9900-serisi-bri953-01-ipl-tuy-alma-skinai-uygulama-vucut-yuz-ve-bikini-3-baslik-canta-p-922158266?boutiqueId=61&merchantId=1315124) | Philips | Kaya Teknomarkt | 14499 | InStock | 4.3 | 226 | 1130 | refreshed |  | Kargo Bedava; Peşin Fiyatına 9 Taksit |
+| 119 | 8 | 25.4 | 4.6 | [Kiwi Ksı-646 2'si 1 Arada Buharlı Ütü Krem](https://www.trendyol.com/kiwi/ksi-646-2-si-1-arada-buharli-utu-krem-p-815470422?boutiqueId=61&merchantId=137908) | Kiwi | Mega Çarşı | 1600 | InStock | 4.3 | - | 294 | refreshed |  | Kargo Bedava; Sepette %1 İndirim; Peşin Fiyatına 3 Taksit |
+| 181 | -35 | 35.1 | 3.4 | [Roborock Vacuum Q8 Max Pro Robot Süpürge Beyaz](https://www.trendyol.com/roborock/vacuum-q8-max-pro-robot-supurge-beyaz-p-929960380?boutiqueId=61&merchantId=1174912) | Roborock | TREDA | 13192 | InStock | 4.3 | 2115 | 2302 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Peşin Fiyatına 9 Taksit; Son 10 günün en düşük fiyatı |

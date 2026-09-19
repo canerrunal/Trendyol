@@ -1,0 +1,7 @@
+# Stok Riski — 2026-08-26
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 24 | 2 | 61.3 | 13.7 | [KIKO Renkli Dudak Nemlendiricisi-Coloured Balm-08 Almond- Shea Yağı ve Besleyici A,E,C Vitaminleri](https://www.trendyol.com/kiko/renkli-dudak-nemlendiricisi-coloured-balm-08-almond-shea-yagi-ve-besleyici-a-e-c-vitaminleri-p-806014667?boutiqueId=61&merchantId=1215847) | KIKO | - | 649 | InStock | 4.6 | 4567 | - | refreshed |  | Kargo Bedava; Sepette %25 İndirim; 50 TL Kupon; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |
+| 86 | - | 18.8 | 26.2 | [Mac Lustreglass Sheer-Shine Lipstick - Nemlendirme Etkili Parlak Bitişli Ruj - Thanks, It's MAC](https://www.trendyol.com/mac/lustreglass-sheer-shine-lipstick-nemlendirme-etkili-parlak-bitisli-ruj-thanks-it-s-mac-p-1168515977?boutiqueId=61&merchantId=104736) | Mac | - | 1316.65 | InStock | 5 | - | 11 | refreshed |  | Sepette %15 İndirim; Kargo Bedava; 30 TL Kupon; Trendyol Plus'a Özel |
+| 175 | -9 | 55.5 | 50 | [CALLİEL Leke Karşıtı Gözenek Sıkılaştırıcı Glikolik Asit Tonik 200 Ml](https://www.trendyol.com/calliel/leke-karsiti-gozenek-sikilastirici-glikolik-asit-tonik-200-ml-p-847267079?boutiqueId=61&merchantId=1065469) | CALLİEL | THE CLEAN CONTENTS | 399 | InStock | 4.3 | 6428 | 5048 | refreshed |  | Kargo Bedava; Trendyol Plus'a Özel |

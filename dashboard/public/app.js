@@ -84,6 +84,37 @@ function renderSocial() {
   $('#socialRuns').innerHTML = runs.length ? runs.map(run => `<a class="social-row run-${run.outcome}" href="${escapeHtml(run.url)}" target="_blank" rel="noreferrer"><span class="run-dot"></span><div><strong>${socialOutcome(run.outcome)}</strong><small>${escapeHtml(run.event === 'workflow_dispatch' ? 'Manuel test' : 'Duyuru değişikliği')} · ${fmtDateTime(run.createdAt)}</small></div><i>#${run.id}</i></a>`).join('') : `<p class="social-empty">${escapeHtml(social.error || 'Henüz otomasyon çalışması yok.')}</p>`;
 }
 
+function renderSocial() {
+  const social = state.data.social;
+  if (!social) return;
+  const summary = social.summary || {};
+  const lastOutcome = socialOutcome(summary.lastOutcome);
+  const statusClass = !social.available ? 'unavailable' : social.enabled ? 'active' : 'paused';
+  $('#socialAutomation').className = `social-automation ${statusClass}`;
+  $('#socialAutomation').textContent = !social.available ? 'Bağlantı yok' : social.enabled ? 'Otomatik yayın açık' : 'Otomatik yayın kapalı';
+  $('#socialWorkflow').href = social.workflowUrl;
+  $('#socialRepository').href = social.repositoryUrl;
+  $('#socialSummary').innerHTML = [
+    ['Aktif platform',`${summary.activePlatforms || 0}/4`,social.enabled ? 'push sonrası otomatik' : 'yayın hattı kapalı'],
+    ['Yayın kaydı',fmtNumber(summary.publicationCount),'platform etiketleri'],
+    ['Son çalışma',lastOutcome,fmtDateTime(summary.lastRunAt),summary.lastOutcome === 'failed' ? 'bad' : summary.lastOutcome === 'running' ? 'running' : 'good'],
+    ['Başarılı iş',summary.successfulRuns || 0,`${summary.failedRuns || 0} hata kaydı`,summary.failedRuns ? 'warn' : 'good']
+  ].map(([label,value,detail,cls='']) => `<div class="social-stat ${cls}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong><small>${escapeHtml(detail)}</small></div>`).join('');
+  $('#socialPlatforms').innerHTML = (social.platforms || []).map(platform => {
+    const latest = platform.latest;
+    return `<article class="social-platform ${platform.enabled ? 'enabled' : 'disabled'}">
+      <div class="platform-top"><span class="platform-mark ${platform.key}">${platformMark(platform.key)}</span><div><strong>${escapeHtml(platform.label)}</strong><small>${escapeHtml(platform.handle)}</small></div><b>${platform.enabled ? 'Açık' : 'Kapalı'}</b></div>
+      <div class="platform-count"><strong>${fmtNumber(platform.publicationCount)}</strong><span>yayın kaydı</span></div>
+      <p>${latest ? escapeHtml(prettySlug(latest.slug)) : 'Henüz yayın etiketi yok'}</p>
+      <div class="platform-links"><a href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noreferrer">Profil ↗</a>${latest ? `<a href="${escapeHtml(latest.announcementUrl)}" target="_blank" rel="noreferrer">Duyuru ↗</a>` : ''}</div>
+    </article>`;
+  }).join('');
+  const publications = social.recentPublications || [];
+  $('#socialPublications').innerHTML = publications.length ? publications.map(item => `<a class="social-row" href="${escapeHtml(item.announcementUrl)}" target="_blank" rel="noreferrer"><span class="mini-mark">${platformMark(item.platform)}</span><div><strong>${escapeHtml(prettySlug(item.slug))}</strong><small>${escapeHtml(item.platform)} · ${fmtDateTime(item.sourceCommitAt)}</small></div><i>↗</i></a>`).join('') : '<p class="social-empty">Henüz sosyal yayın kaydı yok.</p>';
+  const runs = social.recentRuns || [];
+  $('#socialRuns').innerHTML = runs.length ? runs.map(run => `<a class="social-row run-${run.outcome}" href="${escapeHtml(run.url)}" target="_blank" rel="noreferrer"><span class="run-dot"></span><div><strong>${socialOutcome(run.outcome)}</strong><small>${escapeHtml(run.event === 'workflow_dispatch' ? 'Manuel test' : 'Duyuru değişikliği')} · ${fmtDateTime(run.createdAt)}</small></div><i>#${run.id}</i></a>`).join('') : `<p class="social-empty">${escapeHtml(social.error || 'Henüz otomasyon çalışması yok.')}</p>`;
+}
+
 function taxonomyStageState(stage) {
   if (!stage.enabled) return 'paused';
   if (['running','claimed'].includes(stage.status)) return 'running';

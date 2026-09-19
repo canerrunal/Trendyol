@@ -1,0 +1,8 @@
+# Fiyatı Düşen Ürünler — 2026-08-31
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 56 | 13 | 29.1 | 10.9 | [Puklife Ceylin 4lü Zigon Sehpa Gümüş Renk Metal Ayak, Füme Ayna](https://www.trendyol.com/puklife/ceylin-4lu-zigon-sehpa-gumus-renk-metal-ayak-fume-ayna-p-898808123) | Puklife | Puklife Mobilya | 2439.95 | InStock | 4.6 | - | 48 | refreshed |  | Sepette %10 İndirim; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 57 | -8 | 30.7 | 9.3 | [Puklife Ceylin 4lü Zigon Sehpa Gold Renk Metal Ayak, Parlak Krem Mdf](https://www.trendyol.com/puklife/ceylin-4lu-zigon-sehpa-gold-renk-metal-ayak-parlak-krem-mdf-p-850541165) | Puklife | Puklife Mobilya | 2776.02 | InStock | 4.4 | - | 154 | refreshed |  | Sepette %10 İndirim; Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 20 | -5 | 72.2 | 30.1 | [Myplas Modern Ahşap Dikdörtgen Koltuk Sehpası Tepsi Dekoratif](https://www.trendyol.com/myplas/modern-ahsap-dikdortgen-koltuk-sehpasi-tepsi-dekoratif-p-1088897900) | Myplas | - | 289.29 | InStock | 4.4 | 72 | 28 | refreshed |  | Son 10 Günün En Düşük Fiyatı; Kargo Bedava; Son 10 günün en düşük fiyatı |
+| 1 |  | 108.4 | 29.9 | [Hürrem Koyu Kahve Koltuk Tepsisi Yan Sehpa Tesbih Cevizi Cm Ortasabit 13,5 Cm Amerikan Servisi](https://www.trendyol.com/hurrem/koyu-kahve-koltuk-tepsisi-yan-sehpa-tesbih-cevizi-cm-ortasabit-13-5-cm-amerikan-servisi-p-133138947) | Hürrem | Asır Dekorasyon | 92.71 | InStock | 4 | 3894 | 153 | refreshed |  | Kargo Bedava |

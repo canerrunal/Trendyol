@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "productCount": 200,
+  "coreCoverage": 99.8,
+  "detailTarget": 200,
+  "detailAttempted": 200,
+  "detailRefreshed": 200,
+  "detailSuccessRate": 100,
+  "carriedForward": 0,
+  "listingOnly": 0,
+  "coverage": {
+    "product_id": 100,
+    "title": 100,
+    "url": 100,
+    "price": 99,
+    "seller_name": 88,
+    "stock_status": 100,
+    "rating": 66.5,
+    "rating_count": 66.5,
+    "review_count": 25,
+    "question_count": 82.5,
+    "delivery_summary": 100
+  },
+  "detailCoverage": {
+    "product_id": 100,
+    "title": 100,
+    "url": 100,
+    "price": 99,
+    "seller_name": 88,
+    "stock_status": 100,
+    "rating": 66.5,
+    "rating_count": 66.5,
+    "review_count": 25,
+    "question_count": 82.5,
+    "delivery_summary": 100
+  },
+  "lowCoverageFields": [
+    "rating",
+    "rating_count",
+    "review_count"
+  ],
+  "thresholds": {
+    "minimumRatingCountCoverage": 50
+  },
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T13:00:17+03:00",
+  "selection": {
+    "topN": 200,
+    "rotationN": 0,
+    "rotationIndex": 1,
+    "rotationBlocks": 1,
+    "hotN": 25
+  }
+}

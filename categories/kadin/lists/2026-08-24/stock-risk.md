@@ -1,0 +1,9 @@
+# Stok Riski — 2026-08-24
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 20 | -2 | 89.9 | 56.7 | [ORNATE Karınca Yumurtası Yağlı Tüy Azaltıcı Ve Tüy Serum 30ml %0.5 Formic Acid %10 Aloe Vera](https://www.trendyol.com/ornate/karinca-yumurtasi-yagli-tuy-azaltici-ve-tuy-serum-30ml-0-5-formic-acid-10-aloe-vera-p-474728905?boutiqueId=61&merchantId=985035) | ORNATE | IŞILTI international | 349.99 | InStock | 4.3 | 14461 | 8366 | refreshed |  | Kargo Bedava |
+| 39 | -5 | 10.3 | - | [Genel Markalar Kadın Erkek Şeffaf Kaymaz Taban Deniz Plaj Ayakkabısı](https://www.trendyol.com/genel-markalar/kadin-erkek-seffaf-kaymaz-taban-deniz-plaj-ayakkabisi-p-824884209?boutiqueId=61&merchantId=1082474) | Genel Markalar | - | 170 | InStock | - | - | - | refreshed |  | Kargo Bedava |
+| 40 | 14 | 21.7 | 42.5 | [Laslusa BUTTER SQUISHY](https://www.trendyol.com/laslusa/butter-squishy-p-1161167547?boutiqueId=61&merchantId=1304571) | Laslusa | ER TİCARETT | 230.59 | InStock | 3.6 | 46 | 67 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı |
+| 131 | 69 | 29.4 | 0.6 | [Newlilla 10001 Seven Days Kadın Külot V6-10001](https://www.trendyol.com/newlilla/10001-seven-days-kadin-kulot-v6-10001-p-311093681?boutiqueId=61&merchantId=122545) | Newlilla | Newlilla | 391.72 | InStock | 4.6 | - | 248 | refreshed |  |  |
+| 171 | -47 | 23.5 | 6.5 | [Imprime Sue EDP Kadın Parfüm 50ml / Çiçeksi & Pudralı / Şakayık, Limon, Gül, Müge, Manolya, Misk](https://www.trendyol.com/imprime/sue-edp-kadin-parfum-50ml-ciceksi-pudrali-sakayik-limon-gul-muge-manolya-misk-p-1059190418?boutiqueId=61&merchantId=789349) | Imprime | Millstone | 632 | InStock | 3.9 | 876 | 143 | refreshed |  | Kargo Bedava; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |

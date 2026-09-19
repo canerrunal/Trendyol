@@ -1,0 +1,8 @@
+# Stok Riski — 2026-08-27
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 34 | 24 | 48.6 | 18.4 | [Tutku ERKEK DÜZ PENYE BOXER 6 Adet](https://www.trendyol.com/tutku/erkek-duz-penye-boxer-6-adet-p-122430746?boutiqueId=61&merchantId=126575) | Tutku | PiJALİNA | 505 | InStock | 4.6 | - | 1550 | refreshed |  | 20 TL Kupon; Kargo Bedava |
+| 60 | 35 | 39.2 | 10.4 | [AC&Co / Altınyıldız Classics Erkek Çekmeyen Pamuklu Kumaş Slim Fit Dar Kesim Beyaz Kıvrılmaz Polo Yaka T-shirt](https://www.trendyol.com/ac-co-altinyildiz-classics/erkek-cekmeyen-pamuklu-kumas-slim-fit-dar-kesim-beyaz-kivrilmaz-polo-yaka-t-shirt-p-37206082?boutiqueId=61&merchantId=347) | AC&Co / Altınyıldız Classics | Altınyıldız Classics | 459.99 | InStock | 4.6 | - | 210 | refreshed |  | Kargo Bedava; Trendyol Plus'a Özel |
+| 10 | 3 | 90.1 | 20 | [Avon Perceive Erkek Parfüm Edt 100 Ml.](https://www.trendyol.com/avon/perceive-erkek-parfum-edt-100-ml-p-1206454?boutiqueId=61&merchantId=766691) | Avon | SevSev Kozmetik | 699 | InStock | 4.3 | 5788 | 553 | refreshed |  | Kargo Bedava |
+| 50 | -6 | 49.2 | 5.8 | [GIGI MILANO Erkek Parfüm- Sexy Pour Homme Erkek Parfüm 50 ml erkek parfüm](https://www.trendyol.com/gigi-milano/erkek-parfum-sexy-pour-homme-erkek-parfum-50-ml-erkek-parfum-p-754766118?boutiqueId=61&merchantId=852210) | GIGI MILANO | Gigi Milano | 1455 | InStock | 4.6 | 1055 | 454 | refreshed |  | Sepette %25 İndirim; Kargo Bedava; Süper Fırsat Ürünü; Trendyol Plus'a Özel |

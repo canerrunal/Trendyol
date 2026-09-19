@@ -1,0 +1,9 @@
+# Stok Riski — 2026-08-30
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 9 | -2 | 73.8 | 53.3 | [Bershka Arkası açık kısa sivri topuklu ayakkabı](https://www.trendyol.com/bershka/arkasi-acik-kisa-sivri-topuklu-ayakkabi-p-1173609404) | Bershka | BERSHKA | 1250 | InStock | 4.4 | 8 | - | refreshed |  | Peşin Fiyatına 3 Taksit |
+| 4 | 1 | 88.2 | 42.7 | [H&M MAMA 2'li Pamuklu Emzirme Sütyeni](https://www.trendyol.com/h-m/mama-2-li-pamuklu-emzirme-sutyeni-p-897535196) | H&M | H&M | 599.99 | InStock | 4.4 | - | 7 | refreshed |  | Kargo Bedava |
+| 10 | -2 | 65.6 | 44.4 | [Herbalife Collagen Drink Powder / Çilek & Limon Aromalı Kolajen Takviyesi /](https://www.trendyol.com/herbalife/collagen-drink-powder-cilek-limon-aromali-kolajen-takviyesi-p-1063046307) | Herbalife | STAR LIFE | 1655 | InStock | 4.1 | 4 | 7 | refreshed |  | Trendyol Plus'a Özel |
+| 1 | 1 | 79.5 | - | [İMEXTECH 4K Çantalı Dijital Retro Video Kamera 48MP 16X Zoom Işıklı (+32GB Kart Hediye) Fotoğraf Makinesi](https://www.trendyol.com/imextech/4k-cantali-dijital-retro-video-kamera-48mp-16x-zoom-isikli-32gb-kart-hediye-fotograf-makinesi-p-1157702414) | İMEXTECH | Serreha | 3200 | InStock | - | - | 17 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 2 | -1 | 81.6 | 50.2 | [İMEXTECH 4K Çantalı Dijital Retro Video Kamera 48MP 16X Zoom Işıklı (+32GB Kart Hediye) Fotoğraf Makinesi](https://www.trendyol.com/imextech/4k-cantali-dijital-retro-video-kamera-48mp-16x-zoom-isikli-32gb-kart-hediye-fotograf-makinesi-p-1162337246) | İMEXTECH | Serreha | 2770 | InStock | 3 | - | 18 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |

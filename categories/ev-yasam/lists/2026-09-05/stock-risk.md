@@ -1,0 +1,7 @@
+# Stok Riski — 2026-09-05
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 44 | - | 82.3 | 15.2 | [FİENS LÜKS İPEK BAMBU Şantuklu Ağır Gramajlı 1/3 Sık Pileli Tül Perde Ütü İstemeyen En Çok Satılan](https://www.trendyol.com/fiens/luks-ipek-bambu-santuklu-agir-gramajli-1-3-sik-pileli-tul-perde-utu-istemeyen-en-cok-satilan-p-364833417?boutiqueId=61&merchantId=675777) | FİENS | İLKBİRLANT FİENS | 0.01 | InStock | 4.6 | - | 428 | refreshed |  | Sepette %74 İndirim; Süper Fırsat Ürünü; Kargo Bedava |
+| 63 | - | 21.7 | 8.3 | [TEFAL Fresh Kitchen Paslanmaz Çelik 12/15 Cm 2'li Şef Bıçağı - 2100123283](https://www.trendyol.com/tefal/fresh-kitchen-paslanmaz-celik-12-15-cm-2-li-sef-bicagi-2100123283-p-832572534?boutiqueId=61&merchantId=530) | TEFAL | Tefal | 699 | InStock | 4.8 | 515 | 54 | refreshed |  | Kargo Bedava; Sepette %15 İndirim |
+| 71 | - | 14.9 | 15.1 | [Kütahya Porselen Bone Luz 6 Parça 2 Kişilik Yemek Takımı](https://www.trendyol.com/kutahya-porselen/bone-luz-6-parca-2-kisilik-yemek-takimi-p-1146204991?boutiqueId=61&merchantId=404697) | Kütahya Porselen | KÜTAHYA PORSELEN | 799.2 | InStock | 4.8 | 71 | 19 | refreshed |  | Kargo Bedava; Sepette %50 İndirim; 150 TL Kupon; 80 TL Kupon; Son 10 Günün En Düşük Fiyatı; Trendyol Plus'a Özel |

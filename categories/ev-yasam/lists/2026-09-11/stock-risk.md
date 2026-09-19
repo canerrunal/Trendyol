@@ -1,0 +1,7 @@
+# Stok Riski — 2026-09-11
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 23 | 42 | 61.4 | 74.4 | [DGM YAPI DOLAP İÇİNE SUNTALAM RAF ÖLÇÜYE GÖRE KESİM YAPILIR](https://www.trendyol.com/dgm-yapi/dolap-icine-suntalam-raf-olcuye-gore-kesim-yapilir-p-1156808324?boutiqueId=61&merchantId=1117275) | DGM YAPI | DGM YAPI | 25 | InStock | 5 | 21 | 255 | refreshed |  | 150 TL Kupon; 50 TL Kupon; 357,35 TL Kupon; 360,57 TL Kupon; Kargo Bedava; Trendyol Plus'a Özel |
+| 50 | -11 | 15.6 | 14.4 | [ZURİ DESİGN 3'lü Set Düz Cam Vazo - Modern ve Şık Dekoratif Vazo 9x10 - 9x14 - 9x18 ( Mum Dahil Değildir )](https://www.trendyol.com/zuri-design/3-lu-set-duz-cam-vazo-modern-ve-sik-dekoratif-vazo-9x10-9x14-9x18-mum-dahil-degildir-p-983199013?boutiqueId=61&merchantId=231980) | ZURİ DESİGN | AtölyedenAL | 549.95 | InStock | 4.722891566265061 | 87 | 31 | refreshed |  | Kargo Bedava; Trendyol Plus'a Özel |
+| 43 | - | 17.9 | 15.6 | [Genel Markalar 10 Cm Minimal Vazo Set 3'lü Bohem Biblo Minyatür Dekoratif Vazo Seti Ham Beyaz](https://www.trendyol.com/genel-markalar/10-cm-minimal-vazo-set-3-lu-bohem-biblo-minyatur-dekoratif-vazo-seti-ham-beyaz-p-878819077?boutiqueId=61&merchantId=197491) | Genel Markalar | OS Atölye | 127.5 | InStock | 3.7874564459930316 | 171 | 27 | refreshed |  | Kargo Bedava; Trendyol Plus'a Özel |

@@ -1,0 +1,7 @@
+# Stok Riski — 2026-09-08
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 19 | 12 | 57.9 | 29.6 | [ALgorand Home Oval Peluş Halı Krem Kaymaz Taban Yıkanabilir Yumuşak Salon Yatak Odası Halısı](https://www.trendyol.com/algorand-home/oval-pelus-hali-krem-kaymaz-taban-yikanabilir-yumusak-salon-yatak-odasi-halisi-p-1136127901?boutiqueId=61&merchantId=201516) | ALgorand Home | ALgorand Home | 185.99 | InStock | 4.057142857142857 | 96 | 61 | refreshed |  | Sepette %1 İndirim; Kargo Bedava |
+| 74 | -47 | 16.6 | 13.4 | [TOSHE Kahverengi Tekli Keten Dokuma Kırlent Kılıfı , Dekoratif Kırlent](https://www.trendyol.com/toshe/kahverengi-tekli-keten-dokuma-kirlent-kilifi-dekoratif-kirlent-p-354145843?boutiqueId=61&merchantId=559512) | TOSHE | TOSHE | 199.9 | InStock | 4.818181818181818 | 118 | 65 | refreshed |  | Sepette %1 İndirim; Kargo Bedava; Trendyol Plus'a Özel |
+| 89 | - | 20.9 | 9.1 | [Home Modern Game Over Kabartmalı Süs – Dekoratif Obje, Duvar & Masaüstü Aksesuarı,Hediye](https://www.trendyol.com/home/modern-game-over-kabartmali-sus-dekoratif-obje-duvar-masaustu-aksesuari-hediye-p-979568287?boutiqueId=61&merchantId=1309398) | Home | Zivka | 34.99 | InStock | 4.483870967741935 | 408 | 65 | refreshed |  | Kargo Bedava |

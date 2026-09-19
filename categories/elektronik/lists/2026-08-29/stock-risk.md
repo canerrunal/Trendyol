@@ -1,0 +1,7 @@
+# Stok Riski — 2026-08-29
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 8 | -4 | 95.1 | 49.1 | [KUMTEL KTF-355 Siyah 16 inç Ayaklı Vantilatör 50 W, 5 Pervaneli, 3 Kademeli, 121 cm Yükseklik](https://www.trendyol.com/kumtel/ktf-355-siyah-16-inc-ayakli-vantilator-50-w-5-pervaneli-3-kademeli-121-cm-yukseklik-p-1146148704?boutiqueId=61&merchantId=150479) | KUMTEL | BSTBilişim | 1089 | InStock | 3.8 | - | 62 | refreshed |  | 50 TL Kupon; Kargo Bedava; Peşin Fiyatına 3 Taksit; Son 10 Günün En Düşük Fiyatı |
+| 154 | 28 | 26.6 | 3.4 | [Roborock Vacuum Q8 Max Pro Robot Süpürge Beyaz](https://www.trendyol.com/roborock/vacuum-q8-max-pro-robot-supurge-beyaz-p-929960380?boutiqueId=61&merchantId=1080831) | Roborock | Mesoy | 13600 | InStock | 4.3 | 2104 | 2296 | refreshed |  | Kargo Bedava; Peşin Fiyatına 9 Taksit |
+| 168 | 15 | 18.8 | 11.2 | [Philips Lumea 9900 Serisi BRI953/01 IPL Tüy Alma, SkinAI Uygulama,Vücut,Yüz ve Bikini,3 Başlık,Çanta](https://www.trendyol.com/philips/lumea-9900-serisi-bri953-01-ipl-tuy-alma-skinai-uygulama-vucut-yuz-ve-bikini-3-baslik-canta-p-922158266?boutiqueId=61&merchantId=1315124) | Philips | Kaya Teknomarkt | 14779.55 | InStock | 4.3 | 221 | 1123 | refreshed |  | Kargo Bedava; Peşin Fiyatına 9 Taksit |

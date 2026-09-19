@@ -1,0 +1,7 @@
+# Stok Riski — 2026-09-01
+
+| Kapsam içi sıra | Sıra Δ | Trend | Niche | Ürün | Marka | Satıcı | Fiyat TL | Stok | Puan | Yorum | Soru | Detay | Yaş (gün) | Kampanya |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 73 | -5 | 22.1 | 7.9 | [Givayo Mobilya Milan Tv Ünitesi Duvara Monte - Ayaklı Kullanım 240 Cm](https://www.trendyol.com/givayo-mobilya/milan-tv-unitesi-duvara-monte-ayakli-kullanim-240-cm-p-873734538) | Givayo Mobilya | Givayo Mobilya | 3199.99 | InStock | 4.2 | - | 459 | refreshed |  | Kargo Bedava; Peşin Fiyatına 3 Taksit |
+| 89 | -8 | 2.4 | 27.6 | [Pablohome Monaco Tedy Koltuk Takımı 2 Adet Üçlü Kanepe 1 Adet Berjer](https://www.trendyol.com/pablohome/monaco-tedy-koltuk-takimi-2-adet-uclu-kanepe-1-adet-berjer-p-660525010?boutiqueId=61&merchantId=544677) | Pablohome | Pablo home concept | 173999 | InStock | 5 | 1 | 25 | refreshed |  | Kargo Bedava; Sepette %15 İndirim; 500 TL Kupon; Peşin Fiyatına 9 Taksit; Trendyol Plus'a Özel |
+| 95 | -1 | 2.4 | 27.6 | [joyfoam modular foam sofas TERRA LÜKS KÖŞE BERJER YATAKLI YIKANABİLİR ORTA SERT SUNGER GENÇ DİNAMİK TARZ](https://www.trendyol.com/joyfoam-modular-foam-sofas/terra-luks-kose-berjer-yatakli-yikanabilir-orta-sert-sunger-genc-dinamik-tarz-p-1104193752?boutiqueId=61&merchantId=1219953) | joyfoam modular foam sofas | Joyfoam modular foam sofas | 7419 | InStock | 4 | 1 | 6 | refreshed |  | Kargo Bedava; Sepette %5 İndirim; 250 TL Kupon; Peşin Fiyatına 6 Taksit; Trendyol Plus'a Özel |
