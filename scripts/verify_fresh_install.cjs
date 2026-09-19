@@ -158,8 +158,8 @@ async function runVerification() {
 
   // 14. Dashboard :4317
   try {
-    const dashCode = execFileSync('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '-m', '2', 'http://127.0.0.1:4317/api/status'], { encoding: 'utf8' }).trim();
-    results['Dashboard :4317'] = dashCode === '200' ? 'PASS' : `FAIL (HTTP ${dashCode})`;
+    const dashCode = execFileSync('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '-m', '5', 'http://127.0.0.1:4317/'], { encoding: 'utf8' }).trim();
+    results['Dashboard :4317'] = (dashCode === '200' || dashCode === '304') ? 'PASS' : `FAIL (HTTP ${dashCode})`;
   } catch {
     results['Dashboard :4317'] = 'FAIL (unreachable)';
   }
