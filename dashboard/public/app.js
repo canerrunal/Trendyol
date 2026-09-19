@@ -34,14 +34,23 @@ function renderAlerts() {
 
 function renderSummary() {
   const s = state.data.summary;
+  const d = state.data.disk || {};
+  const ch = state.data.clickhouse || {};
+  const b = state.data.backup || {};
+  const t = state.data.tunnel || {};
+  const outbox = state.data.outbox || {};
+
   const cards = [
-    ['Toplam görev',s.total,'aktif kategori',''],
-    ['Bugün başarılı',s.completedToday,`${s.total} görevin ${s.completedToday} tanesi`,'good'],
-    ['Dikkat gereken',s.failed+s.warning,`${s.failed} hata · ${s.warning} uyarı`,s.failed?'bad':'warn'],
-    ['İzlenen ürün',fmtNumber(s.totalProducts),'son geçerli havuz toplamı',''],
-    ['GitHub',state.data.repository.shortHead,'main güncel commit','good']
+    ['Toplam görev', s.total, 'aktif kategori', ''],
+    ['Bugün başarılı', s.completedToday, `${s.total} görevin ${s.completedToday} tanesi`, 'good'],
+    ['Dikkat gereken', s.failed + s.warning, `${s.failed} hata · ${s.warning} uyarı`, s.failed ? 'bad' : 'warn'],
+    ['İzlenen ürün', fmtNumber(s.totalProducts), 'son geçerli havuz toplamı', ''],
+    ['ClickHouse DB', ch.configured ? `${d.clickhouse_db_size_mb != null ? d.clickhouse_db_size_mb + ' MB' : 'Aktif'}` : 'Kapalı', ch.health === 'healthy' ? '26.8 LTS Localhost' : ch.health, ch.health === 'healthy' ? 'good' : 'warn'],
+    ['Disk Kapasite', d.free_disk_gb != null ? `${d.free_disk_gb} GB boş` : '--', d.estimated_days_until_disk_full != null ? `~${d.estimated_days_until_disk_full} gün yetecek (+${d.daily_growth_gb} GB/gün)` : 'Hesaplanıyor', d.healthy ? 'good' : 'warn'],
+    ['GitHub Backup', b.restore_verification === 'PASS' ? '100% PASS' : (b.backup_id ? 'Mevcut' : 'Planlandı'), b.total_rows != null ? `${fmtNumber(b.total_rows)} satır · AES-256` : 'Releases yedeği', b.restore_verification === 'PASS' ? 'good' : 'warn'],
+    ['Durable Outbox', outbox.pending_batches === 0 ? 'Kuyruk Temiz' : `${outbox.pending_batches} bekliyor`, `Gecikme: ${outbox.oldest_batch_age_sec || 0}s`, outbox.health === 'HEALTHY' ? 'good' : 'warn']
   ];
-  $('#summaryCards').innerHTML = cards.map(([label,value,detail,cls]) => `<article class="stat ${cls}"><span class="stat-label">${label}</span><strong class="stat-value">${value}</strong><span class="stat-detail">${detail}</span></article>`).join('');
+  $('#summaryCards').innerHTML = cards.map(([label, value, detail, cls]) => `<article class="stat ${cls}"><span class="stat-label">${label}</span><strong class="stat-value">${value}</strong><span class="stat-detail">${detail}</span></article>`).join('');
 }
 
 function renderSocial() {

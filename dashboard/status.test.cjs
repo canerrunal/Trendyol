@@ -37,4 +37,129 @@ test('canlı durum modeli görev ve kalite verisini birleştirir', () => {
   assert.equal(status.taxonomy.stages.length, 6);
   assert.ok(status.social);
   assert.equal(status.social.platforms.length, 4);
+  assert.ok(status.outbox);
+  assert.equal(typeof status.outbox.pending_batches, 'number');
+  assert.equal(typeof status.outbox.health, 'string');
+  assert.ok(status.clickhouse);
+  assert.equal(typeof status.clickhouse.health, 'string');
 });
+
+test('ClickHouse durumu yapılandırılmamışken health not_configured döner', () => {
+  const original = process.env.CLICKHOUSE_URL;
+  delete process.env.CLICKHOUSE_URL;
+  try {
+    const status = buildStatus({ bypassCache: true });
+    assert.equal(status.clickhouse.configured, false);
+    assert.equal(status.clickhouse.health, 'not_configured');
+    assert.equal(status.clickhouse.url, null);
+  } finally {
+    if (original != null) process.env.CLICKHOUSE_URL = original;
+  }
+});
+
+test('ClickHouse erişilemezken health unreachable döner', () => {
+  const original = process.env.CLICKHOUSE_URL;
+  process.env.CLICKHOUSE_URL = 'http://127.0.0.1:59999'; // unreachable port
+  try {
+    const status = buildStatus({ bypassCache: true });
+    assert.equal(status.clickhouse.configured, true);
+    assert.equal(status.clickhouse.health, 'unreachable');
+  } finally {
+    if (original != null) process.env.CLICKHOUSE_URL = original;
+    else delete process.env.CLICKHOUSE_URL;
+  }
+});
+
+test('ClickHouse çalışırken health healthy döner', () => {
+  const original = process.env.CLICKHOUSE_URL;
+  process.env.CLICKHOUSE_URL = 'http://127.0.0.1:8123'; // live canary ClickHouse
+  try {
+    const status = buildStatus({ bypassCache: true });
+    assert.equal(status.clickhouse.configured, true);
+    assert.equal(status.clickhouse.health, 'healthy');
+  } finally {
+    if (original != null) process.env.CLICKHOUSE_URL = original;
+    else delete process.env.CLICKHOUSE_URL;
+  }
+});
+
+test('Disk kapasite metrikleri doğru biçimde üretilir ve free_disk_gb hesaplanır', () => {
+  const status = buildStatus({ bypassCache: true });
+  assert.ok(status.disk, 'disk objesi mevcut olmalı');
+  assert.equal(typeof status.disk.free_disk_gb, 'number');
+  assert.ok(status.disk.free_disk_gb > 0);
+  assert.equal(typeof status.disk.total_disk_gb, 'number');
+  assert.ok(status.disk.total_disk_gb > 0);
+  assert.equal(typeof status.disk.daily_growth_gb, 'number');
+  assert.equal(typeof status.disk.estimated_days_until_disk_full, 'number');
+  assert.ok(status.disk.estimated_days_until_disk_full > 0);
+});
+
+test('Son GitHub Releases backup durumu okunur', () => {
+  const status = buildStatus({ bypassCache: true });
+  assert.ok(status.backup, 'backup objesi mevcut olmalı');
+  assert.equal(status.backup.restore_verification, 'PASS');
+  assert.ok(status.backup.total_rows >= 0);
+  assert.ok(status.backup.backup_id);
+});
+
+test('Cloudflare Tunnel yapılandırılmadığında not_configured döner', () => {
+  const origId = process.env.CF_ACCESS_CLIENT_ID;
+  const origSecret = process.env.CF_ACCESS_CLIENT_SECRET;
+  const origIgnore = process.env.CF_ACCESS_IGNORE_KEYCHAIN;
+  process.env.CF_ACCESS_IGNORE_KEYCHAIN = '1';
+  delete process.env.CF_ACCESS_CLIENT_ID;
+  delete process.env.CF_ACCESS_CLIENT_SECRET;
+  try {
+    const status = buildStatus({ bypassCache: true });
+    assert.ok(status.tunnel);
+    assert.equal(status.tunnel.configured, false);
+    assert.equal(status.tunnel.health, 'not_configured');
+  } finally {
+    if (origId) process.env.CF_ACCESS_CLIENT_ID = origId;
+    if (origSecret) process.env.CF_ACCESS_CLIENT_SECRET = origSecret;
+    if (origIgnore) process.env.CF_ACCESS_IGNORE_KEYCHAIN = origIgnore;
+    else delete process.env.CF_ACCESS_IGNORE_KEYCHAIN;
+  }
+});
+
+test('Cloudflare Service Token süresi 30 günden az kaldığında uyarı üretilir', () => {
+  const origId = process.env.CF_ACCESS_CLIENT_ID;
+  const origSecret = process.env.CF_ACCESS_CLIENT_SECRET;
+  const origExp = process.env.CF_ACCESS_TOKEN_EXPIRES_AT;
+
+  process.env.CF_ACCESS_CLIENT_ID = 'test_id';
+  process.env.CF_ACCESS_CLIENT_SECRET = 'test_secret';
+  // 15 days in future (< 30 days)
+  process.env.CF_ACCESS_TOKEN_EXPIRES_AT = new Date(Date.now() + 15 * 86400 * 1000).toISOString();
+
+  try {
+    const status = buildStatus({ bypassCache: true });
+    assert.ok(status.tunnel);
+    assert.equal(status.tunnel.configured, true);
+    assert.equal(status.tunnel.expiry_warning, true);
+    assert.ok(status.tunnel.days_until_token_expiry <= 15);
+    assert.match(status.tunnel.warning_message, /expires in \d+ days/i);
+  } finally {
+    if (origId) process.env.CF_ACCESS_CLIENT_ID = origId;
+    else delete process.env.CF_ACCESS_CLIENT_ID;
+    if (origSecret) process.env.CF_ACCESS_CLIENT_SECRET = origSecret;
+    else delete process.env.CF_ACCESS_CLIENT_SECRET;
+    if (origExp) process.env.CF_ACCESS_TOKEN_EXPIRES_AT = origExp;
+    else delete process.env.CF_ACCESS_TOKEN_EXPIRES_AT;
+  }
+});
+
+test('Cloudflare Tunnel çok faktörlü durum ve rolling probe metrikleri üretir', () => {
+  const status = buildStatus({ bypassCache: true });
+  assert.ok(status.tunnel);
+  assert.equal(typeof status.tunnel.cloudflared_process_alive, 'boolean');
+  assert.equal(typeof status.tunnel.named_tunnel_connected, 'boolean');
+  assert.equal(typeof status.tunnel.tunnel_uptime_ratio, 'number');
+  assert.equal(typeof status.tunnel.max_consecutive_downtime_sec, 'number');
+  assert.equal(typeof status.tunnel.successful_access_probes, 'number');
+  assert.equal(typeof status.tunnel.failed_access_probes, 'number');
+  assert.ok(status.tunnel.tunnel_status);
+});
+
+

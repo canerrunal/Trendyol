@@ -1,7 +1,7 @@
-📊 Trendyol Hamile Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 197/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Pierre Cardin Kadın Ten 6116 Pamuklu Kaplı Emzirme Sütyeni (467.41 TL) | 2) Arma Yıldız 3'lü Paket Kadın Renkli Pamuklu Likralı Yüksek Bel Hamile Lohusa Külot Esnek ve Rahat Kumaş (299.9 TL) | 3) MODALADY Kadın 3 Adet Emzirme Sütyeni (478.9 TL)
-🎯 Niche: 1) LadyMina Pijama Siyah Pileli Hamile Lahusa Pijama Takım | 2) Arma Yıldız Çıkarılabilir Pedli Emzirme Sütyeni 3'lü Beyaz Siyah Ten Pamuklu Göğüs Ucu Belli Etmez | 3) Pierre Cardin Kadın Ten 6116 Pamuklu Kaplı Emzirme Sütyeni
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/hamile/reports/2026-08-21.md
+📊 Trendyol Hamile Günlük Raporu — 2026-09-19
+✅ 1000 ürünlük havuz | 320/320 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) H&M MAMA Straight Low Waist Jeans (1399 TL) | 2) H&M MAMA Geniş Pantolon (899.99 TL) | 3) H&M MAMA Sigaret Pantolon (779.99 TL)
+🎯 Niche: 1) Maison La Femme Kadın Siyah Yüksek Bel Bol Paça Hamile Pantolonu | 2) H&M MAMA Sigaret Pantolon | 3) H&M MAMA 5'li Hipster Külot
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/hamile/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

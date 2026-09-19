@@ -1,12 +1,39 @@
+# Dependencies
 node_modules/
+
+# Environment and Secrets
 .env
 .env.local
 .env.*.local
-.DS_Store
+*.secret
+*.token
+*.key
+access/
+
+# Runtime artifacts and local databases
 .runtime/
+uuid
+
+# Temporary data files, caches and archives
 *.tmp
 *.tmp.*
 *.log
-categories/*/data/listing-cache.json
-data/listing-cache.json
+*.parquet
+*.tar.gz
+*.tar.gz.enc
+*.pid
+.DS_Store
 
+# Temporary crawler and listing caches
+data/listing-cache.json
+categories/*/data/listing-cache.json
+categories/**/snapshots/
+categories/**/backups/
+taxonomy/snapshots/
+taxonomy/reports/
+snapshots/
+lists/
+quality/
+reports/
+metadata/
+audits/

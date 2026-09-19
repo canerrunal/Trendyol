@@ -20,6 +20,7 @@ const OUTPUT_PREFIX = path.relative(ROOT, OUTPUT_ROOT).split(path.sep).join('/')
 const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const LISTING_CACHE_FILE = path.join(OUTPUT_ROOT, 'data', 'listing-cache.json');
 
+
 function mkdir(dir) { fs.mkdirSync(dir, { recursive: true }); }
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 function nowIstanbul() {
@@ -682,6 +683,18 @@ function qualityFor(products) {
   };
 }
 async function main() {
+  // SAFETY OVERRIDE: Nonessential crawler schedules paused when host capacity guardrail triggers
+  const CRAWLER_PAUSE_FILE = path.join(ROOT, '.runtime', 'crawler_pause_state.json');
+  if (fs.existsSync(CRAWLER_PAUSE_FILE)) {
+    try {
+      const pauseState = JSON.parse(fs.readFileSync(CRAWLER_PAUSE_FILE, 'utf8'));
+      if (pauseState && pauseState.crawlers_paused === true) {
+        console.log(`[SAFETY_OVERRIDE] Nonessential crawler schedule PAUSED (reason: ${pauseState.pause_reason || 'CAPACITY_GUARDRAIL_TRIGGERED'}). Exiting safely without disk writes (ZERO_AUTOMATED_DELETION).`);
+        process.exit(0);
+      }
+    } catch {}
+  }
+
   const { chromium } = require('playwright');
   if (!fs.existsSync(CHROME)) throw new Error(`Chrome bulunamadı: ${CHROME}`);
   const { date, timestamp } = nowIstanbul();
@@ -778,9 +791,25 @@ async function main() {
     }
     const snapshotDir = path.join(OUTPUT_ROOT, 'snapshots', date); mkdir(snapshotDir);
     writeJsonAtomic(path.join(snapshotDir, 'products.json'), scored);
-    writeCsv(path.join(snapshotDir, 'products.csv'), scored, columns);
-    const oldOtherDays = history.filter(r => r.date !== date);
-    writeCsv(historyFile, [...oldOtherDays, ...scored], columns);
+    // Incremental Append-Only Storage Hygiene (avoid repeated full rewrite)
+    if (!fs.existsSync(historyFile)) {
+      writeCsv(historyFile, scored, columns);
+    } else {
+      const dateAlreadyInHistory = history.some(r => r.date === date);
+      if (!dateAlreadyInHistory) {
+        const lines = scored.map(r => columns.map(c => {
+          const v = r[c] === null || r[c] === undefined ? '' : String(r[c]);
+          return v.includes(',') || v.includes('"') || v.includes('\n') ? `"${v.replace(/"/g, '""')}"` : v;
+        }).join(','));
+        fs.appendFileSync(historyFile, lines.join('\n') + '\n', 'utf8');
+      } else {
+        const existingTodayCount = history.filter(r => r.date === date).length;
+        if (scored.length > existingTodayCount) {
+          const oldOtherDays = history.filter(r => r.date !== date);
+          writeCsv(historyFile, [...oldOtherDays, ...scored], columns);
+        }
+      }
+    }
     const listsDir = path.join(OUTPUT_ROOT, 'lists', date); mkdir(listsDir);
     const lists = buildLists(scored);
     for (const [name, rows] of Object.entries(lists)) {

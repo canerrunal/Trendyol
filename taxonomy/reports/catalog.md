@@ -1,12 +1,12 @@
 # Trendyol Çok Satanlar Kategori Kataloğu
 
-Son keşif: **2026-08-21T23:30:46+03:00**
+Son keşif: **2026-09-19T15:00:20+03:00**
 
-- Menüdeki kategori yolu: **4.003**
-- Benzersiz kategori kimliği: **3.952**
+- Menüdeki kategori yolu: **4.006**
+- Benzersiz kategori kimliği: **3.955**
 - Birden fazla yolda görünen tekrar: **51**
 - Ana kategori: **19**
-- Uç kategori: **3.512**
+- Uç kategori: **3.515**
 - En derin yol: **6 seviye**
 
 | Ana kategori | Kimlik | Toplam dal |
@@ -25,10 +25,10 @@ Son keşif: **2026-08-21T23:30:46+03:00**
 | [Kitap](https://www.trendyol.com/cok-satanlar?categoryId=91&type=bestSeller&webGenderId=1) | 91 | 134 |
 | [Kompakt Fotoğraf Makinesi](https://www.trendyol.com/cok-satanlar?categoryId=177086&type=bestSeller&webGenderId=1) | 177086 | 1 |
 | [Kozmetik & Kişisel Bakım](https://www.trendyol.com/cok-satanlar?categoryId=89&type=bestSeller&webGenderId=1) | 89 | 180 |
-| [Otomobil & Motosiklet](https://www.trendyol.com/cok-satanlar?categoryId=105777&type=bestSeller&webGenderId=1) | 105777 | 415 |
+| [Otomobil & Motosiklet](https://www.trendyol.com/cok-satanlar?categoryId=105777&type=bestSeller&webGenderId=1) | 105777 | 416 |
 | [Sanat Eseri](https://www.trendyol.com/cok-satanlar?categoryId=142625&type=bestSeller&webGenderId=1) | 142625 | 9 |
 | [Spor&Outdoor](https://www.trendyol.com/cok-satanlar?categoryId=104593&type=bestSeller&webGenderId=1) | 104593 | 471 |
-| [Süpermarket](https://www.trendyol.com/cok-satanlar?categoryId=103799&type=bestSeller&webGenderId=1) | 103799 | 654 |
+| [Süpermarket](https://www.trendyol.com/cok-satanlar?categoryId=103799&type=bestSeller&webGenderId=1) | 103799 | 656 |
 | [Takı & Aksesuar Setleri](https://www.trendyol.com/cok-satanlar?categoryId=173890&type=bestSeller&webGenderId=1) | 173890 | 1 |
 
 Tam katalog: [catalog.csv](../catalog.csv) · [catalog.json](../catalog.json)

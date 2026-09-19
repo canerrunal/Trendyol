@@ -5,6 +5,7 @@ const path = require('path');
 const zlib = require('zlib');
 const { ROOT, readJson, readGzipJson, writeJsonAtomic, nowIstanbul, mkdir } = require('./taxonomy_common.cjs');
 const { createLineageRecord, getGitCommit, calculateConfigHash } = require('./lib/lineage.cjs');
+const { getOutboxBacklogMetrics } = require('./lib/clickhouse_client.cjs');
 
 function formatNumber(value) { return new Intl.NumberFormat('tr-TR').format(value); }
 function writeTextAtomic(file, text) {
@@ -315,6 +316,10 @@ function finalize({ shardCount = 4 } = {}) {
   writeTextAtomic(path.join(ROOT, 'taxonomy', 'reports', `${date}.md`), report);
   writeTextAtomic(path.join(ROOT, 'taxonomy', 'reports', 'latest.md'), report);
 
+  const outboxMetrics = getOutboxBacklogMetrics();
+  const chHealth = outboxMetrics.sinks_pending?.clickhouse > 5 ? '⚠️ ClickHouse: Degraded' : 'ClickHouse: OK ✅';
+  const outboxLine = `Outbox: ${outboxMetrics.pending_batches} pending (${outboxMetrics.size_mb} MB) ${outboxMetrics.health === 'OK' ? '✅' : '⚠️'}\n${chHealth}\n\n`;
+
   let telegram = '';
   if (status === 'PASS') {
     telegram = `✅ TRENDYOL DAILY RUN\n\n` +
@@ -326,6 +331,7 @@ function finalize({ shardCount = 4 } = {}) {
       `Fresh:\n%${freshCoverage.toLocaleString('tr-TR')}\n\n` +
       `Detail:\n${formatNumber(detailRefreshed)} / ${formatNumber(detailAttempts)}\n\n` +
       `Production publish:\n✅ Approved\n\n` +
+      outboxLine +
       `🔗 https://github.com/canerrunal/Trendyol/blob/main/taxonomy/reports/${date}.md\n`;
   } else {
     const shardStatusLines = shards.map(s => `Shard ${s.shard} ${s.status === 'MISSING' ? '❌' : '✅'}`).join('\n');
@@ -336,6 +342,7 @@ function finalize({ shardCount = 4 } = {}) {
       `Fresh:\n%${freshCoverage.toLocaleString('tr-TR')}\n\n` +
       `Production publish:\n⛔ BLOCKED\n\n` +
       `Verimimari current dataset:\n${previous?.date || 'N/A'} PASS\n\n` +
+      outboxLine +
       `🔗 https://github.com/canerrunal/Trendyol/blob/main/taxonomy/reports/${date}.md\n`;
   }
   writeTextAtomic(path.join(ROOT, 'taxonomy', 'reports', 'telegram-latest.txt'), telegram);

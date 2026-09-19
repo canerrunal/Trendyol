@@ -1,7 +1,7 @@
-📊 Trendyol Kozmetik Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) ILLUSIONE FRAGRANCE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk (479 TL) | 2) Pierre Cardin Amour Infini EDP Kadın Parfüm 50 ml|Çiçeksi|Frenk Üzümü, Bergamot, Yasemin, Portakal Çiçeği, Vanilya (639 TL) | 3) Yves Rocher Monoi Nemlendirici Peelingli Duş Yağı-Tüm Ciltler-Monoi de Tahiti-Vegan-150ml (274.95 TL)
-🎯 Niche: 1) Xoom Liberty Body Mist 30 ML - Gün Boyu Tazelik | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ILLUSIONE FRAGRANCE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kozmetik/reports/2026-08-21.md
+📊 Trendyol Kozmetik Günlük Raporu — 2026-09-19
+✅ 1000 ürünlük havuz | 310/310 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) New Well Lıft me up Volume Mascara 8 ml (219.9 TL) | 2) VULLY 24k Altın Parçacıklı Arındırıcı Nemlendirici Gözenek Sıkılaştırıcı Yüz Temizleme Jeli 200 Ml (249 TL) | 3) NIVOSHE 75ML Diş Beyazlatıcı Jel Parlatıcı Jel 75 ML Teeth Whitening Gel 75ML (1 TL)
+🎯 Niche: 1) CALLİEL Yoğun Nemlendirici, Yumuşatıcı, Işıltı Verici Tinted Dudak Bakım Maskesi | 2) Garnier Micellar Makyaj Temizleme Suyu 700ML, 24 Saat Nemlendirme, Hassas Ciltler için, Vegan & Cruelty Free | 3) MOZIUR Tırnak Bakım Törpüsü 100-180 Kalıcı Oje Protez Tırnak
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kozmetik/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

@@ -19,6 +19,13 @@ if [[ "${TRENDYOL_GLOBAL_LOCK_HELD:-0}" != "1" ]]; then
 fi
 
 cd "$PROJECT_DIR"
+PAUSE_FILE="$PROJECT_DIR/.runtime/crawler_pause_state.json"
+if [[ -f "$PAUSE_FILE" ]]; then
+  if grep -q '"crawlers_paused": true' "$PAUSE_FILE" 2>/dev/null; then
+    echo "SAFETY_OVERRIDE: Nonessential hourly crawler PAUSED (reason=CAPACITY_GUARDRAIL_TRIGGERED). Exiting profile=$PROFILE."
+    exit 0
+  fi
+fi
 mkdir -p categories
 
 echo "DAILY_RUN_START profile=$PROFILE time=$(TZ=Europe/Istanbul date +%FT%T%z)"

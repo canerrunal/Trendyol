@@ -1,0 +1,65 @@
+<clickhouse>
+    <!-- 1. Text Log: 3 Günlük Bounded TTL -->
+    <text_log>
+        <database>system</database>
+        <table>text_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </text_log>
+
+    <!-- 2. Trace Log: 3 Günlük Bounded TTL -->
+    <trace_log>
+        <database>system</database>
+        <table>trace_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </trace_log>
+
+    <!-- 3. Asynchronous Metric Log: 3 Günlük TTL -->
+    <asynchronous_metric_log>
+        <database>system</database>
+        <table>asynchronous_metric_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>60000</flush_interval_milliseconds>
+    </asynchronous_metric_log>
+
+    <!-- 4. Metric Log: 3 Günlük TTL -->
+    <metric_log>
+        <database>system</database>
+        <table>metric_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>60000</flush_interval_milliseconds>
+    </metric_log>
+
+    <!-- 5. Part Log: 7 Günlük TTL -->
+    <part_log>
+        <database>system</database>
+        <table>part_log</table>
+        <ttl>event_date + INTERVAL 7 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </part_log>
+
+    <!-- 6. Query Log: 7 Günlük TTL -->
+    <query_log>
+        <database>system</database>
+        <table>query_log</table>
+        <ttl>event_date + INTERVAL 7 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </query_log>
+
+    <!-- 7. Processors Profile Log: 3 Günlük TTL -->
+    <processors_profile_log>
+        <database>system</database>
+        <table>processors_profile_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </processors_profile_log>
+
+    <!-- 8. Asynchronous Insert Log: 3 Günlük TTL -->
+    <asynchronous_insert_log>
+        <database>system</database>
+        <table>asynchronous_insert_log</table>
+        <ttl>event_date + INTERVAL 3 DAY</ttl>
+        <flush_interval_milliseconds>7500</flush_interval_milliseconds>
+    </asynchronous_insert_log>
+</clickhouse>

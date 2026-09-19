@@ -1,7 +1,7 @@
-📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (240.62 TL) | 2) Genel Markalar 5 Katlı Metal Pantolon Askısı Dolap Elbise Askısı Giysi Eşarp Fular Havlu Kravat Düzenleyici (44 TL) | 3) Lilac Home Yapay Çiçek Elmas Saksıda 80 Cm Yoğun Yapraklı Koyu Yeşil Okaliptus Sarkıt (159.99 TL)
-🎯 Niche: 1) thebestnzm ÇT Çeçem Ticaret Duvara Monte Mop Ve Paspas Tutucu Gold | 2) Dream Time Bambu Premium Sıvı Geçirmez Fitted Alez | Bambu Ultra Sessiz Yatak Koruyucu | 3) KAMİZ Fırfırlı Koltuk Örtüsü Bohem Pamuk Keten | Kaymaz, Yıkanabilir, Modern Şık Tasarım
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/ev-yasam/reports/2026-08-21.md
+📊 Trendyol Ev & Yaşam Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 316/316 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Canbay Store 24 Adet Ahşap Görünümlü Plastik A Kalite 24 Adet Siyah Askı Pantolon Gömlek Askı (271.02 TL) | 2) Orvila 5 Bölmeli Metal Elbise Askısı - Giysi Pantalon Eşarp Fular Kıyafet Gardrop Düzenleyici Organizer (50.49 TL) | 3) ACAR Karat 9 Parça Rendeli Karıştırma ve Saklama Kabı (16-20-24 cm) (785 TL)
+🎯 Niche: 1) Ezupack AYICIK PET ŞİŞE Okul Piknik Meyve Suyu Smoothie Detoks Ginger Şeffaf Plastik Boş İçecek Sızdırmaz | 2) thebestnzm ÇT Çeçem Ticaret Duvara Monte Mop Ve Paspas Tutucu Gold | 3) TEFAL K1330404 Festive Manual 500 ml Kapasiteli Rondo ve Doğrayıcı - 2100119759
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/ev-yasam/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

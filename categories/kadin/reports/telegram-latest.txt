@@ -1,7 +1,7 @@
-📊 Trendyol Kadın Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Mad Parfüm Mad H105 Selective 50 ml Kadın Parfüm (379.99 TL) | 2) ILLUSIONE FRAGRANCE Lumiére Edp Kadın Parfüm 50ml | Tatlı - Vanilya - Gurme | Narenciye, Müge, Orkide, Misk (479 TL) | 3) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL)
-🎯 Niche: 1) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) Wega Moda Yazlık Şık Kadın Asimetrik Transparan Dökümlü Triko Pelerin Panço - Ekru
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/kadin/reports/2026-08-21.md
+📊 Trendyol Kadın Günlük Raporu — 2026-09-18
+✅ 1000 ürünlük havuz | 324/324 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) H&M Spor Taytı Seamless DryMove™ (899.99 TL) | 2) Imprime Muse Edp Kadın Parfüm 50ml | Çiçeksi, Meyveli | Frenk Üzümü, Lavanta, Yasemin, Vanilya, Misk, Amber (579 TL) | 3) Olalook Kadın Beyaz Dikiş Detaylı Flamlı Keten Gömlek GML-19001144 (425.81 TL)
+🎯 Niche: 1) Stradivarius Dik yaka suni deri trençkot | 2) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez | 3) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/kadin/reports/2026-09-18.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

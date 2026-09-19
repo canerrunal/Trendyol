@@ -1,20 +1,21 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "runId": "trendyol-20260919-120020-36bcb",
   "sourceUrl": "https://www.trendyol.com/cok-satanlar?type=bestSeller&webGenderId=1",
-  "generatedAt": "2026-08-21T23:30:46+03:00",
+  "generatedAt": "2026-09-19T15:00:20+03:00",
   "stats": {
-    "total": 4003,
-    "uniqueCategoryIds": 3952,
+    "total": 4006,
+    "uniqueCategoryIds": 3955,
     "duplicatePaths": 51,
     "roots": 19,
-    "leaves": 3512,
+    "leaves": 3515,
     "parents": 491,
     "maxDepth": 5,
     "levels": {
       "0": 19,
       "1": 182,
-      "2": 991,
-      "3": 1888,
+      "2": 993,
+      "3": 1889,
       "4": 879,
       "5": 44
     }
@@ -93,7 +94,7 @@
     {
       "categoryId": 105777,
       "name": "Otomobil & Motosiklet",
-      "descendants": 414
+      "descendants": 415
     },
     {
       "categoryId": 142625,
@@ -108,7 +109,7 @@
     {
       "categoryId": 103799,
       "name": "Süpermarket",
-      "descendants": 653
+      "descendants": 655
     },
     {
       "categoryId": 173890,
@@ -48994,7 +48995,7 @@
       "parentId": 109552,
       "level": 2,
       "hasChildren": true,
-      "childCount": 1,
+      "childCount": 2,
       "rootId": 105777,
       "rootName": "Otomobil & Motosiklet",
       "path": "Otomobil & Motosiklet > Motosiklet > Motosiklet Bakım",
@@ -49005,6 +49006,26 @@
       ],
       "pathSlug": "otomobil-motosiklet/motosiklet/motosiklet-bakim",
       "url": "https://www.trendyol.com/cok-satanlar?categoryId=187630&type=bestSeller&webGenderId=1"
+    },
+    {
+      "categoryId": 187887,
+      "name": "Motosiklet Bakım Seti",
+      "slug": "motosiklet-bakim-seti",
+      "parentId": 187630,
+      "level": 3,
+      "hasChildren": false,
+      "childCount": 0,
+      "rootId": 105777,
+      "rootName": "Otomobil & Motosiklet",
+      "path": "Otomobil & Motosiklet > Motosiklet > Motosiklet Bakım > Motosiklet Bakım Seti",
+      "pathIds": [
+        105777,
+        109552,
+        187630,
+        187887
+      ],
+      "pathSlug": "otomobil-motosiklet/motosiklet/motosiklet-bakim/motosiklet-bakim-seti",
+      "url": "https://www.trendyol.com/cok-satanlar?categoryId=187887&type=bestSeller&webGenderId=1"
     },
     {
       "categoryId": 187625,
@@ -74765,7 +74786,7 @@
       "parentId": 103799,
       "level": 1,
       "hasChildren": true,
-      "childCount": 8,
+      "childCount": 10,
       "rootId": 103799,
       "rootName": "Süpermarket",
       "path": "Süpermarket > Pet Shop",
@@ -74775,6 +74796,25 @@
       ],
       "pathSlug": "supermarket/pet-shop",
       "url": "https://www.trendyol.com/cok-satanlar?categoryId=1142&type=bestSeller&webGenderId=1"
+    },
+    {
+      "categoryId": 187885,
+      "name": "Akıllı Evcil Hayvan Bakım Ürünü",
+      "slug": "akilli-evcil-hayvan-bakim-urunu",
+      "parentId": 1142,
+      "level": 2,
+      "hasChildren": false,
+      "childCount": 0,
+      "rootId": 103799,
+      "rootName": "Süpermarket",
+      "path": "Süpermarket > Pet Shop > Akıllı Evcil Hayvan Bakım Ürünü",
+      "pathIds": [
+        103799,
+        1142,
+        187885
+      ],
+      "pathSlug": "supermarket/pet-shop/akilli-evcil-hayvan-bakim-urunu",
+      "url": "https://www.trendyol.com/cok-satanlar?categoryId=187885&type=bestSeller&webGenderId=1"
     },
     {
       "categoryId": 103564,
@@ -75153,6 +75193,25 @@
       ],
       "pathSlug": "supermarket/pet-shop/ciftlik-hayvani-urunleri/kanatli-hayvan-urunleri",
       "url": "https://www.trendyol.com/cok-satanlar?categoryId=164984&type=bestSeller&webGenderId=1"
+    },
+    {
+      "categoryId": 187886,
+      "name": "Diğer Akıllı Evcil Hayvan Ürünü",
+      "slug": "diger-akilli-evcil-hayvan-urunu",
+      "parentId": 1142,
+      "level": 2,
+      "hasChildren": false,
+      "childCount": 0,
+      "rootId": 103799,
+      "rootName": "Süpermarket",
+      "path": "Süpermarket > Pet Shop > Diğer Akıllı Evcil Hayvan Ürünü",
+      "pathIds": [
+        103799,
+        1142,
+        187886
+      ],
+      "pathSlug": "supermarket/pet-shop/diger-akilli-evcil-hayvan-urunu",
+      "url": "https://www.trendyol.com/cok-satanlar?categoryId=187886&type=bestSeller&webGenderId=1"
     },
     {
       "categoryId": 144116,

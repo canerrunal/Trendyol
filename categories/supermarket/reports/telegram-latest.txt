@@ -1,7 +1,7 @@
-📊 Trendyol Süpermarket Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) icollagen Kolajen Ve Prebiyotik Tablet (350 TL) | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml (279 TL) | 3) MOMORDİCA Coconut Mix - 250 ml (279 TL)
-🎯 Niche: 1) HARMANA Karnıyarık Otu Tozu 150 Gr | 2) MOMORDİCA Karnıyarık Otu Mix - 250ml | 3) Sibelon Professionel Kağıt Tırnak Törpü 100/180 1 Adet
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/supermarket/reports/2026-08-21.md
+📊 Trendyol Süpermarket Günlük Raporu — 2026-09-19
+✅ 1000 ürünlük havuz | 320/320 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 2) Zühre Ana Karadut Özü 670 Gr (229.9 TL) | 3) Nutriful İbni Sina Sirkengebin Prebiyotik Sirkesi (279 TL)
+🎯 Niche: 1) Kiperin One | Tek Hidrolize Kolajen Peptitler | MSM, Biotin, Hyaluronik Asit, Selenyum, Vitamin D | 30Kapsül | 2) Swedent Gurme Serisi Antep Fıstığı Aromalı Çikolata Sos Gerçek Antep Fıstığı Tadında Zengin ve Akışkan Kıvam | 3) Swedent Gurme Serisi Bitter Çikolata Sos Gerçek Kakao ile Zengin ve Akışkan Kıvam
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/supermarket/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

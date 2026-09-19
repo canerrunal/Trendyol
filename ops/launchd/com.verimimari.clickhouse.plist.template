@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.verimimari.clickhouse</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>{{CLICKHOUSE_SERVER_BIN}}</string>
+    <string>--config-file</string>
+    <string>{{WORKSPACE_ROOT}}/.runtime/clickhouse_prod/etc/clickhouse-server/config.xml</string>
+    <string>--pid-file</string>
+    <string>{{WORKSPACE_ROOT}}/.runtime/clickhouse_prod/var/run/clickhouse-server/clickhouse-server.pid</string>
+  </array>
+  <key>WorkingDirectory</key><string>{{WORKSPACE_ROOT}}</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>10</integer>
+  <key>StandardOutPath</key><string>{{WORKSPACE_ROOT}}/.runtime/clickhouse.stdout.log</string>
+  <key>StandardErrorPath</key><string>{{WORKSPACE_ROOT}}/.runtime/clickhouse.stderr.log</string>
+</dict>
+</plist>

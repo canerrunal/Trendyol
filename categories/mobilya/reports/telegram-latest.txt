@@ -1,7 +1,7 @@
-📊 Trendyol Mobilya Günlük Raporu — 2026-08-20
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Hürrem Koyu Kahve Koltuk Tepsisi Yan Sehpa Tesbih Cevizi Cm Ortasabit 13,5 Cm Amerikan Servisi (97.8 TL) | 2) YUNUSOĞLU HOME Katlanabilir Ahşap Koltuk Kenarı Yan Sehpa Amerikan Servisi Kanepe Kenarı Koltuk Tepsisi Ceviz Rengi (142.4 TL) | 3) Mobezzo 3’lü Yuvarlak Zigon Sehpa Takımı –hobistan Ahşap Ayaklı, Modern Tarz, Kahve Ve Sunum Sehpası (745 TL)
-🎯 Niche: Baz çizgisi oluşuyor
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/mobilya/reports/2026-08-20.md
+📊 Trendyol Mobilya Günlük Raporu — 2026-09-19
+✅ 1000 ürünlük havuz | 322/322 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) FİENS KIRIK BEYAZ SATEN GÜNEŞLİK (TÜL PERDE VE FON ALTINA) HER KOMBİNE YAKIŞIR ! TÜM ODALARA ŞIKLIK KATAR! En Çok Satılan (0.01 TL) | 2) FİENS LÜKS İPEK BAMBU Şantuklu Ağır Gramajlı 1/3 Sık Pileli Tül Perde Ütü İstemeyen En Çok Satılan (0.01 TL) | 3) FİENS BAMBU TTİ'S 1/3 Kat Sıkı Pileli Zarif - Sade Dokuma Tül Perde Ütü İstemez Özel Dikim En Çok Satılan (0.01 TL)
+🎯 Niche: 1) PAŞAMANLAR İpek Soft Bambu Şantuklu Ağır Gramajlı 1/3 Sık Pileli Tül Perde | 2) Puklife Ahşap Yan Sehpa – Katlanabilir Koltuk Sehpası 40x20 cm Ceviz Renk | 3) Luna Lighting Elda Gold Kaplama 3 Renk Kumandalı Metal Salon Mutfak Oturma Yatak Odası Modern Led Sarkıt Avize
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/mobilya/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

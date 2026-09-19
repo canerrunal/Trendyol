@@ -1,7 +1,7 @@
-📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) Magly Manyetik Yapı Blokları – Çocuklar İçin Renkli 3 Boyutlu 72 Parça Manyetik Karo Oyun Seti (1784.25 TL) | 2) Go Toys Go Magnetic Series 72 Parça Manyetik Yapı Blokları Original - Mıknatıslı Manyetik Bloklar (1498 TL) | 3) Magly Magnetic Cars Manyetik Araç Oyun Seti - Manyetik Yapı Blokları Araba Eklentisi (354.25 TL)
-🎯 Niche: 1) Kenzlife mobilya kulpu boru rustik96 siyah plastik dolap kulbu 01 adet kulp gardırop vida dahildir | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) Genel Markalar BÜYÜK BOY 25 CM Katlanır Kore yelpaze Serinlik
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-08-21.md
+📊 Trendyol Genel Çok Satanlar Günlük Raporu — 2026-09-19
+✅ 300 ürünlük havuz | 300/300 detay yenilendi | kalite PASS
+♻️ 300 ürünün tamamı günlük detay taramasında
+🔥 Trend: 1) Zühre Ana Kekre Termojenik Mix 250 Ml (199.9 TL) | 2) Kiwi Kmx-3608 El Mikseri (299 TL) | 3) Aprilla Ahs 2013 Saç Düzleştirici, Seramik plaka, Otomatik kapanma, 230 derece, 45W (199 TL)
+🎯 Niche: 1) Timaş Yayınları Vatanın Kalbi | 2) ecrin tuhafiye hobi Beyaz Düğün Arabası Süsü Gelin Arabası Konvoy Süsü & Bohça Süsü 1 Adet | 3) House Bird Büyük Boy 25 cm Katlanır Kore Yelpazesi Desenli Hafif Taşınabilir Çantalı El Yelpazesi - 1 ADET
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/genel-cok-satanlar/reports/2026-09-19.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.

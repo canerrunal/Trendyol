@@ -8,6 +8,7 @@ const zlib = require('zlib');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
+const { getOutboxBacklogMetrics } = require('../scripts/lib/clickhouse_client.cjs');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const HERMES_CRON_DIR = path.join(os.homedir(), '.hermes', 'cron');
 const JOBS_FILE = path.join(HERMES_CRON_DIR, 'jobs.json');
@@ -363,6 +364,239 @@ function buildTaxonomyStatus(jobByName, executions, today) {
   };
 }
 
+let chHealthCache = { expiresAt: 0, result: null };
+
+function getClickHouseHealth({ bypassCache = false } = {}) {
+  const isConfigured = Boolean(process.env.CLICKHOUSE_URL);
+  if (!isConfigured) {
+    return {
+      configured: false,
+      health: 'not_configured',
+      url: null
+    };
+  }
+
+  const url = process.env.CLICKHOUSE_URL;
+  const now = Date.now();
+  if (!bypassCache && chHealthCache.result && chHealthCache.expiresAt > now) {
+    return chHealthCache.result;
+  }
+
+  let isHealthy = false;
+  try {
+    const pingUrl = new URL('/ping', url).href;
+    const output = execFileSync('curl', ['-s', '-m', '1', pingUrl], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    isHealthy = output.trim() === 'Ok.';
+  } catch {
+    isHealthy = false;
+  }
+
+  const outbox = getOutboxBacklogMetrics();
+  let health = isHealthy ? 'healthy' : 'unreachable';
+  if (health === 'healthy' && outbox.sinks_pending?.clickhouse > 5) {
+    health = 'degraded';
+  }
+
+  const result = {
+    configured: true,
+    health,
+    url
+  };
+
+  chHealthCache = { expiresAt: now + 5000, result };
+  return result;
+}
+
+const { getCalibratedDiskMetrics } = require('../scripts/lib/disk_growth_monitor.cjs');
+
+function getDiskCapacityMetrics() {
+  try {
+    const stage = parseInt(process.env.DUAL_WRITE_STAGE || '1', 10);
+    return getCalibratedDiskMetrics({ currentStage: stage });
+  } catch (err) {
+    return {
+      free_disk_gb: null,
+      total_disk_gb: null,
+      clickhouse_db_size_mb: null,
+      daily_growth_gb: 0.10,
+      estimated_days_until_disk_full: null,
+      calibrated: false,
+      healthy: false,
+      error: err.message
+    };
+  }
+}
+
+function getCloudflareTunnelHealth() {
+  const tunnelDomain = process.env.CLOUDFLARE_TUNNEL_DOMAIN || 'ch.verimimari.com';
+  const expiresAtRaw = process.env.CF_ACCESS_TOKEN_EXPIRES_AT;
+
+  let secrets = { clientId: null, clientSecret: null, source: 'NONE', configured: false };
+  let probeMetrics = {
+    epoch_started: false,
+    epoch_status: 'AWAITING_FIRST_AUTH_SELECT',
+    epoch_start_time: null,
+    rolling_window_hours: 0.0,
+    rolling_window_required_hours: 24.0,
+    total_epoch_probes: 0,
+    successful_access_probes: 0,
+    failed_access_probes: 0,
+    incident_history_count: 0,
+    tunnel_uptime_ratio: 0.0,
+    target_uptime_ratio: 99.0,
+    all_unauthenticated_denied: true,
+    all_authenticated_select_200: false,
+    max_consecutive_downtime_sec: 0,
+    current_consecutive_downtime_sec: 0,
+    epoch_gate_passed: false
+  };
+
+  try {
+    const { loadCloudflareAccessSecrets, getTunnelProbeMetrics } = require('../scripts/lib/tunnel_monitor.cjs');
+    secrets = loadCloudflareAccessSecrets();
+    probeMetrics = getTunnelProbeMetrics();
+  } catch {}
+
+  const clientId = secrets.clientId;
+  const clientSecret = secrets.clientSecret;
+
+  // 1. Process alive check (OS level)
+  let cloudflaredProcessAlive = false;
+  try {
+    const pgrepOut = execFileSync('pgrep', ['-x', 'cloudflared'], { encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] }).trim();
+    cloudflaredProcessAlive = pgrepOut.length > 0;
+  } catch {
+    cloudflaredProcessAlive = false;
+  }
+
+  // 2. Named tunnel connected check
+  let namedTunnelConnected = false;
+  if (cloudflaredProcessAlive) {
+    try {
+      const metricOut = execFileSync('curl', ['-s', '-m', '1', 'http://127.0.0.1:20241/metrics'], { encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] });
+      namedTunnelConnected = metricOut.includes('cloudflared_tunnel_ha_connections') ||
+        metricOut.includes('cloudflared_tunnel_tunnel_register_success') ||
+        metricOut.includes('cloudflared_tunnel_server_locations') ||
+        metricOut.includes('cloudflared_tunnel_total_connections') ||
+        metricOut.includes('cloudflared_tunnel_user_connections');
+    } catch {
+      namedTunnelConnected = false;
+    }
+  }
+
+  // 3. Monitor env variables check
+  const monitorConfigMissing = !secrets.configured;
+
+  let tokenExpiresAt = null;
+  let daysUntilExpiry = null;
+  let expiryWarning = false;
+  let warningMessage = null;
+
+  if (expiresAtRaw) {
+    try {
+      const expDate = new Date(expiresAtRaw);
+      if (!isNaN(expDate.getTime())) {
+        tokenExpiresAt = expDate.toISOString();
+        daysUntilExpiry = Math.floor((expDate.getTime() - Date.now()) / (1000 * 86400));
+        if (daysUntilExpiry < 30) {
+          expiryWarning = true;
+          warningMessage = `Cloudflare Service Token expires in ${daysUntilExpiry} days (< 30 days)! Rotate token soon.`;
+        }
+      }
+    } catch {}
+  }
+
+  // 4. Access protected SELECT / ping reachable check
+  let accessProtectedSelectReachable = false;
+  let reachabilityDetails = 'NOT_CHECKED';
+  if (!monitorConfigMissing) {
+    try {
+      const curlArgs = ['-s', '-m', '2', '-H', `CF-Access-Client-Id: ${clientId}`, '-H', `CF-Access-Client-Secret: ${clientSecret}`, `https://${tunnelDomain}/ping`];
+      const out = execFileSync('curl', curlArgs, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+      accessProtectedSelectReachable = out === 'Ok.';
+      reachabilityDetails = accessProtectedSelectReachable ? 'REACHABLE_OK' : `UNEXPECTED_RESPONSE (${out.slice(0, 30)})`;
+    } catch (err) {
+      accessProtectedSelectReachable = false;
+      reachabilityDetails = `CURL_FAILED (${err.message})`;
+    }
+  } else {
+    reachabilityDetails = 'NOT_CHECKED (MONITOR_CONFIG_MISSING)';
+  }
+
+  // 5. Determine fine-grained tunnel status
+  let tunnelStatus = 'UNKNOWN';
+  if (monitorConfigMissing) {
+    tunnelStatus = 'MONITOR_CONFIG_MISSING';
+  } else if (!cloudflaredProcessAlive) {
+    tunnelStatus = 'PROCESS_DOWN';
+  } else if (!accessProtectedSelectReachable) {
+    tunnelStatus = 'UNREACHABLE';
+  } else {
+    tunnelStatus = 'HEALTHY';
+  }
+
+  // Strict is_healthy boolean: not_configured, unknown, unreachable, MONITOR_CONFIG_MISSING are NEVER healthy
+  const isHealthy = tunnelStatus === 'HEALTHY' && cloudflaredProcessAlive && accessProtectedSelectReachable;
+
+  // Legacy health string for backwards compatibility
+  let health = monitorConfigMissing ? 'not_configured' : (isHealthy ? 'healthy' : 'unreachable');
+  if (health === 'healthy' && expiryWarning) {
+    health = 'warning_expiring_soon';
+  }
+
+  return {
+    configured: !monitorConfigMissing,
+    monitor_config_missing: monitorConfigMissing,
+    monitor_config_status: monitorConfigMissing ? 'MONITOR_CONFIG_MISSING' : 'CONFIG_PRESENT',
+    secret_source: secrets.source,
+    cloudflared_process_alive: cloudflaredProcessAlive,
+    named_tunnel_connected: namedTunnelConnected,
+    access_protected_select_reachable: accessProtectedSelectReachable,
+    reachability_details: reachabilityDetails,
+    tunnel_status: tunnelStatus,
+    epoch_started: probeMetrics.epoch_started ?? false,
+    epoch_status: probeMetrics.epoch_status ?? 'AWAITING_FIRST_AUTH_SELECT',
+    epoch_start_time: probeMetrics.epoch_start_time,
+    rolling_window_hours: probeMetrics.rolling_window_hours ?? 0.0,
+    incident_history_count: probeMetrics.incident_history_count ?? 0,
+    all_unauthenticated_denied: probeMetrics.all_unauthenticated_denied ?? true,
+    all_authenticated_select_200: probeMetrics.all_authenticated_select_200 ?? false,
+    tunnel_uptime_ratio: probeMetrics.tunnel_uptime_ratio ?? 0.0,
+    max_consecutive_downtime_sec: probeMetrics.max_consecutive_downtime_sec ?? 0,
+    successful_access_probes: probeMetrics.successful_access_probes ?? 0,
+    failed_access_probes: probeMetrics.failed_access_probes ?? 0,
+    epoch_gate_passed: probeMetrics.epoch_gate_passed ?? false,
+    health,
+    is_healthy: isHealthy,
+    domain: tunnelDomain,
+    token_expires_at: tokenExpiresAt,
+    days_until_token_expiry: daysUntilExpiry,
+    expiry_warning: expiryWarning,
+    warning_message: warningMessage
+  };
+}
+
+function getLastBackupStatus() {
+  const backupFile = path.join(ROOT, '.runtime', 'latest_backup_status.json');
+  if (fs.existsSync(backupFile)) {
+    try {
+      return JSON.parse(fs.readFileSync(backupFile, 'utf8'));
+    } catch {}
+  }
+  return null;
+}
+
+function getLastReconciliationStatus() {
+  const reconFile = path.join(ROOT, '.runtime', 'latest_reconciliation_report.json');
+  if (fs.existsSync(reconFile)) {
+    try {
+      return JSON.parse(fs.readFileSync(reconFile, 'utf8'));
+    } catch {}
+  }
+  return null;
+}
+
+
 function buildStatus({ bypassCache = false } = {}) {
   if (!bypassCache && statusCache.value && statusCache.expiresAt > Date.now()) return statusCache.value;
   const jobsData = readJson(JOBS_FILE, { jobs: [], updated_at: null });
@@ -472,6 +706,12 @@ function buildStatus({ bypassCache = false } = {}) {
       heartbeat: fs.existsSync(path.join(HERMES_CRON_DIR, 'ticker_heartbeat')) ? fs.readFileSync(path.join(HERMES_CRON_DIR, 'ticker_heartbeat'), 'utf8').trim() : null,
       lastSuccess: fs.existsSync(path.join(HERMES_CRON_DIR, 'ticker_last_success')) ? fs.readFileSync(path.join(HERMES_CRON_DIR, 'ticker_last_success'), 'utf8').trim() : null
     },
+    outbox: getOutboxBacklogMetrics(),
+    clickhouse: getClickHouseHealth({ bypassCache }),
+    disk: getDiskCapacityMetrics(),
+    tunnel: getCloudflareTunnelHealth(),
+    backup: getLastBackupStatus(),
+    reconciliation: getLastReconciliationStatus(),
     social: buildSocialStatus({ bypassCache }),
     taxonomy: buildTaxonomyStatus(jobByName, executions, today),
     profiles,
@@ -541,5 +781,21 @@ function startServer() {
   return server;
 }
 
-module.exports = { ROOT, buildStatus, buildSocialStatus, parseSocialRefs, normalizeSocialRun, cronTime, errorSummary, progressFromLog, discoverProfiles, startServer };
+module.exports = {
+  ROOT,
+  buildStatus,
+  buildSocialStatus,
+  getClickHouseHealth,
+  getDiskCapacityMetrics,
+  getCloudflareTunnelHealth,
+  getLastBackupStatus,
+  getLastReconciliationStatus,
+  parseSocialRefs,
+  normalizeSocialRun,
+  cronTime,
+  errorSummary,
+  progressFromLog,
+  discoverProfiles,
+  startServer
+};
 if (require.main === module) startServer();

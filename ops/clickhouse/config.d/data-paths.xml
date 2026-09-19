@@ -1,0 +1,6 @@
+<clickhouse>
+    <path>{{CLICKHOUSE_DIR}}/var/lib/clickhouse</path>
+    <tmp_path>{{CLICKHOUSE_DIR}}/var/lib/clickhouse/tmp</tmp_path>
+    <user_files_path>{{CLICKHOUSE_DIR}}/var/lib/clickhouse/user_files</user_files_path>
+    <format_schema_path>{{CLICKHOUSE_DIR}}/var/lib/clickhouse/format_schemas</format_schema_path>
+</clickhouse>

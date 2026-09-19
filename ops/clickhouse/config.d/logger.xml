@@ -1,0 +1,9 @@
+<clickhouse>
+    <logger>
+        <log>{{CLICKHOUSE_DIR}}/var/log/clickhouse-server/clickhouse-server.log</log>
+        <errorlog>{{CLICKHOUSE_DIR}}/var/log/clickhouse-server/clickhouse-server.err.log</errorlog>
+        <level>warning</level>
+        <size>10M</size>
+        <count>3</count>
+    </logger>
+</clickhouse>

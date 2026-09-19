@@ -23246,6 +23246,38 @@
               "mostRated",
               "topViewed"
             ]
+          },
+          {
+            "id": 187885,
+            "name": "Akıllı Evcil Hayvan Bakım Ürünü",
+            "url": "/akilli-evcil-hayvan-bakim-urunu",
+            "parentId": 1142,
+            "level": 2,
+            "hasChildren": false,
+            "isActive": false,
+            "topRankingRelations": [
+              "bestSeller",
+              "topRepurchased",
+              "mostFavourite",
+              "mostRated",
+              "topViewed"
+            ]
+          },
+          {
+            "id": 187886,
+            "name": "Diğer Akıllı Evcil Hayvan Ürünü",
+            "url": "/diger-akilli-evcil-hayvan-urunu",
+            "parentId": 1142,
+            "level": 2,
+            "hasChildren": false,
+            "isActive": false,
+            "topRankingRelations": [
+              "bestSeller",
+              "topRepurchased",
+              "mostFavourite",
+              "mostRated",
+              "topViewed"
+            ]
           }
         ],
         "isActive": false,
@@ -55956,6 +55988,22 @@
                 "id": 187625,
                 "name": "Motosiklet Motor Yağı",
                 "url": "/motosiklet-motor-yagi",
+                "parentId": 187630,
+                "level": 3,
+                "hasChildren": false,
+                "isActive": false,
+                "topRankingRelations": [
+                  "bestSeller",
+                  "topRepurchased",
+                  "mostFavourite",
+                  "mostRated",
+                  "topViewed"
+                ]
+              },
+              {
+                "id": 187887,
+                "name": "Motosiklet Bakım Seti",
+                "url": "/motosiklet-bakim-seti",
                 "parentId": 187630,
                 "level": 3,
                 "hasChildren": false,

@@ -1,7 +1,7 @@
-📊 Trendyol Erkek Günlük Raporu — 2026-08-21
-✅ 200 ürünlük havuz | 200/200 detay yenilendi | kalite PASS
-♻️ 200 ürünün tamamı günlük detay taramasında
-🔥 Trend: 1) gloceans feel the glow Peptide Complex & Keratin Saç Dökülmesine Karşı Sağlıklı Saç Uzatan Onarıcı Besleyici Şampuan (356.92 TL) | 2) New Well Ter Önleyici Beyazlatıcı Roll-on 50 ml (220 TL) | 3) Embeauty 9 Aktifli Saç Dökülmesine Karşı Hızlı Saç Uzatan & Onarıcı Dolgunlaştırıcı Besleyici Şampuan 400 ML (327.89 TL)
-🎯 Niche: 1) Xoom Liberty Kalıcı Etkili Duş Jeli 200 ML – Cildi nemlendiren , Kalıcı Koku | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
-📁 GitHub: https://github.com/caner8047-coder/Trendyol/blob/main/categories/erkek/reports/2026-08-21.md
+📊 Trendyol Erkek Günlük Raporu — 2026-09-17
+✅ 1000 ürünlük havuz | 306/306 detay yenilendi | kalite PASS
+♻️ İlk 300 günlük + 0 dönüşümlü + 25 hızlı değişen ürün
+🔥 Trend: 1) Biorgin Collagen+Biotin Anti Hairloss Şampuan 400ML (279 TL) | 2) Embeauty Kepek Kaşıntı Ve Egzama Karşıtı 9 Aktifli Kepek Karşıtı Tuzsuz Sampuan 400 ml (229 TL) | 3) Bargello 561 Erkek 50 ml Parfüm Edp Fresh (370 TL)
+🎯 Niche: 1) H&M Şık Pantolon Slim Fit | 2) icollagen Kolajen, Isırgan Otu, Prebiyotik Şampuan - Dökülen Ve Geç Uzayan Yağlanma Karşıtı | 3) ORNATE Karınca Tüy Azaltıcı Beyazlatıcı, Koku Ve Ter Karşıtı Unisex Doğal Roll On - Aliminyum Içermez
+📁 GitHub: https://github.com/canerrunal/Trendyol/blob/main/categories/erkek/reports/2026-09-17.md
 Not: Yükselen/düşen listeleri ikinci ölçümden itibaren günlük farklarla dolacaktır.
